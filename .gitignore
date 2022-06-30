@@ -7,3 +7,4 @@ debug.py
 run.log
 *.log
 novel/
+!exp_log/*
