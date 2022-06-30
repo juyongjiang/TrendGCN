@@ -1,0 +1,9 @@
+exp/
+*.pyc
+*__pycache__
+log/
+dataset/PEMS*
+debug.py
+run.log
+*.log
+novel/
