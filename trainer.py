@@ -92,21 +92,6 @@ class Trainer(object):
 
             fake_input_rf = self.scaler.transform(output) # [B'', W, N, 1] // [B'', H, N, 1] -> [B'', W+H, N, 1]
             true_input_rf = self.scaler.transform(label) if self.args.real_value else label
-
-            # fake_input_rf_real = torch.cat((self.scaler.inverse_transform(data), output), dim=1) # [B'', W+H, N, 1]
-            # true_input_rf_real = torch.cat((self.scaler.inverse_transform(data), label), dim=1)
-            # print(true_input_rf[0][0][:10][:10])
-            # input('check')
-            # print(fake_input_rf.shape)
-            # input('check')
-            # print(self.scaler.transform(output)[0, 0].squeeze(), data[0, 0].squeeze()) # , label[0, 0].squeeze())
-            # input('check')
-            # print(self.loss_G(output.cuda(), label).item(), self.loss_D(self.discriminator(fake_input), valid).item())
-            # input('check')
-            # print(self.discriminator(fake_input).squeeze()[:64])
-            # input('check')
-            # self.loss_D(self.discriminator(fake_input), valid) 
-            # 
             
             loss_G = self.loss_G(output.cuda(), label) + 0.01 * self.loss_D(self.discriminator(fake_input), valid) + self.loss_D(self.discriminator_rf(fake_input_rf), valid_rf)
             loss_G.backward()
@@ -123,9 +108,6 @@ class Trainer(object):
             self.optimizer_D.zero_grad()
             real_loss = self.loss_D(self.discriminator(true_input), valid)
             fake_loss = self.loss_D(self.discriminator(fake_input.detach()), fake)
-            # print(self.discriminator(true_input).squeeze()[:64])
-            # print(self.discriminator(fake_input).squeeze()[:64])
-            # input('check')
             loss_D = 0.5 * (real_loss + fake_loss)
             loss_D.backward()
             self.optimizer_D.step() 
@@ -137,9 +119,6 @@ class Trainer(object):
             self.optimizer_D_RF.zero_grad()
             real_loss_rf = self.loss_D(self.discriminator_rf(true_input_rf), valid_rf)
             fake_loss_rf = self.loss_D(self.discriminator_rf(fake_input_rf.detach()), fake_rf)
-            # print(self.discriminator_rf(true_input_rf).squeeze()[:64])
-            # print(self.discriminator_rf(fake_input_rf).squeeze()[:64])
-            # input('check')
             loss_D_RF = 0.5 * (real_loss_rf + fake_loss_rf)
             loss_D_RF.backward()
             self.optimizer_D_RF.step() 

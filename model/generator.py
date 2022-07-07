@@ -24,10 +24,6 @@ class MAAGCN(nn.Module):
         self.layernorm = nn.LayerNorm(self.hidden_dim, eps=1e-12)
         self.out_dropout = nn.Dropout(0.1)
 
-        # predictor (if it is adaptive for each node, it maybe better)
-        # self.weights = nn.Parameter(torch.FloatTensor(args.embed_dim, args.horizon * self.output_dim, self.hidden_dim, 1)) # [D, T, C, F]
-        # self.bias = nn.Parameter(torch.FloatTensor(args.embed_dim, args.horizon * self.output_dim, 1)) # [D, F]
-
         self.end_conv = nn.Conv2d(1, args.horizon * self.output_dim, kernel_size=(1, self.hidden_dim), bias=True)
 
     def forward(self, source, norm_dis_matrix):
@@ -35,10 +31,6 @@ class MAAGCN(nn.Module):
         init_state = self.encoder.init_hidden(source.shape[0])
         output, _ = self.encoder(source, norm_dis_matrix, init_state, self.node_embeddings, self.node_flows, self.time_embeddings) # B, T, N, hidden
         output = self.out_dropout(self.layernorm(output[:, -1:, :, :])) # B, 1, N, hidden
-        # output = output[:, -1:, :, :]
-
-        # _, output = self.encoder(source, init_state, self.node_embeddings, self.node_flows, self.time_embeddings) # B, T, N, hidden
-        # output = self.out_dropout(self.layernorm(torch.mean(torch.stack(output, dim=1), dim=1).unsqueeze(1)))# output[:, -1:, :, :] # B, 1, N, hidden
 
         # CNN based predictor
         output = self.end_conv((output)) # B, T*C, N, 1
@@ -67,9 +59,6 @@ class MAGRNN(nn.Module):
         seq_length = x.shape[1] # T
         current_inputs = x
         output_hidden = []
-
-        # time series similarity
-        # seq_sim = nn.Softmax(dim=-1)(torch.mean(torch.einsum("btmc,bmkc->btkc", x.permute(0, 2, 1, 3), x), dim=0))[:, :, 0] # [B, N, T, D] * [B, T, N, D] -> [B, N, N, D]
 
         for i in range(self.num_layers):
             state = init_state[i]
@@ -132,11 +121,7 @@ class MAGCN(nn.Module):
         # x shaped[B, N, C], node_flows shaped [N, N], node_embeddings shaped [N, D] -> supports shaped [N, N]
         # output shape [B, N, C]
         node_num = node_embeddings.shape[0] 
-        # node_time = torch.mul(node_embeddings, time_embeddings.unsqueeze(0)) # [N, D] * [1, D] -> [N, D]
-        # x_flow = torch.mean(x, dim=0) # [N, C]
-        # x_rel_flow = F.softmax(torch.matmul(x_flow, x_flow.permute(1, 0)), dim=1) # [N, N]
         node_embeddings = self.embs_dropout(self.layernorm(node_embeddings + time_embeddings.unsqueeze(0))) # torch.mul(node_embeddings, node_time)
-        # node_flow_sim = self.embs_dropout(self.layernorm(torch.matmul(node_embeddings, node_flows) + time_embeddings.unsqueeze(0)))
         supports = F.softmax(torch.mm(node_embeddings, node_embeddings.transpose(0, 1)), dim=1)
         # supports = F.softmax(torch.mm(node_embeddings, node_embeddings.transpose(0, 1)) + norm_dis_matrix, dim=1) #+ F.softmax(torch.mm(node_flow_sim, node_flow_sim.transpose(0, 1)), dim=1) # [N, N]
 

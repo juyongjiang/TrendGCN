@@ -23,6 +23,7 @@ DEBUG = 'True'
 DATASET = 'PEMS04'      # PEMS03 or PEMS04 or PEMS07 or PEMS08
 MODEL = 'AGCRN'
 ADJ_MATRIX = './dataset/{}/{}.csv'.format(DATASET, DATASET)
+#*************************************************************************#
 
 # get configuration
 config_file = './config/{}.conf'.format(DATASET)
@@ -194,6 +195,6 @@ if __name__ == "__main__":
     elif args.mode.lower() == 'test':
         generator.load_state_dict(torch.load('../pre-trained/{}.pth'.format(args.dataset)))
         print("Load saved model")
-        trainer.test(generator, trainer.args, test_loader, scaler, trainer.logger)
+        trainer.test(generator, norm_dis_matrix, trainer.args, test_loader, scaler, trainer.logger)
     else:
         raise ValueError

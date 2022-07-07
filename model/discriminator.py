@@ -19,9 +19,7 @@ class Discriminator(nn.Module):
 
     def forward(self, x):  
         x = x.squeeze() # [B, (W+H), N]
-        x_flat = x.view(-1, x.shape[2]) # # [B*(W+H), N]
-        # print(x_flat.shape)
-        # input('check')
+        x_flat = x.view(-1, x.shape[2]) # [B*(W+H), N]
 
         validity = self.model(x_flat)
 
@@ -45,7 +43,7 @@ class Discriminator_RF(nn.Module):
 
     def forward(self, x):  
         x = nn.Softmax(dim=-1)(torch.matmul(x.squeeze().permute(0, 2, 1), x.squeeze())) # [B, N, H] * [B, H, N] -> [B, N, N]
-        x_flat = x.reshape(-1, x.shape[2]) # # [B*N, N]
+        x_flat = x.reshape(-1, x.shape[2]) # [B*N, N]
         validity = self.model(x_flat)
 
         return validity
