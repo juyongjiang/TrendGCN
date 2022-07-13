@@ -112,7 +112,7 @@ class MAGCN(nn.Module):
         self.node_num = node_num
         self.weights_pool = nn.Parameter(torch.FloatTensor(embed_dim, cheb_k, dim_in, dim_out)) # [D, cheb_k, C, F]
         self.bias_pool = nn.Parameter(torch.FloatTensor(embed_dim, dim_out)) # [D, F]
-
+        
         self.layernorm = nn.LayerNorm(embed_dim, eps=1e-12)
         self.embs_dropout = nn.Dropout(0.1)
         self.layernorm_graph = nn.LayerNorm(node_num, eps=1e-12)
