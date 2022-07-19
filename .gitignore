@@ -9,3 +9,4 @@ run.log
 novel/
 !exp_log/*
 *_val_loss.txt
+.DS_Store
