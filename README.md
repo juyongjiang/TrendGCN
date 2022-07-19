@@ -76,7 +76,7 @@ We conduct extensive experiments on four real-world traffic benchmark datasets. 
 </p>
 
 <p align="center">
-  <img src="./imagesfigure_3.png" alt="Faster Convergence on PEMS08" width="800">
+  <img src="./images/figure_3.png" alt="Faster Convergence on PEMS08" width="800">
   <br>
   <b>Figure 3.</b> Convergence guarantees and correctness of DAAGCN on PEMS08. The left sub-figure illustrates that the training loss of our DAAGCN yields lower training loss during the whole training phase and convergence almost eight times faster than AGCRN \cite{agcrn}. The right eight sub-figures, corresponding to eight nodes, show the predicted traffic flow of DAAGCN and AGCRN, and the ground truth in the future 12 time steps, which indicating the stronger prediction ability of DAAGCN.
 </p>
