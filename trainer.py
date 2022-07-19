@@ -8,6 +8,13 @@ import numpy as np
 from utils.util import get_logger
 from utils.metrics import All_Metrics
 
+
+def record_loss(loss_file, loss):
+    with open(loss_file, 'a') as f:
+        line = "{:.4f}\n".format(loss)
+        f.write(line) 
+
+
 class Trainer(object):
     def __init__(self, 
                  args,
@@ -179,6 +186,12 @@ class Trainer(object):
         train_loss_list_D_RF = []
         val_loss_list = []
 
+        # loss file
+        loss_file = '{}_{}_val_loss.txt'.format(self.args.model, self.args.dataset)
+        if os.path.exists(loss_file):
+            os.remove(loss_file)
+            print('Recreate {}'.format(loss_file))
+
         start_time = time.time()
         for epoch in range(1, self.args.epochs + 1):
             train_epoch_loss_G, train_epoch_loss_D, train_epoch_loss_D_RF = self.train_epoch(epoch)
@@ -188,6 +201,7 @@ class Trainer(object):
             else:
                 val_dataloader = self.val_loader
             val_epoch_loss = self.val_epoch(epoch, val_dataloader)
+            record_loss(loss_file, val_epoch_loss)
 
             train_loss_list_G.append(train_epoch_loss_G)
             train_loss_list_D.append(train_epoch_loss_D)

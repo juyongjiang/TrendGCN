@@ -65,7 +65,21 @@ or
 bash run.sh
 ```
 
-Note that for descriptions of more arguments, please run `python main.py -h`. 
+Note that for descriptions of more arguments, please run `python main.py -h`. The logs of training and testing over four datasets can be found in 
+[exp_log](https://github.com/juyongjiang/DAAGCN/tree/master/exp_log).
+
+## Visualization
+**Model Convergence Loss**
+```bash
+python vis_loss.py
+```
+
+**Horizon Prediction**
+After training, the predicted results with 12 horizon will be saved in `log/dataset_name_xx/date_xx` which contains `best_model.pth`, 
+`dataset_pred.npy`, and `dataset_true.npy`. Then, run the following command to visualize prediction with 12 horizon. 
+```bash
+python vis_pred.py
+```
 
 ## Main Results
 We conduct extensive experiments on four real-world traffic benchmark datasets. The experimental results show that DAAGCN outperforms the state-of-the-art methods by an average \textbf{14.13\%} relative MSE reduction, \textbf{12.81\%} relative RMSE reduction, and \textbf{17.18\%} relative MAPE reduction over all datasets (see Table 1). Besides, DAAGCN is the first attempt to combine GCNs with GANs for traffic forecasting task. It encapsulates the advantages of GCNs and GANs, and shows $\bm{6\times}$ at least faster convergence guarantees and correctness empirically (see Figure. 2 and Figure. 3). 
