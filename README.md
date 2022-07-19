@@ -75,6 +75,7 @@ python vis_loss.py
 ```
 
 **Horizon Prediction**
+
 After training, the predicted results with 12 horizon will be saved in `log/dataset_name_xx/date_xx` which contains `best_model.pth`, 
 `dataset_pred.npy`, and `dataset_true.npy`. Then, run the following command to visualize prediction with 12 horizon. 
 ```bash
