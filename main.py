@@ -1,4 +1,3 @@
-
 import os
 import sys
 import torch
@@ -8,7 +7,7 @@ import argparse
 import configparser
 from datetime import datetime
 
-from model.generator import MAAGCN as Generator
+from model.generator import DAAGCN as Generator
 from model.discriminator import Discriminator, Discriminator_RF
 from trainer import Trainer
 
@@ -21,7 +20,7 @@ from utils.adj_dis_matrix import get_adj_dis_matrix, norm_Adj as norm_adj
 Mode = 'Train'
 DEBUG = 'True'
 DATASET = 'PEMS04'      # PEMS03 or PEMS04 or PEMS07 or PEMS08
-MODEL = 'AGCRN'
+MODEL = 'DAAGCN'
 ADJ_MATRIX = './dataset/{}/{}.csv'.format(DATASET, DATASET)
 #*************************************************************************#
 

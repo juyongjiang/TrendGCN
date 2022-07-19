@@ -1,5 +1,5 @@
 2022-07-13 04:41: Experiment log path in: /home/john/Research/Preprint/M2A/hyper_08/log/PEMS08/20220713044105
-2022-07-13 04:41: Argument: Namespace(adj_file='./dataset/PEMS08/PEMS08.csv', batch_size=64, cheb_k=2, column_wise=False, dataset='PEMS08', debug=True, default_graph=True, device=device(type='cuda', index=3), early_stop=True, early_stop_patience=15, embed_dim=4, epochs=120, gpu_id=3, grad_norm=False, horizon=12, input_dim=1, lag=12, log_dir='/home/john/Research/Preprint/M2A/hyper_08/log/PEMS08/20220713044105', log_step=20, loss_func='mae', lr_decay=True, lr_decay_rate=0.3, lr_decay_step='80,100', lr_init=0.003, mae_thresh=None, mape_thresh=0.0, max_grad_norm=5, mode='Train', model='AGCRN', normalizer='std', num_layers=2, num_nodes=170, output_dim=1, plot=False, real_value=True, rnn_units=64, seed=10, test_ratio=0.2, tod=False, val_ratio=0.2)
+2022-07-13 04:41: Argument: Namespace(adj_file='./dataset/PEMS08/PEMS08.csv', batch_size=64, cheb_k=2, column_wise=False, dataset='PEMS08', debug=True, default_graph=True, device=device(type='cuda', index=3), early_stop=True, early_stop_patience=15, embed_dim=4, epochs=120, gpu_id=3, grad_norm=False, horizon=12, input_dim=1, lag=12, log_dir='/home/john/Research/Preprint/M2A/hyper_08/log/PEMS08/20220713044105', log_step=20, loss_func='mae', lr_decay=True, lr_decay_rate=0.3, lr_decay_step='80,100', lr_init=0.003, mae_thresh=None, mape_thresh=0.0, max_grad_norm=5, mode='Train', model='DAAGCN', normalizer='std', num_layers=2, num_nodes=170, output_dim=1, plot=False, real_value=True, rnn_units=64, seed=10, test_ratio=0.2, tod=False, val_ratio=0.2)
 2022-07-13 04:41: adj_file: ./dataset/PEMS08/PEMS08.csv
 2022-07-13 04:41: batch_size: 64
 2022-07-13 04:41: cheb_k: 2
@@ -28,7 +28,7 @@
 2022-07-13 04:41: mape_thresh: 0.0
 2022-07-13 04:41: max_grad_norm: 5
 2022-07-13 04:41: mode: Train
-2022-07-13 04:41: model: AGCRN
+2022-07-13 04:41: model: DAAGCN
 2022-07-13 04:41: normalizer: std
 2022-07-13 04:41: num_layers: 2
 2022-07-13 04:41: num_nodes: 170
@@ -1432,7 +1432,7 @@ mae_thresh: None
 mape_thresh: 0.0
 max_grad_norm: 5
 mode: Train
-model: AGCRN
+model: DAAGCN
 normalizer: std
 num_layers: 2
 num_nodes: 170

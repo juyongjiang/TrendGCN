@@ -3,9 +3,9 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 
-class MAAGCN(nn.Module):
+class DAAGCN(nn.Module):
     def __init__(self, args):
-        super(MAAGCN, self).__init__()
+        super(DAAGCN, self).__init__()
         self.num_node = args.num_nodes
         self.input_dim = args.input_dim
         self.hidden_dim = args.rnn_units
@@ -19,7 +19,7 @@ class MAAGCN(nn.Module):
         self.time_embeddings = nn.Parameter(torch.randn(self.window, args.embed_dim), requires_grad=True)
         self.node_flows = nn.Parameter(torch.randn(args.embed_dim, args.embed_dim), requires_grad=True)
 
-        self.encoder = MAGRNN(args.num_nodes, args.input_dim, args.rnn_units, args.cheb_k, args.embed_dim, args.num_layers)
+        self.encoder = DAGRNN(args.num_nodes, args.input_dim, args.rnn_units, args.cheb_k, args.embed_dim, args.num_layers)
 
         self.layernorm = nn.LayerNorm(self.hidden_dim, eps=1e-12)
         self.out_dropout = nn.Dropout(0.1)
@@ -40,17 +40,17 @@ class MAAGCN(nn.Module):
         return output
 
 
-class MAGRNN(nn.Module):
+class DAGRNN(nn.Module):
     def __init__(self, node_num, dim_in, dim_out, cheb_k, embed_dim, num_layers=1):
-        super(MAGRNN, self).__init__()
+        super(DAGRNN, self).__init__()
         assert num_layers >= 1, 'At least one GRU layer in the Encoder.'
         self.node_num = node_num
         self.input_dim = dim_in
         self.num_layers = num_layers
-        self.magrnn_cells = nn.ModuleList()
-        self.magrnn_cells.append(GRUCell(node_num, dim_in, dim_out, cheb_k, embed_dim))
+        self.dagrnn_cells = nn.ModuleList()
+        self.dagrnn_cells.append(GRUCell(node_num, dim_in, dim_out, cheb_k, embed_dim))
         for _ in range(1, num_layers):
-            self.magrnn_cells.append(GRUCell(node_num, dim_out, dim_out, cheb_k, embed_dim))
+            self.dagrnn_cells.append(GRUCell(node_num, dim_out, dim_out, cheb_k, embed_dim))
 
     def forward(self, x, norm_dis_matrix, init_state, node_embeddings, node_flows, time_embeddings):
         # shape of x: (B, T, N, D)
@@ -64,7 +64,7 @@ class MAGRNN(nn.Module):
             state = init_state[i]
             inner_states = []
             for t in range(seq_length): # one by one for GRU
-                state = self.magrnn_cells[i](current_inputs[:, t, :, :], norm_dis_matrix, state, node_embeddings, node_flows, time_embeddings[t]) # [B, N, hidden_dim]
+                state = self.dagrnn_cells[i](current_inputs[:, t, :, :], norm_dis_matrix, state, node_embeddings, node_flows, time_embeddings[t]) # [B, N, hidden_dim]
                 inner_states.append(state)
             output_hidden.append(state)
             current_inputs = torch.stack(inner_states, dim=1) # [B, T, N, D]
@@ -76,7 +76,7 @@ class MAGRNN(nn.Module):
     def init_hidden(self, batch_size):
         init_states = []
         for i in range(self.num_layers):
-            init_states.append(self.magrnn_cells[i].init_hidden_state(batch_size))
+            init_states.append(self.dagrnn_cells[i].init_hidden_state(batch_size))
         return torch.stack(init_states, dim=0) # (num_layers, B, N, hidden_dim)
 
 
@@ -85,8 +85,8 @@ class GRUCell(nn.Module):
         super(GRUCell, self).__init__()
         self.node_num = node_num
         self.hidden_dim = dim_out
-        self.gate = MAGCN(dim_in+self.hidden_dim, 2*dim_out, cheb_k, embed_dim, node_num)
-        self.update = MAGCN(dim_in+self.hidden_dim, dim_out, cheb_k, embed_dim, node_num)
+        self.gate = DAGCN(dim_in+self.hidden_dim, 2*dim_out, cheb_k, embed_dim, node_num)
+        self.update = DAGCN(dim_in+self.hidden_dim, dim_out, cheb_k, embed_dim, node_num)
 
     def forward(self, x, norm_dis_matrix, state, node_embeddings, node_flows, time_embeddings):
         # x: B, num_nodes, input_dim
@@ -105,9 +105,9 @@ class GRUCell(nn.Module):
         return torch.zeros(batch_size, self.node_num, self.hidden_dim)
 
 
-class MAGCN(nn.Module):
+class DAGCN(nn.Module):
     def __init__(self, dim_in, dim_out, cheb_k, embed_dim, node_num):
-        super(MAGCN, self).__init__()
+        super(DAGCN, self).__init__()
         self.cheb_k = cheb_k
         self.node_num = node_num
         self.weights_pool = nn.Parameter(torch.FloatTensor(embed_dim, cheb_k, dim_in, dim_out)) # [D, cheb_k, C, F]
