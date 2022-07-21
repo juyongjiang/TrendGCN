@@ -73,7 +73,7 @@ Note that for descriptions of more arguments, please run `python main.py -h`. Th
 $ tree
 .
 ├── visualize
-│   ├── PEMS04
+    └── PEMS04
         ├── DAAGCN_PEMS04_pred.npy
         ├── DAAGCN_PEMS04_true.npy
         └── DAAGCN_PEMS04_val_loss.txt
