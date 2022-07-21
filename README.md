@@ -69,17 +69,18 @@ Note that for descriptions of more arguments, please run `python main.py -h`. Th
 [exp_log](https://github.com/juyongjiang/DAAGCN/tree/master/exp_log).
 
 ## Visualization
-**Model Convergence Loss**
-```bash
-python vis_loss.py
 ```
-
-**Horizon Prediction**
-
-After training, the predicted results with 12 horizon will be saved in `log/dataset_name_xx/date_xx` which contains `best_model.pth`, 
-`dataset_pred.npy`, and `dataset_true.npy`. Then, run the following command to visualize prediction with 12 horizon. 
+$ tree
+.
+├── visualize
+│   ├── PEMS04
+        ├── DAAGCN_PEMS04_pred.npy
+        ├── DAAGCN_PEMS04_true.npy
+        └── DAAGCN_PEMS04_val_loss.txt
+``` 
+After training, the training loss will be saved in current path. Besides, the predicted results with 12 horizon will be saved in `log/dataset_name_xx/date_xx` which contains `best_model.pth`, `dataset_pred.npy`, and `dataset_true.npy`. Place these files in the format of above path tree. Then, run the following script to visualize model convergence loss and prediction with 12 horizon in [Colab](https://colab.research.google.com/?utm_source=scs-index). 
 ```bash
-python vis_pred.py
+vis_loss_pred.
 ```
 
 ## Main Results
