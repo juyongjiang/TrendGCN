@@ -80,7 +80,7 @@ $ tree
 ``` 
 After training, the training loss will be saved in current path. Besides, the predicted results with 12 horizon will be saved in `log/dataset_name_xx/date_xx` which contains `best_model.pth`, `dataset_pred.npy`, and `dataset_true.npy`. Place these files in the format of above path tree. Then, run the following script to visualize model convergence loss and prediction with 12 horizon in [Colab](https://colab.research.google.com/?utm_source=scs-index). 
 ```bash
-vis_loss_pred.
+vis_loss_pred.ipynb
 ```
 
 ## Main Results
