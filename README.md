@@ -37,7 +37,7 @@ conda activate daagcn
 
 ## Datasets Preparation
 In our work, we evaluate proposed models on four public traffic benchmark dataset, including: PEMS03, PEMS04, PEMS07, and PEMS08.
-You can download them at [ASTGNN](https://github.com/guoshnBJTU/ASTGNN). Then, place them into `dataset` folder.
+You can download them at [TimeSeriesDatasets](https://github.com/juyongjiang/TimeSeriesDatasets). Then, place them into `dataset` folder.
 
 ## Train and Test
 **Step 1:**
