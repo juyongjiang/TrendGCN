@@ -1,7 +1,7 @@
 # DAAGCN: Dynamic Adaptive and Adversarial Graph Convolutional Network for Traffic Forecasting
-Juyong Jiang\*, Binqing Wu\*, Ling Chen\+, Sunghun Kim
+Juyong Jiang\*, Binqing Wu\*, Ling Chen\†, Sunghun Kim .
 
-(\*) Equal Contribution, (\+) Corresponding Author.
+(\*) Equal Contribution, (†) Corresponding Author.
 
 This is our Pytorch implementation for the paper: "**[Dynamic Adaptive and Adversarial Graph Convolutional Network for Traffic Forecasting]()**".
 Our framework is built based on framework of [AGCRN](https://github.com/LeiBAI/AGCRN). More useful repositories can be found in our [HKUST@DeepSE Lab](https://github.com/AIM-SE).
