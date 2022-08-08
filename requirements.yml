@@ -164,4 +164,3 @@ dependencies:
     - wcwidth==0.2.5
     - werkzeug==2.0.3
     - zipp==3.7.0
-prefix: /home/john/Softwares/anaconda3/envs/daagcn
