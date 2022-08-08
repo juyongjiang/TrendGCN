@@ -1,5 +1,5 @@
 # DAAGCN: Dynamic Adaptive and Adversarial Graph Convolutional Network for Traffic Forecasting
-Juyong Jiang\*, Binqing Wu\*, Ling Chen\†, Sunghun Kim .
+Juyong Jiang\*, Binqing Wu\*, Ling Chen†, Sunghun Kim .
 
 (\*) Equal Contribution, (†) Corresponding Author.
 
