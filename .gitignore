@@ -7,6 +7,6 @@ debug.py
 run.log
 *.log
 novel/
-!exp_log/*
+!results/*
 *_val_loss.txt
 .DS_Store

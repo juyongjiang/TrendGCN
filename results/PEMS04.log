@@ -1,0 +1,1394 @@
+2022-07-13 22:42: Experiment log path in: /home/john/Research/Preprint/M2A/hyper_04/log/PEMS04/20220713224217
+2022-07-13 22:42: Argument: Namespace(adj_file='./dataset/PEMS04/PEMS04.csv', batch_size=64, cheb_k=2, column_wise=False, dataset='PEMS04', debug=True, default_graph=True, device=device(type='cuda', index=2), early_stop=True, early_stop_patience=15, embed_dim=6, epochs=120, gpu_id=2, grad_norm=False, horizon=12, input_dim=1, lag=12, log_dir='/home/john/Research/Preprint/M2A/hyper_04/log/PEMS04/20220713224217', log_step=20, loss_func='mae', lr_decay=True, lr_decay_rate=0.3, lr_decay_step='80,100', lr_init=0.003, mae_thresh=None, mape_thresh=0.0, max_grad_norm=5, mode='Train', model='DAAGCN', normalizer='std', num_layers=2, num_nodes=307, output_dim=1, plot=False, real_value=True, rnn_units=64, seed=10, test_ratio=0.2, tod=False, val_ratio=0.2)
+2022-07-13 22:42: adj_file: ./dataset/PEMS04/PEMS04.csv
+2022-07-13 22:42: batch_size: 64
+2022-07-13 22:42: cheb_k: 2
+2022-07-13 22:42: column_wise: False
+2022-07-13 22:42: dataset: PEMS04
+2022-07-13 22:42: debug: True
+2022-07-13 22:42: default_graph: True
+2022-07-13 22:42: device: cuda:2
+2022-07-13 22:42: early_stop: True
+2022-07-13 22:42: early_stop_patience: 15
+2022-07-13 22:42: embed_dim: 6
+2022-07-13 22:42: epochs: 120
+2022-07-13 22:42: gpu_id: 2
+2022-07-13 22:42: grad_norm: False
+2022-07-13 22:42: horizon: 12
+2022-07-13 22:42: input_dim: 1
+2022-07-13 22:42: lag: 12
+2022-07-13 22:42: log_dir: /home/john/Research/Preprint/M2A/hyper_04/log/PEMS04/20220713224217
+2022-07-13 22:42: log_step: 20
+2022-07-13 22:42: loss_func: mae
+2022-07-13 22:42: lr_decay: True
+2022-07-13 22:42: lr_decay_rate: 0.3
+2022-07-13 22:42: lr_decay_step: 80,100
+2022-07-13 22:42: lr_init: 0.003
+2022-07-13 22:42: mae_thresh: None
+2022-07-13 22:42: mape_thresh: 0.0
+2022-07-13 22:42: max_grad_norm: 5
+2022-07-13 22:42: mode: Train
+2022-07-13 22:42: model: DAAGCN
+2022-07-13 22:42: normalizer: std
+2022-07-13 22:42: num_layers: 2
+2022-07-13 22:42: num_nodes: 307
+2022-07-13 22:42: output_dim: 1
+2022-07-13 22:42: plot: False
+2022-07-13 22:42: real_value: True
+2022-07-13 22:42: rnn_units: 64
+2022-07-13 22:42: seed: 10
+2022-07-13 22:42: test_ratio: 0.2
+2022-07-13 22:42: tod: False
+2022-07-13 22:42: val_ratio: 0.2
+2022-07-13 22:42: Train Epoch 1: 0/158 Generator Loss: 202.508774 Pred Discriminator Loss: 0.820126 RelFlow Discriminator Loss: 0.961404
+2022-07-13 22:42: Train Epoch 1: 20/158 Generator Loss: 212.914764 Pred Discriminator Loss: 0.524170 RelFlow Discriminator Loss: 0.672835
+2022-07-13 22:42: Train Epoch 1: 40/158 Generator Loss: 211.651642 Pred Discriminator Loss: 0.502616 RelFlow Discriminator Loss: 0.620150
+2022-07-13 22:42: Train Epoch 1: 60/158 Generator Loss: 197.634857 Pred Discriminator Loss: 0.490184 RelFlow Discriminator Loss: 0.568907
+2022-07-13 22:42: Train Epoch 1: 80/158 Generator Loss: 199.537415 Pred Discriminator Loss: 0.487692 RelFlow Discriminator Loss: 0.491767
+2022-07-13 22:42: Train Epoch 1: 100/158 Generator Loss: 163.456833 Pred Discriminator Loss: 0.487559 RelFlow Discriminator Loss: 0.416475
+2022-07-13 22:42: Train Epoch 1: 120/158 Generator Loss: 164.958389 Pred Discriminator Loss: 0.488004 RelFlow Discriminator Loss: 0.332587
+2022-07-13 22:42: Train Epoch 1: 140/158 Generator Loss: 157.395157 Pred Discriminator Loss: 0.486392 RelFlow Discriminator Loss: 0.268846
+2022-07-13 22:42: **********Train Epoch 1: Averaged Generator Loss: 183.750533, Averaged Pred Discriminator Loss: 0.507705, Averaged RelFlow Discriminator Loss: 0.488185
+2022-07-13 22:42: **********Val Epoch 1: average Loss: 163.235712
+2022-07-13 22:42: *********************************Current best model saved!
+2022-07-13 22:42: Train Epoch 2: 0/158 Generator Loss: 140.535812 Pred Discriminator Loss: 0.485002 RelFlow Discriminator Loss: 0.242864
+2022-07-13 22:42: Train Epoch 2: 20/158 Generator Loss: 130.564575 Pred Discriminator Loss: 0.494148 RelFlow Discriminator Loss: 0.816234
+2022-07-13 22:42: Train Epoch 2: 40/158 Generator Loss: 116.859154 Pred Discriminator Loss: 0.507754 RelFlow Discriminator Loss: 0.717554
+2022-07-13 22:42: Train Epoch 2: 60/158 Generator Loss: 116.403091 Pred Discriminator Loss: 0.518540 RelFlow Discriminator Loss: 0.591833
+2022-07-13 22:42: Train Epoch 2: 80/158 Generator Loss: 99.090645 Pred Discriminator Loss: 0.525920 RelFlow Discriminator Loss: 0.570871
+2022-07-13 22:42: Train Epoch 2: 100/158 Generator Loss: 81.126305 Pred Discriminator Loss: 0.528936 RelFlow Discriminator Loss: 0.561997
+2022-07-13 22:43: Train Epoch 2: 120/158 Generator Loss: 80.841972 Pred Discriminator Loss: 0.537583 RelFlow Discriminator Loss: 0.509432
+2022-07-13 22:43: Train Epoch 2: 140/158 Generator Loss: 59.502911 Pred Discriminator Loss: 0.558339 RelFlow Discriminator Loss: 0.554843
+2022-07-13 22:43: **********Train Epoch 2: Averaged Generator Loss: 103.583182, Averaged Pred Discriminator Loss: 0.518815, Averaged RelFlow Discriminator Loss: 0.579337
+2022-07-13 22:43: **********Val Epoch 2: average Loss: 73.153056
+2022-07-13 22:43: *********************************Current best model saved!
+2022-07-13 22:43: Train Epoch 3: 0/158 Generator Loss: 64.408173 Pred Discriminator Loss: 0.530519 RelFlow Discriminator Loss: 0.500345
+2022-07-13 22:43: Train Epoch 3: 20/158 Generator Loss: 60.416759 Pred Discriminator Loss: 0.540196 RelFlow Discriminator Loss: 0.506505
+2022-07-13 22:43: Train Epoch 3: 40/158 Generator Loss: 53.423004 Pred Discriminator Loss: 0.546582 RelFlow Discriminator Loss: 0.494099
+2022-07-13 22:43: Train Epoch 3: 60/158 Generator Loss: 57.265285 Pred Discriminator Loss: 0.533616 RelFlow Discriminator Loss: 0.455730
+2022-07-13 22:43: Train Epoch 3: 80/158 Generator Loss: 47.801888 Pred Discriminator Loss: 0.560579 RelFlow Discriminator Loss: 0.484454
+2022-07-13 22:43: Train Epoch 3: 100/158 Generator Loss: 46.535542 Pred Discriminator Loss: 0.554813 RelFlow Discriminator Loss: 0.458076
+2022-07-13 22:43: Train Epoch 3: 120/158 Generator Loss: 36.136013 Pred Discriminator Loss: 0.566636 RelFlow Discriminator Loss: 0.506015
+2022-07-13 22:43: Train Epoch 3: 140/158 Generator Loss: 39.890724 Pred Discriminator Loss: 0.544532 RelFlow Discriminator Loss: 0.483472
+2022-07-13 22:43: **********Train Epoch 3: Averaged Generator Loss: 49.354186, Averaged Pred Discriminator Loss: 0.551748, Averaged RelFlow Discriminator Loss: 0.492910
+2022-07-13 22:43: **********Val Epoch 3: average Loss: 37.756159
+2022-07-13 22:43: *********************************Current best model saved!
+2022-07-13 22:43: Train Epoch 4: 0/158 Generator Loss: 34.248062 Pred Discriminator Loss: 0.569040 RelFlow Discriminator Loss: 0.531754
+2022-07-13 22:43: Train Epoch 4: 20/158 Generator Loss: 40.917213 Pred Discriminator Loss: 0.539640 RelFlow Discriminator Loss: 0.439530
+2022-07-13 22:43: Train Epoch 4: 40/158 Generator Loss: 33.916855 Pred Discriminator Loss: 0.559438 RelFlow Discriminator Loss: 0.510548
+2022-07-13 22:43: Train Epoch 4: 60/158 Generator Loss: 35.969986 Pred Discriminator Loss: 0.549914 RelFlow Discriminator Loss: 0.457280
+2022-07-13 22:43: Train Epoch 4: 80/158 Generator Loss: 30.162148 Pred Discriminator Loss: 0.564280 RelFlow Discriminator Loss: 0.516555
+2022-07-13 22:43: Train Epoch 4: 100/158 Generator Loss: 31.771088 Pred Discriminator Loss: 0.570979 RelFlow Discriminator Loss: 0.521533
+2022-07-13 22:44: Train Epoch 4: 120/158 Generator Loss: 31.699286 Pred Discriminator Loss: 0.572389 RelFlow Discriminator Loss: 0.507441
+2022-07-13 22:44: Train Epoch 4: 140/158 Generator Loss: 32.968624 Pred Discriminator Loss: 0.574149 RelFlow Discriminator Loss: 0.496310
+2022-07-13 22:44: **********Train Epoch 4: Averaged Generator Loss: 32.750082, Averaged Pred Discriminator Loss: 0.568601, Averaged RelFlow Discriminator Loss: 0.516547
+2022-07-13 22:44: **********Val Epoch 4: average Loss: 28.517458
+2022-07-13 22:44: *********************************Current best model saved!
+2022-07-13 22:44: Train Epoch 5: 0/158 Generator Loss: 28.791618 Pred Discriminator Loss: 0.571623 RelFlow Discriminator Loss: 0.534831
+2022-07-13 22:44: Train Epoch 5: 20/158 Generator Loss: 28.485651 Pred Discriminator Loss: 0.570423 RelFlow Discriminator Loss: 0.539406
+2022-07-13 22:44: Train Epoch 5: 40/158 Generator Loss: 29.385998 Pred Discriminator Loss: 0.572325 RelFlow Discriminator Loss: 0.534572
+2022-07-13 22:44: Train Epoch 5: 60/158 Generator Loss: 28.829836 Pred Discriminator Loss: 0.577512 RelFlow Discriminator Loss: 0.544785
+2022-07-13 22:44: Train Epoch 5: 80/158 Generator Loss: 28.907066 Pred Discriminator Loss: 0.575673 RelFlow Discriminator Loss: 0.557880
+2022-07-13 22:44: Train Epoch 5: 100/158 Generator Loss: 25.267586 Pred Discriminator Loss: 0.593327 RelFlow Discriminator Loss: 0.593509
+2022-07-13 22:44: Train Epoch 5: 120/158 Generator Loss: 27.507891 Pred Discriminator Loss: 0.586186 RelFlow Discriminator Loss: 0.589573
+2022-07-13 22:44: Train Epoch 5: 140/158 Generator Loss: 28.622753 Pred Discriminator Loss: 0.575383 RelFlow Discriminator Loss: 0.608678
+2022-07-13 22:44: **********Train Epoch 5: Averaged Generator Loss: 28.238297, Averaged Pred Discriminator Loss: 0.580657, Averaged RelFlow Discriminator Loss: 0.565031
+2022-07-13 22:44: **********Val Epoch 5: average Loss: 25.516217
+2022-07-13 22:44: *********************************Current best model saved!
+2022-07-13 22:44: Train Epoch 6: 0/158 Generator Loss: 25.859871 Pred Discriminator Loss: 0.607723 RelFlow Discriminator Loss: 0.609756
+2022-07-13 22:44: Train Epoch 6: 20/158 Generator Loss: 25.644838 Pred Discriminator Loss: 0.607974 RelFlow Discriminator Loss: 0.615321
+2022-07-13 22:44: Train Epoch 6: 40/158 Generator Loss: 28.883234 Pred Discriminator Loss: 0.559926 RelFlow Discriminator Loss: 0.570672
+2022-07-13 22:44: Train Epoch 6: 60/158 Generator Loss: 26.505491 Pred Discriminator Loss: 0.580628 RelFlow Discriminator Loss: 0.621936
+2022-07-13 22:44: Train Epoch 6: 80/158 Generator Loss: 25.963009 Pred Discriminator Loss: 0.584547 RelFlow Discriminator Loss: 0.599295
+2022-07-13 22:44: Train Epoch 6: 100/158 Generator Loss: 25.375118 Pred Discriminator Loss: 0.607970 RelFlow Discriminator Loss: 0.641134
+2022-07-13 22:45: Train Epoch 6: 120/158 Generator Loss: 27.247355 Pred Discriminator Loss: 0.575259 RelFlow Discriminator Loss: 0.608078
+2022-07-13 22:45: Train Epoch 6: 140/158 Generator Loss: 28.003706 Pred Discriminator Loss: 0.580591 RelFlow Discriminator Loss: 0.598225
+2022-07-13 22:45: **********Train Epoch 6: Averaged Generator Loss: 26.494513, Averaged Pred Discriminator Loss: 0.590211, Averaged RelFlow Discriminator Loss: 0.613943
+2022-07-13 22:45: **********Val Epoch 6: average Loss: 23.994810
+2022-07-13 22:45: *********************************Current best model saved!
+2022-07-13 22:45: Train Epoch 7: 0/158 Generator Loss: 24.937691 Pred Discriminator Loss: 0.602593 RelFlow Discriminator Loss: 0.639740
+2022-07-13 22:45: Train Epoch 7: 20/158 Generator Loss: 23.878061 Pred Discriminator Loss: 0.601570 RelFlow Discriminator Loss: 0.644889
+2022-07-13 22:45: Train Epoch 7: 40/158 Generator Loss: 27.566744 Pred Discriminator Loss: 0.601244 RelFlow Discriminator Loss: 0.657819
+2022-07-13 22:45: Train Epoch 7: 60/158 Generator Loss: 25.831240 Pred Discriminator Loss: 0.584340 RelFlow Discriminator Loss: 0.638598
+2022-07-13 22:45: Train Epoch 7: 80/158 Generator Loss: 25.091541 Pred Discriminator Loss: 0.597379 RelFlow Discriminator Loss: 0.648263
+2022-07-13 22:45: Train Epoch 7: 100/158 Generator Loss: 27.127928 Pred Discriminator Loss: 0.581145 RelFlow Discriminator Loss: 0.661972
+2022-07-13 22:45: Train Epoch 7: 120/158 Generator Loss: 25.660709 Pred Discriminator Loss: 0.589857 RelFlow Discriminator Loss: 0.637717
+2022-07-13 22:45: Train Epoch 7: 140/158 Generator Loss: 26.334061 Pred Discriminator Loss: 0.609411 RelFlow Discriminator Loss: 0.653800
+2022-07-13 22:45: **********Train Epoch 7: Averaged Generator Loss: 25.340307, Averaged Pred Discriminator Loss: 0.596084, Averaged RelFlow Discriminator Loss: 0.643560
+2022-07-13 22:45: **********Val Epoch 7: average Loss: 22.759005
+2022-07-13 22:45: *********************************Current best model saved!
+2022-07-13 22:45: Train Epoch 8: 0/158 Generator Loss: 25.578932 Pred Discriminator Loss: 0.589069 RelFlow Discriminator Loss: 0.642738
+2022-07-13 22:45: Train Epoch 8: 20/158 Generator Loss: 24.326765 Pred Discriminator Loss: 0.604075 RelFlow Discriminator Loss: 0.650209
+2022-07-13 22:45: Train Epoch 8: 40/158 Generator Loss: 22.208523 Pred Discriminator Loss: 0.619431 RelFlow Discriminator Loss: 0.658902
+2022-07-13 22:45: Train Epoch 8: 60/158 Generator Loss: 25.572821 Pred Discriminator Loss: 0.596065 RelFlow Discriminator Loss: 0.650985
+2022-07-13 22:45: Train Epoch 8: 80/158 Generator Loss: 25.382069 Pred Discriminator Loss: 0.601709 RelFlow Discriminator Loss: 0.672076
+2022-07-13 22:45: Train Epoch 8: 100/158 Generator Loss: 25.602226 Pred Discriminator Loss: 0.601389 RelFlow Discriminator Loss: 0.669612
+2022-07-13 22:45: Train Epoch 8: 120/158 Generator Loss: 24.119762 Pred Discriminator Loss: 0.653000 RelFlow Discriminator Loss: 0.692556
+2022-07-13 22:45: Train Epoch 8: 140/158 Generator Loss: 24.900627 Pred Discriminator Loss: 0.614885 RelFlow Discriminator Loss: 0.697347
+2022-07-13 22:45: **********Train Epoch 8: Averaged Generator Loss: 24.725918, Averaged Pred Discriminator Loss: 0.604504, Averaged RelFlow Discriminator Loss: 0.659496
+2022-07-13 22:46: **********Val Epoch 8: average Loss: 22.920276
+2022-07-13 22:46: Train Epoch 9: 0/158 Generator Loss: 26.071978 Pred Discriminator Loss: 0.590760 RelFlow Discriminator Loss: 0.647756
+2022-07-13 22:46: Train Epoch 9: 20/158 Generator Loss: 24.216974 Pred Discriminator Loss: 0.625866 RelFlow Discriminator Loss: 0.665856
+2022-07-13 22:46: Train Epoch 9: 40/158 Generator Loss: 24.381849 Pred Discriminator Loss: 0.600273 RelFlow Discriminator Loss: 0.652550
+2022-07-13 22:46: Train Epoch 9: 60/158 Generator Loss: 26.580742 Pred Discriminator Loss: 0.598003 RelFlow Discriminator Loss: 0.675751
+2022-07-13 22:46: Train Epoch 9: 80/158 Generator Loss: 23.135521 Pred Discriminator Loss: 0.613640 RelFlow Discriminator Loss: 0.682059
+2022-07-13 22:46: Train Epoch 9: 100/158 Generator Loss: 23.240982 Pred Discriminator Loss: 0.593825 RelFlow Discriminator Loss: 0.673236
+2022-07-13 22:46: Train Epoch 9: 120/158 Generator Loss: 25.838003 Pred Discriminator Loss: 0.586900 RelFlow Discriminator Loss: 0.677505
+2022-07-13 22:46: Train Epoch 9: 140/158 Generator Loss: 22.769413 Pred Discriminator Loss: 0.623873 RelFlow Discriminator Loss: 0.681499
+2022-07-13 22:46: **********Train Epoch 9: Averaged Generator Loss: 24.261186, Averaged Pred Discriminator Loss: 0.606346, Averaged RelFlow Discriminator Loss: 0.670029
+2022-07-13 22:46: **********Val Epoch 9: average Loss: 21.916189
+2022-07-13 22:46: *********************************Current best model saved!
+2022-07-13 22:46: Train Epoch 10: 0/158 Generator Loss: 23.802418 Pred Discriminator Loss: 0.614815 RelFlow Discriminator Loss: 0.672344
+2022-07-13 22:46: Train Epoch 10: 20/158 Generator Loss: 24.508032 Pred Discriminator Loss: 0.595674 RelFlow Discriminator Loss: 0.664747
+2022-07-13 22:46: Train Epoch 10: 40/158 Generator Loss: 24.519968 Pred Discriminator Loss: 0.606169 RelFlow Discriminator Loss: 0.684084
+2022-07-13 22:46: Train Epoch 10: 60/158 Generator Loss: 23.261890 Pred Discriminator Loss: 0.599184 RelFlow Discriminator Loss: 0.670308
+2022-07-13 22:46: Train Epoch 10: 80/158 Generator Loss: 23.663578 Pred Discriminator Loss: 0.613878 RelFlow Discriminator Loss: 0.698487
+2022-07-13 22:46: Train Epoch 10: 100/158 Generator Loss: 22.565844 Pred Discriminator Loss: 0.622579 RelFlow Discriminator Loss: 0.667153
+2022-07-13 22:46: Train Epoch 10: 120/158 Generator Loss: 23.636845 Pred Discriminator Loss: 0.619767 RelFlow Discriminator Loss: 0.663922
+2022-07-13 22:46: Train Epoch 10: 140/158 Generator Loss: 24.613712 Pred Discriminator Loss: 0.603565 RelFlow Discriminator Loss: 0.660096
+2022-07-13 22:46: **********Train Epoch 10: Averaged Generator Loss: 23.878550, Averaged Pred Discriminator Loss: 0.608135, Averaged RelFlow Discriminator Loss: 0.674776
+2022-07-13 22:47: **********Val Epoch 10: average Loss: 21.534236
+2022-07-13 22:47: *********************************Current best model saved!
+2022-07-13 22:47: Train Epoch 11: 0/158 Generator Loss: 22.442928 Pred Discriminator Loss: 0.614336 RelFlow Discriminator Loss: 0.680641
+2022-07-13 22:47: Train Epoch 11: 20/158 Generator Loss: 23.816568 Pred Discriminator Loss: 0.598786 RelFlow Discriminator Loss: 0.677590
+2022-07-13 22:47: Train Epoch 11: 40/158 Generator Loss: 23.805126 Pred Discriminator Loss: 0.622281 RelFlow Discriminator Loss: 0.673445
+2022-07-13 22:47: Train Epoch 11: 60/158 Generator Loss: 25.410061 Pred Discriminator Loss: 0.582733 RelFlow Discriminator Loss: 0.675235
+2022-07-13 22:47: Train Epoch 11: 80/158 Generator Loss: 24.474377 Pred Discriminator Loss: 0.587464 RelFlow Discriminator Loss: 0.685112
+2022-07-13 22:47: Train Epoch 11: 100/158 Generator Loss: 25.567507 Pred Discriminator Loss: 0.607810 RelFlow Discriminator Loss: 0.679163
+2022-07-13 22:47: Train Epoch 11: 120/158 Generator Loss: 22.100601 Pred Discriminator Loss: 0.613172 RelFlow Discriminator Loss: 0.685867
+2022-07-13 22:47: Train Epoch 11: 140/158 Generator Loss: 23.749800 Pred Discriminator Loss: 0.603192 RelFlow Discriminator Loss: 0.692822
+2022-07-13 22:47: **********Train Epoch 11: Averaged Generator Loss: 23.497322, Averaged Pred Discriminator Loss: 0.607051, Averaged RelFlow Discriminator Loss: 0.679601
+2022-07-13 22:47: **********Val Epoch 11: average Loss: 21.164950
+2022-07-13 22:47: *********************************Current best model saved!
+2022-07-13 22:47: Train Epoch 12: 0/158 Generator Loss: 23.378052 Pred Discriminator Loss: 0.596366 RelFlow Discriminator Loss: 0.676311
+2022-07-13 22:47: Train Epoch 12: 20/158 Generator Loss: 24.094261 Pred Discriminator Loss: 0.591683 RelFlow Discriminator Loss: 0.667066
+2022-07-13 22:47: Train Epoch 12: 40/158 Generator Loss: 23.226284 Pred Discriminator Loss: 0.595969 RelFlow Discriminator Loss: 0.676699
+2022-07-13 22:47: Train Epoch 12: 60/158 Generator Loss: 22.728622 Pred Discriminator Loss: 0.617301 RelFlow Discriminator Loss: 0.672805
+2022-07-13 22:47: Train Epoch 12: 80/158 Generator Loss: 22.218224 Pred Discriminator Loss: 0.613248 RelFlow Discriminator Loss: 0.679977
+2022-07-13 22:47: Train Epoch 12: 100/158 Generator Loss: 23.481295 Pred Discriminator Loss: 0.596021 RelFlow Discriminator Loss: 0.689524
+2022-07-13 22:47: Train Epoch 12: 120/158 Generator Loss: 22.682619 Pred Discriminator Loss: 0.615705 RelFlow Discriminator Loss: 0.691692
+2022-07-13 22:47: Train Epoch 12: 140/158 Generator Loss: 21.104803 Pred Discriminator Loss: 0.606143 RelFlow Discriminator Loss: 0.686092
+2022-07-13 22:47: **********Train Epoch 12: Averaged Generator Loss: 23.308627, Averaged Pred Discriminator Loss: 0.605527, Averaged RelFlow Discriminator Loss: 0.681540
+2022-07-13 22:48: **********Val Epoch 12: average Loss: 21.024834
+2022-07-13 22:48: *********************************Current best model saved!
+2022-07-13 22:48: Train Epoch 13: 0/158 Generator Loss: 23.515194 Pred Discriminator Loss: 0.601536 RelFlow Discriminator Loss: 0.689601
+2022-07-13 22:48: Train Epoch 13: 20/158 Generator Loss: 23.115267 Pred Discriminator Loss: 0.596469 RelFlow Discriminator Loss: 0.675284
+2022-07-13 22:48: Train Epoch 13: 40/158 Generator Loss: 23.270451 Pred Discriminator Loss: 0.602921 RelFlow Discriminator Loss: 0.678108
+2022-07-13 22:48: Train Epoch 13: 60/158 Generator Loss: 21.847767 Pred Discriminator Loss: 0.595359 RelFlow Discriminator Loss: 0.681921
+2022-07-13 22:48: Train Epoch 13: 80/158 Generator Loss: 24.792871 Pred Discriminator Loss: 0.601564 RelFlow Discriminator Loss: 0.664798
+2022-07-13 22:48: Train Epoch 13: 100/158 Generator Loss: 21.835794 Pred Discriminator Loss: 0.596696 RelFlow Discriminator Loss: 0.680532
+2022-07-13 22:48: Train Epoch 13: 120/158 Generator Loss: 24.074785 Pred Discriminator Loss: 0.626514 RelFlow Discriminator Loss: 0.683143
+2022-07-13 22:48: Train Epoch 13: 140/158 Generator Loss: 23.595856 Pred Discriminator Loss: 0.590145 RelFlow Discriminator Loss: 0.680162
+2022-07-13 22:48: **********Train Epoch 13: Averaged Generator Loss: 23.102385, Averaged Pred Discriminator Loss: 0.603335, Averaged RelFlow Discriminator Loss: 0.683554
+2022-07-13 22:48: **********Val Epoch 13: average Loss: 20.991454
+2022-07-13 22:48: *********************************Current best model saved!
+2022-07-13 22:48: Train Epoch 14: 0/158 Generator Loss: 24.168425 Pred Discriminator Loss: 0.607515 RelFlow Discriminator Loss: 0.678219
+2022-07-13 22:48: Train Epoch 14: 20/158 Generator Loss: 22.720026 Pred Discriminator Loss: 0.605994 RelFlow Discriminator Loss: 0.685433
+2022-07-13 22:48: Train Epoch 14: 40/158 Generator Loss: 22.774252 Pred Discriminator Loss: 0.612949 RelFlow Discriminator Loss: 0.689958
+2022-07-13 22:48: Train Epoch 14: 60/158 Generator Loss: 22.671623 Pred Discriminator Loss: 0.611004 RelFlow Discriminator Loss: 0.682652
+2022-07-13 22:48: Train Epoch 14: 80/158 Generator Loss: 20.667017 Pred Discriminator Loss: 0.601884 RelFlow Discriminator Loss: 0.685915
+2022-07-13 22:48: Train Epoch 14: 100/158 Generator Loss: 22.910898 Pred Discriminator Loss: 0.588713 RelFlow Discriminator Loss: 0.682983
+2022-07-13 22:48: Train Epoch 14: 120/158 Generator Loss: 23.957268 Pred Discriminator Loss: 0.603321 RelFlow Discriminator Loss: 0.687903
+2022-07-13 22:48: Train Epoch 14: 140/158 Generator Loss: 22.974894 Pred Discriminator Loss: 0.589163 RelFlow Discriminator Loss: 0.686095
+2022-07-13 22:48: **********Train Epoch 14: Averaged Generator Loss: 22.856398, Averaged Pred Discriminator Loss: 0.600042, Averaged RelFlow Discriminator Loss: 0.685432
+2022-07-13 22:49: **********Val Epoch 14: average Loss: 20.628999
+2022-07-13 22:49: *********************************Current best model saved!
+2022-07-13 22:49: Train Epoch 15: 0/158 Generator Loss: 23.768824 Pred Discriminator Loss: 0.585365 RelFlow Discriminator Loss: 0.686817
+2022-07-13 22:49: Train Epoch 15: 20/158 Generator Loss: 23.152172 Pred Discriminator Loss: 0.591413 RelFlow Discriminator Loss: 0.686771
+2022-07-13 22:49: Train Epoch 15: 40/158 Generator Loss: 21.722263 Pred Discriminator Loss: 0.597531 RelFlow Discriminator Loss: 0.683160
+2022-07-13 22:49: Train Epoch 15: 60/158 Generator Loss: 22.592815 Pred Discriminator Loss: 0.605213 RelFlow Discriminator Loss: 0.687323
+2022-07-13 22:49: Train Epoch 15: 80/158 Generator Loss: 21.741077 Pred Discriminator Loss: 0.594220 RelFlow Discriminator Loss: 0.684988
+2022-07-13 22:49: Train Epoch 15: 100/158 Generator Loss: 22.347265 Pred Discriminator Loss: 0.609574 RelFlow Discriminator Loss: 0.688300
+2022-07-13 22:49: Train Epoch 15: 120/158 Generator Loss: 21.830423 Pred Discriminator Loss: 0.607853 RelFlow Discriminator Loss: 0.687888
+2022-07-13 22:49: Train Epoch 15: 140/158 Generator Loss: 23.025873 Pred Discriminator Loss: 0.583625 RelFlow Discriminator Loss: 0.689748
+2022-07-13 22:49: **********Train Epoch 15: Averaged Generator Loss: 22.713132, Averaged Pred Discriminator Loss: 0.599373, Averaged RelFlow Discriminator Loss: 0.686782
+2022-07-13 22:49: **********Val Epoch 15: average Loss: 21.464798
+2022-07-13 22:49: Train Epoch 16: 0/158 Generator Loss: 23.289017 Pred Discriminator Loss: 0.614761 RelFlow Discriminator Loss: 0.691006
+2022-07-13 22:49: Train Epoch 16: 20/158 Generator Loss: 22.987934 Pred Discriminator Loss: 0.574336 RelFlow Discriminator Loss: 0.686863
+2022-07-13 22:49: Train Epoch 16: 40/158 Generator Loss: 23.026863 Pred Discriminator Loss: 0.601398 RelFlow Discriminator Loss: 0.697521
+2022-07-13 22:49: Train Epoch 16: 60/158 Generator Loss: 19.412085 Pred Discriminator Loss: 0.603833 RelFlow Discriminator Loss: 0.689894
+2022-07-13 22:49: Train Epoch 16: 80/158 Generator Loss: 22.406229 Pred Discriminator Loss: 0.582853 RelFlow Discriminator Loss: 0.679664
+2022-07-13 22:49: Train Epoch 16: 100/158 Generator Loss: 22.171719 Pred Discriminator Loss: 0.588238 RelFlow Discriminator Loss: 0.681123
+2022-07-13 22:49: Train Epoch 16: 120/158 Generator Loss: 22.439028 Pred Discriminator Loss: 0.583958 RelFlow Discriminator Loss: 0.685017
+2022-07-13 22:49: Train Epoch 16: 140/158 Generator Loss: 22.392784 Pred Discriminator Loss: 0.606117 RelFlow Discriminator Loss: 0.696696
+2022-07-13 22:50: **********Train Epoch 16: Averaged Generator Loss: 22.638724, Averaged Pred Discriminator Loss: 0.595313, Averaged RelFlow Discriminator Loss: 0.687434
+2022-07-13 22:50: **********Val Epoch 16: average Loss: 20.294002
+2022-07-13 22:50: *********************************Current best model saved!
+2022-07-13 22:50: Train Epoch 17: 0/158 Generator Loss: 19.747465 Pred Discriminator Loss: 0.606303 RelFlow Discriminator Loss: 0.688228
+2022-07-13 22:50: Train Epoch 17: 20/158 Generator Loss: 20.965345 Pred Discriminator Loss: 0.599927 RelFlow Discriminator Loss: 0.684418
+2022-07-13 22:50: Train Epoch 17: 40/158 Generator Loss: 22.127907 Pred Discriminator Loss: 0.613417 RelFlow Discriminator Loss: 0.682449
+2022-07-13 22:50: Train Epoch 17: 60/158 Generator Loss: 22.424374 Pred Discriminator Loss: 0.579413 RelFlow Discriminator Loss: 0.681163
+2022-07-13 22:50: Train Epoch 17: 80/158 Generator Loss: 23.212461 Pred Discriminator Loss: 0.591775 RelFlow Discriminator Loss: 0.691125
+2022-07-13 22:50: Train Epoch 17: 100/158 Generator Loss: 22.356682 Pred Discriminator Loss: 0.597953 RelFlow Discriminator Loss: 0.682251
+2022-07-13 22:50: Train Epoch 17: 120/158 Generator Loss: 23.495436 Pred Discriminator Loss: 0.590123 RelFlow Discriminator Loss: 0.687819
+2022-07-13 22:50: Train Epoch 17: 140/158 Generator Loss: 23.252794 Pred Discriminator Loss: 0.594975 RelFlow Discriminator Loss: 0.680832
+2022-07-13 22:50: **********Train Epoch 17: Averaged Generator Loss: 22.416711, Averaged Pred Discriminator Loss: 0.593750, Averaged RelFlow Discriminator Loss: 0.687894
+2022-07-13 22:50: **********Val Epoch 17: average Loss: 20.551621
+2022-07-13 22:50: Train Epoch 18: 0/158 Generator Loss: 23.128452 Pred Discriminator Loss: 0.571249 RelFlow Discriminator Loss: 0.688191
+2022-07-13 22:50: Train Epoch 18: 20/158 Generator Loss: 21.231888 Pred Discriminator Loss: 0.581926 RelFlow Discriminator Loss: 0.686747
+2022-07-13 22:50: Train Epoch 18: 40/158 Generator Loss: 21.673244 Pred Discriminator Loss: 0.588789 RelFlow Discriminator Loss: 0.691295
+2022-07-13 22:50: Train Epoch 18: 60/158 Generator Loss: 24.095331 Pred Discriminator Loss: 0.567482 RelFlow Discriminator Loss: 0.689586
+2022-07-13 22:50: Train Epoch 18: 80/158 Generator Loss: 21.225788 Pred Discriminator Loss: 0.597023 RelFlow Discriminator Loss: 0.685543
+2022-07-13 22:50: Train Epoch 18: 100/158 Generator Loss: 20.837271 Pred Discriminator Loss: 0.603040 RelFlow Discriminator Loss: 0.696653
+2022-07-13 22:50: Train Epoch 18: 120/158 Generator Loss: 22.461046 Pred Discriminator Loss: 0.573412 RelFlow Discriminator Loss: 0.693702
+2022-07-13 22:50: Train Epoch 18: 140/158 Generator Loss: 22.752234 Pred Discriminator Loss: 0.569104 RelFlow Discriminator Loss: 0.684891
+2022-07-13 22:51: **********Train Epoch 18: Averaged Generator Loss: 22.320365, Averaged Pred Discriminator Loss: 0.589165, Averaged RelFlow Discriminator Loss: 0.688200
+2022-07-13 22:51: **********Val Epoch 18: average Loss: 20.600867
+2022-07-13 22:51: Train Epoch 19: 0/158 Generator Loss: 22.074795 Pred Discriminator Loss: 0.590978 RelFlow Discriminator Loss: 0.690241
+2022-07-13 22:51: Train Epoch 19: 20/158 Generator Loss: 22.944645 Pred Discriminator Loss: 0.589063 RelFlow Discriminator Loss: 0.687887
+2022-07-13 22:51: Train Epoch 19: 40/158 Generator Loss: 23.201283 Pred Discriminator Loss: 0.567618 RelFlow Discriminator Loss: 0.682340
+2022-07-13 22:51: Train Epoch 19: 60/158 Generator Loss: 21.830538 Pred Discriminator Loss: 0.586614 RelFlow Discriminator Loss: 0.689246
+2022-07-13 22:51: Train Epoch 19: 80/158 Generator Loss: 19.874529 Pred Discriminator Loss: 0.587904 RelFlow Discriminator Loss: 0.694501
+2022-07-13 22:51: Train Epoch 19: 100/158 Generator Loss: 21.569098 Pred Discriminator Loss: 0.612899 RelFlow Discriminator Loss: 0.687248
+2022-07-13 22:51: Train Epoch 19: 120/158 Generator Loss: 22.319845 Pred Discriminator Loss: 0.579122 RelFlow Discriminator Loss: 0.688796
+2022-07-13 22:51: Train Epoch 19: 140/158 Generator Loss: 22.978277 Pred Discriminator Loss: 0.587745 RelFlow Discriminator Loss: 0.683833
+2022-07-13 22:51: **********Train Epoch 19: Averaged Generator Loss: 22.249745, Averaged Pred Discriminator Loss: 0.587156, Averaged RelFlow Discriminator Loss: 0.688985
+2022-07-13 22:51: **********Val Epoch 19: average Loss: 20.331989
+2022-07-13 22:51: Train Epoch 20: 0/158 Generator Loss: 21.853098 Pred Discriminator Loss: 0.583161 RelFlow Discriminator Loss: 0.689668
+2022-07-13 22:51: Train Epoch 20: 20/158 Generator Loss: 23.835247 Pred Discriminator Loss: 0.584938 RelFlow Discriminator Loss: 0.688595
+2022-07-13 22:51: Train Epoch 20: 40/158 Generator Loss: 19.958790 Pred Discriminator Loss: 0.611804 RelFlow Discriminator Loss: 0.689813
+2022-07-13 22:51: Train Epoch 20: 60/158 Generator Loss: 21.671019 Pred Discriminator Loss: 0.583659 RelFlow Discriminator Loss: 0.688350
+2022-07-13 22:51: Train Epoch 20: 80/158 Generator Loss: 24.299973 Pred Discriminator Loss: 0.567236 RelFlow Discriminator Loss: 0.691933
+2022-07-13 22:51: Train Epoch 20: 100/158 Generator Loss: 22.680851 Pred Discriminator Loss: 0.570111 RelFlow Discriminator Loss: 0.694755
+2022-07-13 22:51: Train Epoch 20: 120/158 Generator Loss: 23.013590 Pred Discriminator Loss: 0.594246 RelFlow Discriminator Loss: 0.684661
+2022-07-13 22:51: Train Epoch 20: 140/158 Generator Loss: 21.396027 Pred Discriminator Loss: 0.580534 RelFlow Discriminator Loss: 0.690631
+2022-07-13 22:51: **********Train Epoch 20: Averaged Generator Loss: 22.145177, Averaged Pred Discriminator Loss: 0.583191, Averaged RelFlow Discriminator Loss: 0.689264
+2022-07-13 22:52: **********Val Epoch 20: average Loss: 20.100365
+2022-07-13 22:52: *********************************Current best model saved!
+2022-07-13 22:52: Train Epoch 21: 0/158 Generator Loss: 23.245710 Pred Discriminator Loss: 0.574504 RelFlow Discriminator Loss: 0.703003
+2022-07-13 22:52: Train Epoch 21: 20/158 Generator Loss: 22.487198 Pred Discriminator Loss: 0.581017 RelFlow Discriminator Loss: 0.685555
+2022-07-13 22:52: Train Epoch 21: 40/158 Generator Loss: 21.710611 Pred Discriminator Loss: 0.578589 RelFlow Discriminator Loss: 0.693528
+2022-07-13 22:52: Train Epoch 21: 60/158 Generator Loss: 21.937134 Pred Discriminator Loss: 0.585548 RelFlow Discriminator Loss: 0.688212
+2022-07-13 22:52: Train Epoch 21: 80/158 Generator Loss: 23.029530 Pred Discriminator Loss: 0.579576 RelFlow Discriminator Loss: 0.689262
+2022-07-13 22:52: Train Epoch 21: 100/158 Generator Loss: 24.631908 Pred Discriminator Loss: 0.575322 RelFlow Discriminator Loss: 0.692565
+2022-07-13 22:52: Train Epoch 21: 120/158 Generator Loss: 22.754841 Pred Discriminator Loss: 0.569037 RelFlow Discriminator Loss: 0.685746
+2022-07-13 22:52: Train Epoch 21: 140/158 Generator Loss: 21.553265 Pred Discriminator Loss: 0.578785 RelFlow Discriminator Loss: 0.686025
+2022-07-13 22:52: **********Train Epoch 21: Averaged Generator Loss: 22.044887, Averaged Pred Discriminator Loss: 0.583202, Averaged RelFlow Discriminator Loss: 0.689028
+2022-07-13 22:52: **********Val Epoch 21: average Loss: 20.203747
+2022-07-13 22:52: Train Epoch 22: 0/158 Generator Loss: 21.641119 Pred Discriminator Loss: 0.587370 RelFlow Discriminator Loss: 0.689604
+2022-07-13 22:52: Train Epoch 22: 20/158 Generator Loss: 23.180275 Pred Discriminator Loss: 0.588080 RelFlow Discriminator Loss: 0.688716
+2022-07-13 22:52: Train Epoch 22: 40/158 Generator Loss: 24.104454 Pred Discriminator Loss: 0.568869 RelFlow Discriminator Loss: 0.694112
+2022-07-13 22:52: Train Epoch 22: 60/158 Generator Loss: 22.943741 Pred Discriminator Loss: 0.573533 RelFlow Discriminator Loss: 0.685751
+2022-07-13 22:52: Train Epoch 22: 80/158 Generator Loss: 23.001030 Pred Discriminator Loss: 0.575163 RelFlow Discriminator Loss: 0.695844
+2022-07-13 22:52: Train Epoch 22: 100/158 Generator Loss: 21.295876 Pred Discriminator Loss: 0.578588 RelFlow Discriminator Loss: 0.687656
+2022-07-13 22:52: Train Epoch 22: 120/158 Generator Loss: 21.168539 Pred Discriminator Loss: 0.575389 RelFlow Discriminator Loss: 0.690583
+2022-07-13 22:52: Train Epoch 22: 140/158 Generator Loss: 22.054029 Pred Discriminator Loss: 0.585758 RelFlow Discriminator Loss: 0.692434
+2022-07-13 22:52: **********Train Epoch 22: Averaged Generator Loss: 21.938635, Averaged Pred Discriminator Loss: 0.581089, Averaged RelFlow Discriminator Loss: 0.689247
+2022-07-13 22:53: **********Val Epoch 22: average Loss: 19.993288
+2022-07-13 22:53: *********************************Current best model saved!
+2022-07-13 22:53: Train Epoch 23: 0/158 Generator Loss: 22.306293 Pred Discriminator Loss: 0.581369 RelFlow Discriminator Loss: 0.685546
+2022-07-13 22:53: Train Epoch 23: 20/158 Generator Loss: 23.826687 Pred Discriminator Loss: 0.564045 RelFlow Discriminator Loss: 0.694147
+2022-07-13 22:53: Train Epoch 23: 40/158 Generator Loss: 21.066870 Pred Discriminator Loss: 0.574077 RelFlow Discriminator Loss: 0.691782
+2022-07-13 22:53: Train Epoch 23: 60/158 Generator Loss: 22.345951 Pred Discriminator Loss: 0.563267 RelFlow Discriminator Loss: 0.685122
+2022-07-13 22:53: Train Epoch 23: 80/158 Generator Loss: 21.309349 Pred Discriminator Loss: 0.580035 RelFlow Discriminator Loss: 0.692743
+2022-07-13 22:53: Train Epoch 23: 100/158 Generator Loss: 22.246763 Pred Discriminator Loss: 0.572735 RelFlow Discriminator Loss: 0.692445
+2022-07-13 22:53: Train Epoch 23: 120/158 Generator Loss: 21.621120 Pred Discriminator Loss: 0.574847 RelFlow Discriminator Loss: 0.693264
+2022-07-13 22:53: Train Epoch 23: 140/158 Generator Loss: 21.362761 Pred Discriminator Loss: 0.585262 RelFlow Discriminator Loss: 0.691090
+2022-07-13 22:53: **********Train Epoch 23: Averaged Generator Loss: 21.888708, Averaged Pred Discriminator Loss: 0.576823, Averaged RelFlow Discriminator Loss: 0.689616
+2022-07-13 22:53: **********Val Epoch 23: average Loss: 19.930544
+2022-07-13 22:53: *********************************Current best model saved!
+2022-07-13 22:53: Train Epoch 24: 0/158 Generator Loss: 22.994101 Pred Discriminator Loss: 0.578291 RelFlow Discriminator Loss: 0.678178
+2022-07-13 22:53: Train Epoch 24: 20/158 Generator Loss: 24.058275 Pred Discriminator Loss: 0.553597 RelFlow Discriminator Loss: 0.685633
+2022-07-13 22:53: Train Epoch 24: 40/158 Generator Loss: 21.019501 Pred Discriminator Loss: 0.583553 RelFlow Discriminator Loss: 0.691777
+2022-07-13 22:53: Train Epoch 24: 60/158 Generator Loss: 21.394779 Pred Discriminator Loss: 0.573997 RelFlow Discriminator Loss: 0.692642
+2022-07-13 22:53: Train Epoch 24: 80/158 Generator Loss: 21.733135 Pred Discriminator Loss: 0.567933 RelFlow Discriminator Loss: 0.684287
+2022-07-13 22:53: Train Epoch 24: 100/158 Generator Loss: 19.967955 Pred Discriminator Loss: 0.582128 RelFlow Discriminator Loss: 0.690552
+2022-07-13 22:53: Train Epoch 24: 120/158 Generator Loss: 21.978853 Pred Discriminator Loss: 0.585323 RelFlow Discriminator Loss: 0.684297
+2022-07-13 22:53: Train Epoch 24: 140/158 Generator Loss: 21.240837 Pred Discriminator Loss: 0.584789 RelFlow Discriminator Loss: 0.688018
+2022-07-13 22:53: **********Train Epoch 24: Averaged Generator Loss: 21.818072, Averaged Pred Discriminator Loss: 0.572866, Averaged RelFlow Discriminator Loss: 0.689186
+2022-07-13 22:54: **********Val Epoch 24: average Loss: 19.834696
+2022-07-13 22:54: *********************************Current best model saved!
+2022-07-13 22:54: Train Epoch 25: 0/158 Generator Loss: 20.024225 Pred Discriminator Loss: 0.580389 RelFlow Discriminator Loss: 0.690000
+2022-07-13 22:54: Train Epoch 25: 20/158 Generator Loss: 22.687204 Pred Discriminator Loss: 0.573898 RelFlow Discriminator Loss: 0.689608
+2022-07-13 22:54: Train Epoch 25: 40/158 Generator Loss: 21.772949 Pred Discriminator Loss: 0.583822 RelFlow Discriminator Loss: 0.691262
+2022-07-13 22:54: Train Epoch 25: 60/158 Generator Loss: 23.091722 Pred Discriminator Loss: 0.569542 RelFlow Discriminator Loss: 0.688947
+2022-07-13 22:54: Train Epoch 25: 80/158 Generator Loss: 21.399805 Pred Discriminator Loss: 0.565794 RelFlow Discriminator Loss: 0.685891
+2022-07-13 22:54: Train Epoch 25: 100/158 Generator Loss: 20.976238 Pred Discriminator Loss: 0.581148 RelFlow Discriminator Loss: 0.691421
+2022-07-13 22:54: Train Epoch 25: 120/158 Generator Loss: 21.861389 Pred Discriminator Loss: 0.573556 RelFlow Discriminator Loss: 0.691179
+2022-07-13 22:54: Train Epoch 25: 140/158 Generator Loss: 22.766026 Pred Discriminator Loss: 0.564873 RelFlow Discriminator Loss: 0.687622
+2022-07-13 22:54: **********Train Epoch 25: Averaged Generator Loss: 21.846122, Averaged Pred Discriminator Loss: 0.572942, Averaged RelFlow Discriminator Loss: 0.689522
+2022-07-13 22:54: **********Val Epoch 25: average Loss: 20.169757
+2022-07-13 22:54: Train Epoch 26: 0/158 Generator Loss: 23.305614 Pred Discriminator Loss: 0.560020 RelFlow Discriminator Loss: 0.690169
+2022-07-13 22:54: Train Epoch 26: 20/158 Generator Loss: 20.947218 Pred Discriminator Loss: 0.566544 RelFlow Discriminator Loss: 0.683340
+2022-07-13 22:54: Train Epoch 26: 40/158 Generator Loss: 20.680264 Pred Discriminator Loss: 0.578943 RelFlow Discriminator Loss: 0.690582
+2022-07-13 22:54: Train Epoch 26: 60/158 Generator Loss: 21.060467 Pred Discriminator Loss: 0.571677 RelFlow Discriminator Loss: 0.689407
+2022-07-13 22:54: Train Epoch 26: 80/158 Generator Loss: 20.523909 Pred Discriminator Loss: 0.583089 RelFlow Discriminator Loss: 0.689594
+2022-07-13 22:54: Train Epoch 26: 100/158 Generator Loss: 21.902542 Pred Discriminator Loss: 0.575810 RelFlow Discriminator Loss: 0.687573
+2022-07-13 22:54: Train Epoch 26: 120/158 Generator Loss: 21.801390 Pred Discriminator Loss: 0.561676 RelFlow Discriminator Loss: 0.695554
+2022-07-13 22:54: Train Epoch 26: 140/158 Generator Loss: 22.810740 Pred Discriminator Loss: 0.558554 RelFlow Discriminator Loss: 0.684443
+2022-07-13 22:54: **********Train Epoch 26: Averaged Generator Loss: 21.705906, Averaged Pred Discriminator Loss: 0.570326, Averaged RelFlow Discriminator Loss: 0.689316
+2022-07-13 22:54: **********Val Epoch 26: average Loss: 19.759579
+2022-07-13 22:54: *********************************Current best model saved!
+2022-07-13 22:54: Train Epoch 27: 0/158 Generator Loss: 21.589266 Pred Discriminator Loss: 0.567874 RelFlow Discriminator Loss: 0.693278
+2022-07-13 22:54: Train Epoch 27: 20/158 Generator Loss: 22.252199 Pred Discriminator Loss: 0.562060 RelFlow Discriminator Loss: 0.691856
+2022-07-13 22:55: Train Epoch 27: 40/158 Generator Loss: 22.467806 Pred Discriminator Loss: 0.545239 RelFlow Discriminator Loss: 0.689225
+2022-07-13 22:55: Train Epoch 27: 60/158 Generator Loss: 21.331028 Pred Discriminator Loss: 0.591298 RelFlow Discriminator Loss: 0.689546
+2022-07-13 22:55: Train Epoch 27: 80/158 Generator Loss: 21.182522 Pred Discriminator Loss: 0.572266 RelFlow Discriminator Loss: 0.689140
+2022-07-13 22:55: Train Epoch 27: 100/158 Generator Loss: 21.767975 Pred Discriminator Loss: 0.568842 RelFlow Discriminator Loss: 0.691717
+2022-07-13 22:55: Train Epoch 27: 120/158 Generator Loss: 21.899019 Pred Discriminator Loss: 0.610371 RelFlow Discriminator Loss: 0.691248
+2022-07-13 22:55: Train Epoch 27: 140/158 Generator Loss: 20.071770 Pred Discriminator Loss: 0.619433 RelFlow Discriminator Loss: 0.691454
+2022-07-13 22:55: **********Train Epoch 27: Averaged Generator Loss: 21.622313, Averaged Pred Discriminator Loss: 0.572386, Averaged RelFlow Discriminator Loss: 0.689531
+2022-07-13 22:55: **********Val Epoch 27: average Loss: 19.708677
+2022-07-13 22:55: *********************************Current best model saved!
+2022-07-13 22:55: Train Epoch 28: 0/158 Generator Loss: 22.889967 Pred Discriminator Loss: 0.554815 RelFlow Discriminator Loss: 0.689275
+2022-07-13 22:55: Train Epoch 28: 20/158 Generator Loss: 20.796213 Pred Discriminator Loss: 0.601751 RelFlow Discriminator Loss: 0.694039
+2022-07-13 22:55: Train Epoch 28: 40/158 Generator Loss: 23.954113 Pred Discriminator Loss: 0.551576 RelFlow Discriminator Loss: 0.688803
+2022-07-13 22:55: Train Epoch 28: 60/158 Generator Loss: 20.165138 Pred Discriminator Loss: 0.578629 RelFlow Discriminator Loss: 0.686008
+2022-07-13 22:55: Train Epoch 28: 80/158 Generator Loss: 22.201134 Pred Discriminator Loss: 0.558082 RelFlow Discriminator Loss: 0.685503
+2022-07-13 22:55: Train Epoch 28: 100/158 Generator Loss: 19.530104 Pred Discriminator Loss: 0.582244 RelFlow Discriminator Loss: 0.688859
+2022-07-13 22:55: Train Epoch 28: 120/158 Generator Loss: 21.457390 Pred Discriminator Loss: 0.572497 RelFlow Discriminator Loss: 0.686768
+2022-07-13 22:55: Train Epoch 28: 140/158 Generator Loss: 21.765884 Pred Discriminator Loss: 0.557605 RelFlow Discriminator Loss: 0.690318
+2022-07-13 22:55: **********Train Epoch 28: Averaged Generator Loss: 21.621568, Averaged Pred Discriminator Loss: 0.566204, Averaged RelFlow Discriminator Loss: 0.689329
+2022-07-13 22:55: **********Val Epoch 28: average Loss: 20.008018
+2022-07-13 22:55: Train Epoch 29: 0/158 Generator Loss: 23.373735 Pred Discriminator Loss: 0.546708 RelFlow Discriminator Loss: 0.687940
+2022-07-13 22:56: Train Epoch 29: 20/158 Generator Loss: 22.978565 Pred Discriminator Loss: 0.559494 RelFlow Discriminator Loss: 0.695493
+2022-07-13 22:56: Train Epoch 29: 40/158 Generator Loss: 21.222145 Pred Discriminator Loss: 0.568017 RelFlow Discriminator Loss: 0.688027
+2022-07-13 22:56: Train Epoch 29: 60/158 Generator Loss: 22.253050 Pred Discriminator Loss: 0.577332 RelFlow Discriminator Loss: 0.689886
+2022-07-13 22:56: Train Epoch 29: 80/158 Generator Loss: 22.219841 Pred Discriminator Loss: 0.557876 RelFlow Discriminator Loss: 0.682048
+2022-07-13 22:56: Train Epoch 29: 100/158 Generator Loss: 21.091795 Pred Discriminator Loss: 0.563442 RelFlow Discriminator Loss: 0.692143
+2022-07-13 22:56: Train Epoch 29: 120/158 Generator Loss: 19.164904 Pred Discriminator Loss: 0.568172 RelFlow Discriminator Loss: 0.688412
+2022-07-13 22:56: Train Epoch 29: 140/158 Generator Loss: 20.496065 Pred Discriminator Loss: 0.581865 RelFlow Discriminator Loss: 0.691195
+2022-07-13 22:56: **********Train Epoch 29: Averaged Generator Loss: 21.599221, Averaged Pred Discriminator Loss: 0.566144, Averaged RelFlow Discriminator Loss: 0.689560
+2022-07-13 22:56: **********Val Epoch 29: average Loss: 19.755665
+2022-07-13 22:56: Train Epoch 30: 0/158 Generator Loss: 20.199539 Pred Discriminator Loss: 0.567031 RelFlow Discriminator Loss: 0.685535
+2022-07-13 22:56: Train Epoch 30: 20/158 Generator Loss: 22.876564 Pred Discriminator Loss: 0.552185 RelFlow Discriminator Loss: 0.681910
+2022-07-13 22:56: Train Epoch 30: 40/158 Generator Loss: 20.414558 Pred Discriminator Loss: 0.554561 RelFlow Discriminator Loss: 0.694396
+2022-07-13 22:56: Train Epoch 30: 60/158 Generator Loss: 21.711937 Pred Discriminator Loss: 0.577038 RelFlow Discriminator Loss: 0.685521
+2022-07-13 22:56: Train Epoch 30: 80/158 Generator Loss: 23.354605 Pred Discriminator Loss: 0.561156 RelFlow Discriminator Loss: 0.691835
+2022-07-13 22:56: Train Epoch 30: 100/158 Generator Loss: 21.646116 Pred Discriminator Loss: 0.553544 RelFlow Discriminator Loss: 0.689548
+2022-07-13 22:56: Train Epoch 30: 120/158 Generator Loss: 20.420481 Pred Discriminator Loss: 0.562367 RelFlow Discriminator Loss: 0.687128
+2022-07-13 22:56: Train Epoch 30: 140/158 Generator Loss: 20.690895 Pred Discriminator Loss: 0.554815 RelFlow Discriminator Loss: 0.689413
+2022-07-13 22:56: **********Train Epoch 30: Averaged Generator Loss: 21.513918, Averaged Pred Discriminator Loss: 0.563447, Averaged RelFlow Discriminator Loss: 0.689301
+2022-07-13 22:57: **********Val Epoch 30: average Loss: 19.692316
+2022-07-13 22:57: *********************************Current best model saved!
+2022-07-13 22:57: Train Epoch 31: 0/158 Generator Loss: 20.282394 Pred Discriminator Loss: 0.582540 RelFlow Discriminator Loss: 0.688825
+2022-07-13 22:57: Train Epoch 31: 20/158 Generator Loss: 21.112333 Pred Discriminator Loss: 0.563765 RelFlow Discriminator Loss: 0.686806
+2022-07-13 22:57: Train Epoch 31: 40/158 Generator Loss: 22.448736 Pred Discriminator Loss: 0.544933 RelFlow Discriminator Loss: 0.690461
+2022-07-13 22:57: Train Epoch 31: 60/158 Generator Loss: 23.080194 Pred Discriminator Loss: 0.548796 RelFlow Discriminator Loss: 0.683887
+2022-07-13 22:57: Train Epoch 31: 80/158 Generator Loss: 20.955122 Pred Discriminator Loss: 0.562299 RelFlow Discriminator Loss: 0.696479
+2022-07-13 22:57: Train Epoch 31: 100/158 Generator Loss: 21.823771 Pred Discriminator Loss: 0.546388 RelFlow Discriminator Loss: 0.690115
+2022-07-13 22:57: Train Epoch 31: 120/158 Generator Loss: 21.017710 Pred Discriminator Loss: 0.566298 RelFlow Discriminator Loss: 0.687253
+2022-07-13 22:57: Train Epoch 31: 140/158 Generator Loss: 20.337559 Pred Discriminator Loss: 0.556885 RelFlow Discriminator Loss: 0.690315
+2022-07-13 22:57: **********Train Epoch 31: Averaged Generator Loss: 21.592183, Averaged Pred Discriminator Loss: 0.559720, Averaged RelFlow Discriminator Loss: 0.688792
+2022-07-13 22:57: **********Val Epoch 31: average Loss: 19.637081
+2022-07-13 22:57: *********************************Current best model saved!
+2022-07-13 22:57: Train Epoch 32: 0/158 Generator Loss: 19.991550 Pred Discriminator Loss: 0.556509 RelFlow Discriminator Loss: 0.690642
+2022-07-13 22:57: Train Epoch 32: 20/158 Generator Loss: 21.905085 Pred Discriminator Loss: 0.557756 RelFlow Discriminator Loss: 0.689917
+2022-07-13 22:57: Train Epoch 32: 40/158 Generator Loss: 21.240576 Pred Discriminator Loss: 0.563628 RelFlow Discriminator Loss: 0.685766
+2022-07-13 22:57: Train Epoch 32: 60/158 Generator Loss: 19.664297 Pred Discriminator Loss: 0.574080 RelFlow Discriminator Loss: 0.694024
+2022-07-13 22:57: Train Epoch 32: 80/158 Generator Loss: 20.772818 Pred Discriminator Loss: 0.550393 RelFlow Discriminator Loss: 0.690655
+2022-07-13 22:57: Train Epoch 32: 100/158 Generator Loss: 18.214672 Pred Discriminator Loss: 0.594583 RelFlow Discriminator Loss: 0.691260
+2022-07-13 22:57: Train Epoch 32: 120/158 Generator Loss: 21.156246 Pred Discriminator Loss: 0.564144 RelFlow Discriminator Loss: 0.685869
+2022-07-13 22:57: Train Epoch 32: 140/158 Generator Loss: 21.249596 Pred Discriminator Loss: 0.539229 RelFlow Discriminator Loss: 0.683985
+2022-07-13 22:57: **********Train Epoch 32: Averaged Generator Loss: 21.398394, Averaged Pred Discriminator Loss: 0.560085, Averaged RelFlow Discriminator Loss: 0.689341
+2022-07-13 22:57: **********Val Epoch 32: average Loss: 19.714159
+2022-07-13 22:57: Train Epoch 33: 0/158 Generator Loss: 23.228817 Pred Discriminator Loss: 0.540710 RelFlow Discriminator Loss: 0.692910
+2022-07-13 22:57: Train Epoch 33: 20/158 Generator Loss: 20.239170 Pred Discriminator Loss: 0.545850 RelFlow Discriminator Loss: 0.697240
+2022-07-13 22:57: Train Epoch 33: 40/158 Generator Loss: 22.053608 Pred Discriminator Loss: 0.546486 RelFlow Discriminator Loss: 0.688814
+2022-07-13 22:58: Train Epoch 33: 60/158 Generator Loss: 21.037407 Pred Discriminator Loss: 0.564652 RelFlow Discriminator Loss: 0.689917
+2022-07-13 22:58: Train Epoch 33: 80/158 Generator Loss: 20.295315 Pred Discriminator Loss: 0.554387 RelFlow Discriminator Loss: 0.683860
+2022-07-13 22:58: Train Epoch 33: 100/158 Generator Loss: 22.577103 Pred Discriminator Loss: 0.562750 RelFlow Discriminator Loss: 0.688418
+2022-07-13 22:58: Train Epoch 33: 120/158 Generator Loss: 20.655939 Pred Discriminator Loss: 0.559857 RelFlow Discriminator Loss: 0.690143
+2022-07-13 22:58: Train Epoch 33: 140/158 Generator Loss: 20.352098 Pred Discriminator Loss: 0.567379 RelFlow Discriminator Loss: 0.693042
+2022-07-13 22:58: **********Train Epoch 33: Averaged Generator Loss: 21.393405, Averaged Pred Discriminator Loss: 0.557297, Averaged RelFlow Discriminator Loss: 0.689132
+2022-07-13 22:58: **********Val Epoch 33: average Loss: 19.683736
+2022-07-13 22:58: Train Epoch 34: 0/158 Generator Loss: 19.936016 Pred Discriminator Loss: 0.556231 RelFlow Discriminator Loss: 0.692547
+2022-07-13 22:58: Train Epoch 34: 20/158 Generator Loss: 22.563421 Pred Discriminator Loss: 0.553445 RelFlow Discriminator Loss: 0.690202
+2022-07-13 22:58: Train Epoch 34: 40/158 Generator Loss: 21.178421 Pred Discriminator Loss: 0.556086 RelFlow Discriminator Loss: 0.687863
+2022-07-13 22:58: Train Epoch 34: 60/158 Generator Loss: 19.212437 Pred Discriminator Loss: 0.588236 RelFlow Discriminator Loss: 0.685081
+2022-07-13 22:58: Train Epoch 34: 80/158 Generator Loss: 20.228188 Pred Discriminator Loss: 0.576388 RelFlow Discriminator Loss: 0.691601
+2022-07-13 22:58: Train Epoch 34: 100/158 Generator Loss: 22.151493 Pred Discriminator Loss: 0.541767 RelFlow Discriminator Loss: 0.690570
+2022-07-13 22:58: Train Epoch 34: 120/158 Generator Loss: 21.211088 Pred Discriminator Loss: 0.553835 RelFlow Discriminator Loss: 0.690135
+2022-07-13 22:58: Train Epoch 34: 140/158 Generator Loss: 20.303978 Pred Discriminator Loss: 0.542710 RelFlow Discriminator Loss: 0.690575
+2022-07-13 22:58: **********Train Epoch 34: Averaged Generator Loss: 21.395420, Averaged Pred Discriminator Loss: 0.554920, Averaged RelFlow Discriminator Loss: 0.688870
+2022-07-13 22:58: **********Val Epoch 34: average Loss: 19.643715
+2022-07-13 22:58: Train Epoch 35: 0/158 Generator Loss: 20.212780 Pred Discriminator Loss: 0.557392 RelFlow Discriminator Loss: 0.683774
+2022-07-13 22:58: Train Epoch 35: 20/158 Generator Loss: 22.810043 Pred Discriminator Loss: 0.582852 RelFlow Discriminator Loss: 0.689711
+2022-07-13 22:58: Train Epoch 35: 40/158 Generator Loss: 22.019396 Pred Discriminator Loss: 0.570922 RelFlow Discriminator Loss: 0.692376
+2022-07-13 22:58: Train Epoch 35: 60/158 Generator Loss: 20.561583 Pred Discriminator Loss: 0.550958 RelFlow Discriminator Loss: 0.688724
+2022-07-13 22:58: Train Epoch 35: 80/158 Generator Loss: 20.646208 Pred Discriminator Loss: 0.563397 RelFlow Discriminator Loss: 0.694968
+2022-07-13 22:58: Train Epoch 35: 100/158 Generator Loss: 21.590519 Pred Discriminator Loss: 0.564365 RelFlow Discriminator Loss: 0.690621
+2022-07-13 22:58: Train Epoch 35: 120/158 Generator Loss: 21.679333 Pred Discriminator Loss: 0.571820 RelFlow Discriminator Loss: 0.694983
+2022-07-13 22:58: Train Epoch 35: 140/158 Generator Loss: 19.704998 Pred Discriminator Loss: 0.555026 RelFlow Discriminator Loss: 0.691720
+2022-07-13 22:58: **********Train Epoch 35: Averaged Generator Loss: 21.308439, Averaged Pred Discriminator Loss: 0.560341, Averaged RelFlow Discriminator Loss: 0.688670
+2022-07-13 22:59: **********Val Epoch 35: average Loss: 19.694322
+2022-07-13 22:59: Train Epoch 36: 0/158 Generator Loss: 21.010040 Pred Discriminator Loss: 0.535522 RelFlow Discriminator Loss: 0.685413
+2022-07-13 22:59: Train Epoch 36: 20/158 Generator Loss: 20.353727 Pred Discriminator Loss: 0.540606 RelFlow Discriminator Loss: 0.688781
+2022-07-13 22:59: Train Epoch 36: 40/158 Generator Loss: 21.074053 Pred Discriminator Loss: 0.535388 RelFlow Discriminator Loss: 0.690936
+2022-07-13 22:59: Train Epoch 36: 60/158 Generator Loss: 21.219437 Pred Discriminator Loss: 0.550240 RelFlow Discriminator Loss: 0.686207
+2022-07-13 22:59: Train Epoch 36: 80/158 Generator Loss: 20.914330 Pred Discriminator Loss: 0.558067 RelFlow Discriminator Loss: 0.683449
+2022-07-13 22:59: Train Epoch 36: 100/158 Generator Loss: 21.389248 Pred Discriminator Loss: 0.571904 RelFlow Discriminator Loss: 0.694697
+2022-07-13 22:59: Train Epoch 36: 120/158 Generator Loss: 18.817211 Pred Discriminator Loss: 0.559283 RelFlow Discriminator Loss: 0.690889
+2022-07-13 22:59: Train Epoch 36: 140/158 Generator Loss: 21.904308 Pred Discriminator Loss: 0.534290 RelFlow Discriminator Loss: 0.688825
+2022-07-13 22:59: **********Train Epoch 36: Averaged Generator Loss: 21.260309, Averaged Pred Discriminator Loss: 0.552002, Averaged RelFlow Discriminator Loss: 0.688564
+2022-07-13 22:59: **********Val Epoch 36: average Loss: 19.465379
+2022-07-13 22:59: *********************************Current best model saved!
+2022-07-13 22:59: Train Epoch 37: 0/158 Generator Loss: 22.130583 Pred Discriminator Loss: 0.548095 RelFlow Discriminator Loss: 0.690101
+2022-07-13 22:59: Train Epoch 37: 20/158 Generator Loss: 22.287106 Pred Discriminator Loss: 0.544726 RelFlow Discriminator Loss: 0.689230
+2022-07-13 22:59: Train Epoch 37: 40/158 Generator Loss: 21.066133 Pred Discriminator Loss: 0.569804 RelFlow Discriminator Loss: 0.695818
+2022-07-13 22:59: Train Epoch 37: 60/158 Generator Loss: 20.171268 Pred Discriminator Loss: 0.564919 RelFlow Discriminator Loss: 0.683984
+2022-07-13 22:59: Train Epoch 37: 80/158 Generator Loss: 21.378855 Pred Discriminator Loss: 0.570533 RelFlow Discriminator Loss: 0.693515
+2022-07-13 22:59: Train Epoch 37: 100/158 Generator Loss: 21.842003 Pred Discriminator Loss: 0.540683 RelFlow Discriminator Loss: 0.692792
+2022-07-13 22:59: Train Epoch 37: 120/158 Generator Loss: 20.655821 Pred Discriminator Loss: 0.554334 RelFlow Discriminator Loss: 0.687629
+2022-07-13 22:59: Train Epoch 37: 140/158 Generator Loss: 21.113874 Pred Discriminator Loss: 0.545746 RelFlow Discriminator Loss: 0.689245
+2022-07-13 22:59: **********Train Epoch 37: Averaged Generator Loss: 21.229127, Averaged Pred Discriminator Loss: 0.550705, Averaged RelFlow Discriminator Loss: 0.689240
+2022-07-13 22:59: **********Val Epoch 37: average Loss: 19.702736
+2022-07-13 22:59: Train Epoch 38: 0/158 Generator Loss: 21.272820 Pred Discriminator Loss: 0.557655 RelFlow Discriminator Loss: 0.686344
+2022-07-13 22:59: Train Epoch 38: 20/158 Generator Loss: 23.391062 Pred Discriminator Loss: 0.545812 RelFlow Discriminator Loss: 0.685190
+2022-07-13 22:59: Train Epoch 38: 40/158 Generator Loss: 20.916067 Pred Discriminator Loss: 0.566360 RelFlow Discriminator Loss: 0.689363
+2022-07-13 22:59: Train Epoch 38: 60/158 Generator Loss: 22.510508 Pred Discriminator Loss: 0.537368 RelFlow Discriminator Loss: 0.690854
+2022-07-13 22:59: Train Epoch 38: 80/158 Generator Loss: 21.594151 Pred Discriminator Loss: 0.551582 RelFlow Discriminator Loss: 0.687447
+2022-07-13 22:59: Train Epoch 38: 100/158 Generator Loss: 21.229820 Pred Discriminator Loss: 0.530828 RelFlow Discriminator Loss: 0.688878
+2022-07-13 22:59: Train Epoch 38: 120/158 Generator Loss: 21.778336 Pred Discriminator Loss: 0.555425 RelFlow Discriminator Loss: 0.687213
+2022-07-13 23:00: Train Epoch 38: 140/158 Generator Loss: 21.965405 Pred Discriminator Loss: 0.538850 RelFlow Discriminator Loss: 0.683425
+2022-07-13 23:00: **********Train Epoch 38: Averaged Generator Loss: 21.210661, Averaged Pred Discriminator Loss: 0.553375, Averaged RelFlow Discriminator Loss: 0.688780
+2022-07-13 23:00: **********Val Epoch 38: average Loss: 19.561400
+2022-07-13 23:00: Train Epoch 39: 0/158 Generator Loss: 19.170225 Pred Discriminator Loss: 0.560027 RelFlow Discriminator Loss: 0.691639
+2022-07-13 23:00: Train Epoch 39: 20/158 Generator Loss: 19.961489 Pred Discriminator Loss: 0.561665 RelFlow Discriminator Loss: 0.687948
+2022-07-13 23:00: Train Epoch 39: 40/158 Generator Loss: 19.941090 Pred Discriminator Loss: 0.558066 RelFlow Discriminator Loss: 0.690820
+2022-07-13 23:00: Train Epoch 39: 60/158 Generator Loss: 23.260515 Pred Discriminator Loss: 0.533487 RelFlow Discriminator Loss: 0.682149
+2022-07-13 23:00: Train Epoch 39: 80/158 Generator Loss: 20.701584 Pred Discriminator Loss: 0.545309 RelFlow Discriminator Loss: 0.685548
+2022-07-13 23:00: Train Epoch 39: 100/158 Generator Loss: 21.446196 Pred Discriminator Loss: 0.543417 RelFlow Discriminator Loss: 0.690407
+2022-07-13 23:00: Train Epoch 39: 120/158 Generator Loss: 21.792675 Pred Discriminator Loss: 0.545422 RelFlow Discriminator Loss: 0.689170
+2022-07-13 23:00: Train Epoch 39: 140/158 Generator Loss: 21.323263 Pred Discriminator Loss: 0.536527 RelFlow Discriminator Loss: 0.686481
+2022-07-13 23:00: **********Train Epoch 39: Averaged Generator Loss: 21.163773, Averaged Pred Discriminator Loss: 0.548026, Averaged RelFlow Discriminator Loss: 0.688540
+2022-07-13 23:00: **********Val Epoch 39: average Loss: 19.409165
+2022-07-13 23:00: *********************************Current best model saved!
+2022-07-13 23:00: Train Epoch 40: 0/158 Generator Loss: 22.974930 Pred Discriminator Loss: 0.539859 RelFlow Discriminator Loss: 0.686196
+2022-07-13 23:00: Train Epoch 40: 20/158 Generator Loss: 21.424427 Pred Discriminator Loss: 0.533970 RelFlow Discriminator Loss: 0.692792
+2022-07-13 23:00: Train Epoch 40: 40/158 Generator Loss: 20.994312 Pred Discriminator Loss: 0.548848 RelFlow Discriminator Loss: 0.690411
+2022-07-13 23:00: Train Epoch 40: 60/158 Generator Loss: 22.441067 Pred Discriminator Loss: 0.531663 RelFlow Discriminator Loss: 0.689297
+2022-07-13 23:00: Train Epoch 40: 80/158 Generator Loss: 21.037060 Pred Discriminator Loss: 0.560327 RelFlow Discriminator Loss: 0.688025
+2022-07-13 23:00: Train Epoch 40: 100/158 Generator Loss: 21.249567 Pred Discriminator Loss: 0.550387 RelFlow Discriminator Loss: 0.686128
+2022-07-13 23:00: Train Epoch 40: 120/158 Generator Loss: 20.399555 Pred Discriminator Loss: 0.542281 RelFlow Discriminator Loss: 0.686186
+2022-07-13 23:00: Train Epoch 40: 140/158 Generator Loss: 21.122822 Pred Discriminator Loss: 0.533682 RelFlow Discriminator Loss: 0.695843
+2022-07-13 23:00: **********Train Epoch 40: Averaged Generator Loss: 21.192968, Averaged Pred Discriminator Loss: 0.546873, Averaged RelFlow Discriminator Loss: 0.688358
+2022-07-13 23:00: **********Val Epoch 40: average Loss: 19.392501
+2022-07-13 23:00: *********************************Current best model saved!
+2022-07-13 23:00: Train Epoch 41: 0/158 Generator Loss: 20.527819 Pred Discriminator Loss: 0.537289 RelFlow Discriminator Loss: 0.687137
+2022-07-13 23:00: Train Epoch 41: 20/158 Generator Loss: 19.876545 Pred Discriminator Loss: 0.545782 RelFlow Discriminator Loss: 0.686141
+2022-07-13 23:00: Train Epoch 41: 40/158 Generator Loss: 21.813465 Pred Discriminator Loss: 0.535349 RelFlow Discriminator Loss: 0.695583
+2022-07-13 23:00: Train Epoch 41: 60/158 Generator Loss: 21.287918 Pred Discriminator Loss: 0.544037 RelFlow Discriminator Loss: 0.695671
+2022-07-13 23:01: Train Epoch 41: 80/158 Generator Loss: 22.237144 Pred Discriminator Loss: 0.544409 RelFlow Discriminator Loss: 0.690030
+2022-07-13 23:01: Train Epoch 41: 100/158 Generator Loss: 20.597380 Pred Discriminator Loss: 0.544417 RelFlow Discriminator Loss: 0.681623
+2022-07-13 23:01: Train Epoch 41: 120/158 Generator Loss: 20.658636 Pred Discriminator Loss: 0.540252 RelFlow Discriminator Loss: 0.693209
+2022-07-13 23:01: Train Epoch 41: 140/158 Generator Loss: 18.858091 Pred Discriminator Loss: 0.567302 RelFlow Discriminator Loss: 0.687932
+2022-07-13 23:01: **********Train Epoch 41: Averaged Generator Loss: 21.138787, Averaged Pred Discriminator Loss: 0.545570, Averaged RelFlow Discriminator Loss: 0.687920
+2022-07-13 23:01: **********Val Epoch 41: average Loss: 19.358110
+2022-07-13 23:01: *********************************Current best model saved!
+2022-07-13 23:01: Train Epoch 42: 0/158 Generator Loss: 21.024052 Pred Discriminator Loss: 0.549325 RelFlow Discriminator Loss: 0.678644
+2022-07-13 23:01: Train Epoch 42: 20/158 Generator Loss: 22.215179 Pred Discriminator Loss: 0.528519 RelFlow Discriminator Loss: 0.690695
+2022-07-13 23:01: Train Epoch 42: 40/158 Generator Loss: 20.348562 Pred Discriminator Loss: 0.546047 RelFlow Discriminator Loss: 0.691888
+2022-07-13 23:01: Train Epoch 42: 60/158 Generator Loss: 20.760120 Pred Discriminator Loss: 0.551040 RelFlow Discriminator Loss: 0.684703
+2022-07-13 23:01: Train Epoch 42: 80/158 Generator Loss: 21.755379 Pred Discriminator Loss: 0.528426 RelFlow Discriminator Loss: 0.679618
+2022-07-13 23:01: Train Epoch 42: 100/158 Generator Loss: 21.633093 Pred Discriminator Loss: 0.547613 RelFlow Discriminator Loss: 0.688780
+2022-07-13 23:01: Train Epoch 42: 120/158 Generator Loss: 21.831793 Pred Discriminator Loss: 0.535943 RelFlow Discriminator Loss: 0.691903
+2022-07-13 23:01: Train Epoch 42: 140/158 Generator Loss: 20.729494 Pred Discriminator Loss: 0.539694 RelFlow Discriminator Loss: 0.694229
+2022-07-13 23:01: **********Train Epoch 42: Averaged Generator Loss: 21.113296, Averaged Pred Discriminator Loss: 0.544594, Averaged RelFlow Discriminator Loss: 0.687908
+2022-07-13 23:01: **********Val Epoch 42: average Loss: 19.509492
+2022-07-13 23:01: Train Epoch 43: 0/158 Generator Loss: 21.553318 Pred Discriminator Loss: 0.537121 RelFlow Discriminator Loss: 0.694517
+2022-07-13 23:01: Train Epoch 43: 20/158 Generator Loss: 22.127285 Pred Discriminator Loss: 0.555940 RelFlow Discriminator Loss: 0.686806
+2022-07-13 23:01: Train Epoch 43: 40/158 Generator Loss: 22.184727 Pred Discriminator Loss: 0.530992 RelFlow Discriminator Loss: 0.687128
+2022-07-13 23:01: Train Epoch 43: 60/158 Generator Loss: 19.615910 Pred Discriminator Loss: 0.542138 RelFlow Discriminator Loss: 0.685382
+2022-07-13 23:01: Train Epoch 43: 80/158 Generator Loss: 20.234962 Pred Discriminator Loss: 0.537044 RelFlow Discriminator Loss: 0.689224
+2022-07-13 23:01: Train Epoch 43: 100/158 Generator Loss: 20.960649 Pred Discriminator Loss: 0.547839 RelFlow Discriminator Loss: 0.686177
+2022-07-13 23:01: Train Epoch 43: 120/158 Generator Loss: 20.325687 Pred Discriminator Loss: 0.539613 RelFlow Discriminator Loss: 0.694902
+2022-07-13 23:01: Train Epoch 43: 140/158 Generator Loss: 20.223732 Pred Discriminator Loss: 0.521662 RelFlow Discriminator Loss: 0.686999
+2022-07-13 23:01: **********Train Epoch 43: Averaged Generator Loss: 21.083008, Averaged Pred Discriminator Loss: 0.541367, Averaged RelFlow Discriminator Loss: 0.688428
+2022-07-13 23:01: **********Val Epoch 43: average Loss: 19.379232
+2022-07-13 23:02: Train Epoch 44: 0/158 Generator Loss: 21.561380 Pred Discriminator Loss: 0.533242 RelFlow Discriminator Loss: 0.677322
+2022-07-13 23:02: Train Epoch 44: 20/158 Generator Loss: 20.098618 Pred Discriminator Loss: 0.543401 RelFlow Discriminator Loss: 0.683681
+2022-07-13 23:02: Train Epoch 44: 40/158 Generator Loss: 22.152914 Pred Discriminator Loss: 0.541584 RelFlow Discriminator Loss: 0.691662
+2022-07-13 23:02: Train Epoch 44: 60/158 Generator Loss: 19.982403 Pred Discriminator Loss: 0.550948 RelFlow Discriminator Loss: 0.691674
+2022-07-13 23:02: Train Epoch 44: 80/158 Generator Loss: 20.923271 Pred Discriminator Loss: 0.558392 RelFlow Discriminator Loss: 0.689180
+2022-07-13 23:02: Train Epoch 44: 100/158 Generator Loss: 20.689213 Pred Discriminator Loss: 0.535558 RelFlow Discriminator Loss: 0.686366
+2022-07-13 23:02: Train Epoch 44: 120/158 Generator Loss: 21.301487 Pred Discriminator Loss: 0.527049 RelFlow Discriminator Loss: 0.684575
+2022-07-13 23:02: Train Epoch 44: 140/158 Generator Loss: 20.614784 Pred Discriminator Loss: 0.549634 RelFlow Discriminator Loss: 0.687769
+2022-07-13 23:02: **********Train Epoch 44: Averaged Generator Loss: 21.015922, Averaged Pred Discriminator Loss: 0.541073, Averaged RelFlow Discriminator Loss: 0.688439
+2022-07-13 23:02: **********Val Epoch 44: average Loss: 19.264822
+2022-07-13 23:02: *********************************Current best model saved!
+2022-07-13 23:02: Train Epoch 45: 0/158 Generator Loss: 21.577930 Pred Discriminator Loss: 0.568981 RelFlow Discriminator Loss: 0.680114
+2022-07-13 23:02: Train Epoch 45: 20/158 Generator Loss: 20.536917 Pred Discriminator Loss: 0.544064 RelFlow Discriminator Loss: 0.695397
+2022-07-13 23:02: Train Epoch 45: 40/158 Generator Loss: 21.220030 Pred Discriminator Loss: 0.526664 RelFlow Discriminator Loss: 0.690559
+2022-07-13 23:02: Train Epoch 45: 60/158 Generator Loss: 19.969650 Pred Discriminator Loss: 0.548361 RelFlow Discriminator Loss: 0.688692
+2022-07-13 23:02: Train Epoch 45: 80/158 Generator Loss: 22.313721 Pred Discriminator Loss: 0.534802 RelFlow Discriminator Loss: 0.690601
+2022-07-13 23:02: Train Epoch 45: 100/158 Generator Loss: 19.170784 Pred Discriminator Loss: 0.564660 RelFlow Discriminator Loss: 0.696511
+2022-07-13 23:02: Train Epoch 45: 120/158 Generator Loss: 20.628990 Pred Discriminator Loss: 0.541470 RelFlow Discriminator Loss: 0.691002
+2022-07-13 23:02: Train Epoch 45: 140/158 Generator Loss: 20.148703 Pred Discriminator Loss: 0.577809 RelFlow Discriminator Loss: 0.691037
+2022-07-13 23:02: **********Train Epoch 45: Averaged Generator Loss: 21.029539, Averaged Pred Discriminator Loss: 0.543305, Averaged RelFlow Discriminator Loss: 0.688222
+2022-07-13 23:02: **********Val Epoch 45: average Loss: 19.664680
+2022-07-13 23:02: Train Epoch 46: 0/158 Generator Loss: 21.508387 Pred Discriminator Loss: 0.551407 RelFlow Discriminator Loss: 0.688761
+2022-07-13 23:02: Train Epoch 46: 20/158 Generator Loss: 20.601820 Pred Discriminator Loss: 0.534146 RelFlow Discriminator Loss: 0.690198
+2022-07-13 23:02: Train Epoch 46: 40/158 Generator Loss: 21.213488 Pred Discriminator Loss: 0.520781 RelFlow Discriminator Loss: 0.686826
+2022-07-13 23:02: Train Epoch 46: 60/158 Generator Loss: 23.234259 Pred Discriminator Loss: 0.529006 RelFlow Discriminator Loss: 0.690485
+2022-07-13 23:02: Train Epoch 46: 80/158 Generator Loss: 21.946939 Pred Discriminator Loss: 0.540235 RelFlow Discriminator Loss: 0.687713
+2022-07-13 23:02: Train Epoch 46: 100/158 Generator Loss: 20.063869 Pred Discriminator Loss: 0.549042 RelFlow Discriminator Loss: 0.686500
+2022-07-13 23:03: Train Epoch 46: 120/158 Generator Loss: 21.188364 Pred Discriminator Loss: 0.562453 RelFlow Discriminator Loss: 0.690194
+2022-07-13 23:03: Train Epoch 46: 140/158 Generator Loss: 21.107061 Pred Discriminator Loss: 0.533934 RelFlow Discriminator Loss: 0.690228
+2022-07-13 23:03: **********Train Epoch 46: Averaged Generator Loss: 20.980298, Averaged Pred Discriminator Loss: 0.544253, Averaged RelFlow Discriminator Loss: 0.687925
+2022-07-13 23:03: **********Val Epoch 46: average Loss: 19.226778
+2022-07-13 23:03: *********************************Current best model saved!
+2022-07-13 23:03: Train Epoch 47: 0/158 Generator Loss: 20.056364 Pred Discriminator Loss: 0.539205 RelFlow Discriminator Loss: 0.681223
+2022-07-13 23:03: Train Epoch 47: 20/158 Generator Loss: 20.969284 Pred Discriminator Loss: 0.535289 RelFlow Discriminator Loss: 0.679245
+2022-07-13 23:03: Train Epoch 47: 40/158 Generator Loss: 20.108116 Pred Discriminator Loss: 0.570859 RelFlow Discriminator Loss: 0.693090
+2022-07-13 23:03: Train Epoch 47: 60/158 Generator Loss: 20.563812 Pred Discriminator Loss: 0.550047 RelFlow Discriminator Loss: 0.684591
+2022-07-13 23:03: Train Epoch 47: 80/158 Generator Loss: 21.389137 Pred Discriminator Loss: 0.543312 RelFlow Discriminator Loss: 0.692807
+2022-07-13 23:03: Train Epoch 47: 100/158 Generator Loss: 20.002951 Pred Discriminator Loss: 0.547003 RelFlow Discriminator Loss: 0.683958
+2022-07-13 23:03: Train Epoch 47: 120/158 Generator Loss: 20.105291 Pred Discriminator Loss: 0.539512 RelFlow Discriminator Loss: 0.694384
+2022-07-13 23:03: Train Epoch 47: 140/158 Generator Loss: 22.453932 Pred Discriminator Loss: 0.519622 RelFlow Discriminator Loss: 0.691867
+2022-07-13 23:03: **********Train Epoch 47: Averaged Generator Loss: 21.019564, Averaged Pred Discriminator Loss: 0.539345, Averaged RelFlow Discriminator Loss: 0.687825
+2022-07-13 23:03: **********Val Epoch 47: average Loss: 19.741714
+2022-07-13 23:03: Train Epoch 48: 0/158 Generator Loss: 21.156515 Pred Discriminator Loss: 0.567067 RelFlow Discriminator Loss: 0.685473
+2022-07-13 23:03: Train Epoch 48: 20/158 Generator Loss: 21.069937 Pred Discriminator Loss: 0.561859 RelFlow Discriminator Loss: 0.687744
+2022-07-13 23:03: Train Epoch 48: 40/158 Generator Loss: 19.932152 Pred Discriminator Loss: 0.544183 RelFlow Discriminator Loss: 0.685034
+2022-07-13 23:03: Train Epoch 48: 60/158 Generator Loss: 20.356543 Pred Discriminator Loss: 0.558017 RelFlow Discriminator Loss: 0.683152
+2022-07-13 23:03: Train Epoch 48: 80/158 Generator Loss: 19.124521 Pred Discriminator Loss: 0.567346 RelFlow Discriminator Loss: 0.690702
+2022-07-13 23:03: Train Epoch 48: 100/158 Generator Loss: 20.334806 Pred Discriminator Loss: 0.526113 RelFlow Discriminator Loss: 0.691009
+2022-07-13 23:03: Train Epoch 48: 120/158 Generator Loss: 21.822289 Pred Discriminator Loss: 0.573007 RelFlow Discriminator Loss: 0.685869
+2022-07-13 23:03: Train Epoch 48: 140/158 Generator Loss: 20.618395 Pred Discriminator Loss: 0.539532 RelFlow Discriminator Loss: 0.686677
+2022-07-13 23:03: **********Train Epoch 48: Averaged Generator Loss: 20.954347, Averaged Pred Discriminator Loss: 0.547025, Averaged RelFlow Discriminator Loss: 0.688064
+2022-07-13 23:03: **********Val Epoch 48: average Loss: 19.525795
+2022-07-13 23:03: Train Epoch 49: 0/158 Generator Loss: 21.546272 Pred Discriminator Loss: 0.526664 RelFlow Discriminator Loss: 0.697027
+2022-07-13 23:03: Train Epoch 49: 20/158 Generator Loss: 21.488838 Pred Discriminator Loss: 0.540157 RelFlow Discriminator Loss: 0.685915
+2022-07-13 23:04: Train Epoch 49: 40/158 Generator Loss: 20.414595 Pred Discriminator Loss: 0.572777 RelFlow Discriminator Loss: 0.688632
+2022-07-13 23:04: Train Epoch 49: 60/158 Generator Loss: 20.441982 Pred Discriminator Loss: 0.527371 RelFlow Discriminator Loss: 0.682449
+2022-07-13 23:04: Train Epoch 49: 80/158 Generator Loss: 21.727011 Pred Discriminator Loss: 0.544016 RelFlow Discriminator Loss: 0.691070
+2022-07-13 23:04: Train Epoch 49: 100/158 Generator Loss: 21.439428 Pred Discriminator Loss: 0.534000 RelFlow Discriminator Loss: 0.688161
+2022-07-13 23:04: Train Epoch 49: 120/158 Generator Loss: 21.038502 Pred Discriminator Loss: 0.531258 RelFlow Discriminator Loss: 0.685678
+2022-07-13 23:04: Train Epoch 49: 140/158 Generator Loss: 21.016933 Pred Discriminator Loss: 0.528352 RelFlow Discriminator Loss: 0.684753
+2022-07-13 23:04: **********Train Epoch 49: Averaged Generator Loss: 20.940815, Averaged Pred Discriminator Loss: 0.538804, Averaged RelFlow Discriminator Loss: 0.688039
+2022-07-13 23:04: **********Val Epoch 49: average Loss: 19.332003
+2022-07-13 23:04: Train Epoch 50: 0/158 Generator Loss: 20.510248 Pred Discriminator Loss: 0.556422 RelFlow Discriminator Loss: 0.696308
+2022-07-13 23:04: Train Epoch 50: 20/158 Generator Loss: 21.356453 Pred Discriminator Loss: 0.534918 RelFlow Discriminator Loss: 0.685568
+2022-07-13 23:04: Train Epoch 50: 40/158 Generator Loss: 21.767355 Pred Discriminator Loss: 0.528347 RelFlow Discriminator Loss: 0.687009
+2022-07-13 23:04: Train Epoch 50: 60/158 Generator Loss: 20.420982 Pred Discriminator Loss: 0.556918 RelFlow Discriminator Loss: 0.684309
+2022-07-13 23:04: Train Epoch 50: 80/158 Generator Loss: 20.646221 Pred Discriminator Loss: 0.549526 RelFlow Discriminator Loss: 0.690677
+2022-07-13 23:04: Train Epoch 50: 100/158 Generator Loss: 20.851665 Pred Discriminator Loss: 0.559929 RelFlow Discriminator Loss: 0.691786
+2022-07-13 23:04: Train Epoch 50: 120/158 Generator Loss: 20.644390 Pred Discriminator Loss: 0.529836 RelFlow Discriminator Loss: 0.692636
+2022-07-13 23:04: Train Epoch 50: 140/158 Generator Loss: 22.399752 Pred Discriminator Loss: 0.514525 RelFlow Discriminator Loss: 0.683085
+2022-07-13 23:04: **********Train Epoch 50: Averaged Generator Loss: 20.903338, Averaged Pred Discriminator Loss: 0.538503, Averaged RelFlow Discriminator Loss: 0.688342
+2022-07-13 23:04: **********Val Epoch 50: average Loss: 19.354257
+2022-07-13 23:04: Train Epoch 51: 0/158 Generator Loss: 21.271399 Pred Discriminator Loss: 0.531456 RelFlow Discriminator Loss: 0.689283
+2022-07-13 23:04: Train Epoch 51: 20/158 Generator Loss: 20.908842 Pred Discriminator Loss: 0.551733 RelFlow Discriminator Loss: 0.686576
+2022-07-13 23:04: Train Epoch 51: 40/158 Generator Loss: 20.619755 Pred Discriminator Loss: 0.559098 RelFlow Discriminator Loss: 0.685512
+2022-07-13 23:04: Train Epoch 51: 60/158 Generator Loss: 21.223553 Pred Discriminator Loss: 0.529618 RelFlow Discriminator Loss: 0.685399
+2022-07-13 23:04: Train Epoch 51: 80/158 Generator Loss: 20.629110 Pred Discriminator Loss: 0.533035 RelFlow Discriminator Loss: 0.692515
+2022-07-13 23:04: Train Epoch 51: 100/158 Generator Loss: 20.255476 Pred Discriminator Loss: 0.516758 RelFlow Discriminator Loss: 0.688565
+2022-07-13 23:04: Train Epoch 51: 120/158 Generator Loss: 21.315765 Pred Discriminator Loss: 0.526833 RelFlow Discriminator Loss: 0.692410
+2022-07-13 23:05: Train Epoch 51: 140/158 Generator Loss: 20.678375 Pred Discriminator Loss: 0.576911 RelFlow Discriminator Loss: 0.690234
+2022-07-13 23:05: **********Train Epoch 51: Averaged Generator Loss: 20.924435, Averaged Pred Discriminator Loss: 0.546612, Averaged RelFlow Discriminator Loss: 0.687557
+2022-07-13 23:05: **********Val Epoch 51: average Loss: 19.750132
+2022-07-13 23:05: Train Epoch 52: 0/158 Generator Loss: 22.440914 Pred Discriminator Loss: 0.522416 RelFlow Discriminator Loss: 0.680045
+2022-07-13 23:05: Train Epoch 52: 20/158 Generator Loss: 22.813728 Pred Discriminator Loss: 0.528983 RelFlow Discriminator Loss: 0.683546
+2022-07-13 23:05: Train Epoch 52: 40/158 Generator Loss: 20.005121 Pred Discriminator Loss: 0.541021 RelFlow Discriminator Loss: 0.689934
+2022-07-13 23:05: Train Epoch 52: 60/158 Generator Loss: 22.907946 Pred Discriminator Loss: 0.518129 RelFlow Discriminator Loss: 0.680559
+2022-07-13 23:05: Train Epoch 52: 80/158 Generator Loss: 20.837029 Pred Discriminator Loss: 0.537605 RelFlow Discriminator Loss: 0.682691
+2022-07-13 23:05: Train Epoch 52: 100/158 Generator Loss: 22.317120 Pred Discriminator Loss: 0.568743 RelFlow Discriminator Loss: 0.697622
+2022-07-13 23:05: Train Epoch 52: 120/158 Generator Loss: 20.136810 Pred Discriminator Loss: 0.560083 RelFlow Discriminator Loss: 0.692986
+2022-07-13 23:05: Train Epoch 52: 140/158 Generator Loss: 20.200237 Pred Discriminator Loss: 0.542545 RelFlow Discriminator Loss: 0.692134
+2022-07-13 23:05: **********Train Epoch 52: Averaged Generator Loss: 20.902880, Averaged Pred Discriminator Loss: 0.540114, Averaged RelFlow Discriminator Loss: 0.687315
+2022-07-13 23:05: **********Val Epoch 52: average Loss: 19.370735
+2022-07-13 23:05: Train Epoch 53: 0/158 Generator Loss: 21.372433 Pred Discriminator Loss: 0.537064 RelFlow Discriminator Loss: 0.684042
+2022-07-13 23:05: Train Epoch 53: 20/158 Generator Loss: 21.443827 Pred Discriminator Loss: 0.552366 RelFlow Discriminator Loss: 0.681983
+2022-07-13 23:05: Train Epoch 53: 40/158 Generator Loss: 21.537512 Pred Discriminator Loss: 0.538145 RelFlow Discriminator Loss: 0.693481
+2022-07-13 23:05: Train Epoch 53: 60/158 Generator Loss: 19.656050 Pred Discriminator Loss: 0.566070 RelFlow Discriminator Loss: 0.685494
+2022-07-13 23:05: Train Epoch 53: 80/158 Generator Loss: 20.860592 Pred Discriminator Loss: 0.538125 RelFlow Discriminator Loss: 0.692694
+2022-07-13 23:05: Train Epoch 53: 100/158 Generator Loss: 21.667257 Pred Discriminator Loss: 0.521393 RelFlow Discriminator Loss: 0.685974
+2022-07-13 23:05: Train Epoch 53: 120/158 Generator Loss: 19.136272 Pred Discriminator Loss: 0.582875 RelFlow Discriminator Loss: 0.686762
+2022-07-13 23:05: Train Epoch 53: 140/158 Generator Loss: 21.941599 Pred Discriminator Loss: 0.525512 RelFlow Discriminator Loss: 0.688266
+2022-07-13 23:05: **********Train Epoch 53: Averaged Generator Loss: 20.840449, Averaged Pred Discriminator Loss: 0.539136, Averaged RelFlow Discriminator Loss: 0.687521
+2022-07-13 23:05: **********Val Epoch 53: average Loss: 19.360782
+2022-07-13 23:05: Train Epoch 54: 0/158 Generator Loss: 19.512663 Pred Discriminator Loss: 0.534848 RelFlow Discriminator Loss: 0.688530
+2022-07-13 23:05: Train Epoch 54: 20/158 Generator Loss: 20.510311 Pred Discriminator Loss: 0.544257 RelFlow Discriminator Loss: 0.683647
+2022-07-13 23:05: Train Epoch 54: 40/158 Generator Loss: 21.379686 Pred Discriminator Loss: 0.539325 RelFlow Discriminator Loss: 0.683492
+2022-07-13 23:05: Train Epoch 54: 60/158 Generator Loss: 21.965624 Pred Discriminator Loss: 0.541985 RelFlow Discriminator Loss: 0.683633
+2022-07-13 23:06: Train Epoch 54: 80/158 Generator Loss: 19.830553 Pred Discriminator Loss: 0.538532 RelFlow Discriminator Loss: 0.687170
+2022-07-13 23:06: Train Epoch 54: 100/158 Generator Loss: 21.466446 Pred Discriminator Loss: 0.528209 RelFlow Discriminator Loss: 0.696240
+2022-07-13 23:06: Train Epoch 54: 120/158 Generator Loss: 20.162531 Pred Discriminator Loss: 0.521659 RelFlow Discriminator Loss: 0.688812
+2022-07-13 23:06: Train Epoch 54: 140/158 Generator Loss: 20.974689 Pred Discriminator Loss: 0.536258 RelFlow Discriminator Loss: 0.685925
+2022-07-13 23:06: **********Train Epoch 54: Averaged Generator Loss: 20.889817, Averaged Pred Discriminator Loss: 0.530956, Averaged RelFlow Discriminator Loss: 0.687800
+2022-07-13 23:06: **********Val Epoch 54: average Loss: 19.258399
+2022-07-13 23:06: Train Epoch 55: 0/158 Generator Loss: 21.022282 Pred Discriminator Loss: 0.523733 RelFlow Discriminator Loss: 0.686171
+2022-07-13 23:06: Train Epoch 55: 20/158 Generator Loss: 22.158945 Pred Discriminator Loss: 0.531689 RelFlow Discriminator Loss: 0.689565
+2022-07-13 23:06: Train Epoch 55: 40/158 Generator Loss: 22.773746 Pred Discriminator Loss: 0.548777 RelFlow Discriminator Loss: 0.678908
+2022-07-13 23:06: Train Epoch 55: 60/158 Generator Loss: 21.368299 Pred Discriminator Loss: 0.518942 RelFlow Discriminator Loss: 0.682818
+2022-07-13 23:06: Train Epoch 55: 80/158 Generator Loss: 20.819513 Pred Discriminator Loss: 0.522657 RelFlow Discriminator Loss: 0.687220
+2022-07-13 23:06: Train Epoch 55: 100/158 Generator Loss: 21.296114 Pred Discriminator Loss: 0.513951 RelFlow Discriminator Loss: 0.695940
+2022-07-13 23:06: Train Epoch 55: 120/158 Generator Loss: 20.780140 Pred Discriminator Loss: 0.523390 RelFlow Discriminator Loss: 0.686134
+2022-07-13 23:06: Train Epoch 55: 140/158 Generator Loss: 19.928326 Pred Discriminator Loss: 0.531112 RelFlow Discriminator Loss: 0.687225
+2022-07-13 23:06: **********Train Epoch 55: Averaged Generator Loss: 20.835578, Averaged Pred Discriminator Loss: 0.533124, Averaged RelFlow Discriminator Loss: 0.687447
+2022-07-13 23:06: **********Val Epoch 55: average Loss: 19.574579
+2022-07-13 23:06: Train Epoch 56: 0/158 Generator Loss: 22.109526 Pred Discriminator Loss: 0.534327 RelFlow Discriminator Loss: 0.693267
+2022-07-13 23:06: Train Epoch 56: 20/158 Generator Loss: 21.111103 Pred Discriminator Loss: 0.524023 RelFlow Discriminator Loss: 0.685195
+2022-07-13 23:06: Train Epoch 56: 40/158 Generator Loss: 21.965748 Pred Discriminator Loss: 0.516286 RelFlow Discriminator Loss: 0.684744
+2022-07-13 23:06: Train Epoch 56: 60/158 Generator Loss: 19.775730 Pred Discriminator Loss: 0.529491 RelFlow Discriminator Loss: 0.691797
+2022-07-13 23:06: Train Epoch 56: 80/158 Generator Loss: 19.585936 Pred Discriminator Loss: 0.555097 RelFlow Discriminator Loss: 0.686600
+2022-07-13 23:06: Train Epoch 56: 100/158 Generator Loss: 21.137461 Pred Discriminator Loss: 0.512988 RelFlow Discriminator Loss: 0.682537
+2022-07-13 23:06: Train Epoch 56: 120/158 Generator Loss: 20.605669 Pred Discriminator Loss: 0.527496 RelFlow Discriminator Loss: 0.687607
+2022-07-13 23:06: Train Epoch 56: 140/158 Generator Loss: 18.433741 Pred Discriminator Loss: 0.536095 RelFlow Discriminator Loss: 0.690210
+2022-07-13 23:06: **********Train Epoch 56: Averaged Generator Loss: 20.804612, Averaged Pred Discriminator Loss: 0.528209, Averaged RelFlow Discriminator Loss: 0.687554
+2022-07-13 23:07: **********Val Epoch 56: average Loss: 19.267253
+2022-07-13 23:07: Train Epoch 57: 0/158 Generator Loss: 19.795198 Pred Discriminator Loss: 0.525410 RelFlow Discriminator Loss: 0.686846
+2022-07-13 23:07: Train Epoch 57: 20/158 Generator Loss: 21.538515 Pred Discriminator Loss: 0.527640 RelFlow Discriminator Loss: 0.693611
+2022-07-13 23:07: Train Epoch 57: 40/158 Generator Loss: 19.156538 Pred Discriminator Loss: 0.585691 RelFlow Discriminator Loss: 0.690368
+2022-07-13 23:07: Train Epoch 57: 60/158 Generator Loss: 18.962685 Pred Discriminator Loss: 0.567820 RelFlow Discriminator Loss: 0.689009
+2022-07-13 23:07: Train Epoch 57: 80/158 Generator Loss: 21.389942 Pred Discriminator Loss: 0.528480 RelFlow Discriminator Loss: 0.689921
+2022-07-13 23:07: Train Epoch 57: 100/158 Generator Loss: 21.407005 Pred Discriminator Loss: 0.514583 RelFlow Discriminator Loss: 0.680784
+2022-07-13 23:07: Train Epoch 57: 120/158 Generator Loss: 19.741919 Pred Discriminator Loss: 0.518527 RelFlow Discriminator Loss: 0.682300
+2022-07-13 23:07: Train Epoch 57: 140/158 Generator Loss: 19.718409 Pred Discriminator Loss: 0.543980 RelFlow Discriminator Loss: 0.687273
+2022-07-13 23:07: **********Train Epoch 57: Averaged Generator Loss: 20.803924, Averaged Pred Discriminator Loss: 0.538336, Averaged RelFlow Discriminator Loss: 0.687346
+2022-07-13 23:07: **********Val Epoch 57: average Loss: 19.181165
+2022-07-13 23:07: *********************************Current best model saved!
+2022-07-13 23:07: Train Epoch 58: 0/158 Generator Loss: 20.685743 Pred Discriminator Loss: 0.528865 RelFlow Discriminator Loss: 0.683132
+2022-07-13 23:07: Train Epoch 58: 20/158 Generator Loss: 19.105158 Pred Discriminator Loss: 0.573305 RelFlow Discriminator Loss: 0.687046
+2022-07-13 23:07: Train Epoch 58: 40/158 Generator Loss: 20.403975 Pred Discriminator Loss: 0.538235 RelFlow Discriminator Loss: 0.692290
+2022-07-13 23:07: Train Epoch 58: 60/158 Generator Loss: 19.993320 Pred Discriminator Loss: 0.571844 RelFlow Discriminator Loss: 0.692916
+2022-07-13 23:07: Train Epoch 58: 80/158 Generator Loss: 21.563721 Pred Discriminator Loss: 0.528135 RelFlow Discriminator Loss: 0.686660
+2022-07-13 23:07: Train Epoch 58: 100/158 Generator Loss: 21.156893 Pred Discriminator Loss: 0.512431 RelFlow Discriminator Loss: 0.689435
+2022-07-13 23:07: Train Epoch 58: 120/158 Generator Loss: 21.657532 Pred Discriminator Loss: 0.507082 RelFlow Discriminator Loss: 0.684497
+2022-07-13 23:07: Train Epoch 58: 140/158 Generator Loss: 21.385366 Pred Discriminator Loss: 0.534957 RelFlow Discriminator Loss: 0.683851
+2022-07-13 23:07: **********Train Epoch 58: Averaged Generator Loss: 20.777476, Averaged Pred Discriminator Loss: 0.529387, Averaged RelFlow Discriminator Loss: 0.686958
+2022-07-13 23:07: **********Val Epoch 58: average Loss: 19.257316
+2022-07-13 23:07: Train Epoch 59: 0/158 Generator Loss: 21.423611 Pred Discriminator Loss: 0.526369 RelFlow Discriminator Loss: 0.682599
+2022-07-13 23:07: Train Epoch 59: 20/158 Generator Loss: 19.012159 Pred Discriminator Loss: 0.519848 RelFlow Discriminator Loss: 0.683331
+2022-07-13 23:07: Train Epoch 59: 40/158 Generator Loss: 20.869492 Pred Discriminator Loss: 0.517063 RelFlow Discriminator Loss: 0.683508
+2022-07-13 23:07: Train Epoch 59: 60/158 Generator Loss: 20.846827 Pred Discriminator Loss: 0.534093 RelFlow Discriminator Loss: 0.688149
+2022-07-13 23:07: Train Epoch 59: 80/158 Generator Loss: 19.732286 Pred Discriminator Loss: 0.525022 RelFlow Discriminator Loss: 0.685296
+2022-07-13 23:08: Train Epoch 59: 100/158 Generator Loss: 19.530554 Pred Discriminator Loss: 0.558777 RelFlow Discriminator Loss: 0.687427
+2022-07-13 23:08: Train Epoch 59: 120/158 Generator Loss: 19.236082 Pred Discriminator Loss: 0.541915 RelFlow Discriminator Loss: 0.687566
+2022-07-13 23:08: Train Epoch 59: 140/158 Generator Loss: 19.786268 Pred Discriminator Loss: 0.529853 RelFlow Discriminator Loss: 0.690352
+2022-07-13 23:08: **********Train Epoch 59: Averaged Generator Loss: 20.802784, Averaged Pred Discriminator Loss: 0.527521, Averaged RelFlow Discriminator Loss: 0.686883
+2022-07-13 23:08: **********Val Epoch 59: average Loss: 19.771330
+2022-07-13 23:08: Train Epoch 60: 0/158 Generator Loss: 21.831923 Pred Discriminator Loss: 0.515616 RelFlow Discriminator Loss: 0.691227
+2022-07-13 23:08: Train Epoch 60: 20/158 Generator Loss: 22.036139 Pred Discriminator Loss: 0.534213 RelFlow Discriminator Loss: 0.694106
+2022-07-13 23:08: Train Epoch 60: 40/158 Generator Loss: 23.488298 Pred Discriminator Loss: 0.525759 RelFlow Discriminator Loss: 0.687100
+2022-07-13 23:08: Train Epoch 60: 60/158 Generator Loss: 21.254168 Pred Discriminator Loss: 0.522364 RelFlow Discriminator Loss: 0.690632
+2022-07-13 23:08: Train Epoch 60: 80/158 Generator Loss: 19.061508 Pred Discriminator Loss: 0.596041 RelFlow Discriminator Loss: 0.692549
+2022-07-13 23:08: Train Epoch 60: 100/158 Generator Loss: 21.141708 Pred Discriminator Loss: 0.522356 RelFlow Discriminator Loss: 0.689924
+2022-07-13 23:08: Train Epoch 60: 120/158 Generator Loss: 19.860291 Pred Discriminator Loss: 0.517736 RelFlow Discriminator Loss: 0.682991
+2022-07-13 23:08: Train Epoch 60: 140/158 Generator Loss: 20.541925 Pred Discriminator Loss: 0.605875 RelFlow Discriminator Loss: 0.691912
+2022-07-13 23:08: **********Train Epoch 60: Averaged Generator Loss: 20.745222, Averaged Pred Discriminator Loss: 0.532843, Averaged RelFlow Discriminator Loss: 0.687450
+2022-07-13 23:08: **********Val Epoch 60: average Loss: 19.196888
+2022-07-13 23:08: Train Epoch 61: 0/158 Generator Loss: 21.747679 Pred Discriminator Loss: 0.522922 RelFlow Discriminator Loss: 0.683162
+2022-07-13 23:08: Train Epoch 61: 20/158 Generator Loss: 22.120659 Pred Discriminator Loss: 0.509401 RelFlow Discriminator Loss: 0.689635
+2022-07-13 23:08: Train Epoch 61: 40/158 Generator Loss: 20.768539 Pred Discriminator Loss: 0.511321 RelFlow Discriminator Loss: 0.690701
+2022-07-13 23:08: Train Epoch 61: 60/158 Generator Loss: 21.599783 Pred Discriminator Loss: 0.534094 RelFlow Discriminator Loss: 0.690686
+2022-07-13 23:08: Train Epoch 61: 80/158 Generator Loss: 19.816988 Pred Discriminator Loss: 0.526700 RelFlow Discriminator Loss: 0.684686
+2022-07-13 23:08: Train Epoch 61: 100/158 Generator Loss: 20.214060 Pred Discriminator Loss: 0.532562 RelFlow Discriminator Loss: 0.689181
+2022-07-13 23:08: Train Epoch 61: 120/158 Generator Loss: 19.112455 Pred Discriminator Loss: 0.590744 RelFlow Discriminator Loss: 0.685143
+2022-07-13 23:08: Train Epoch 61: 140/158 Generator Loss: 20.755123 Pred Discriminator Loss: 0.538432 RelFlow Discriminator Loss: 0.687836
+2022-07-13 23:08: **********Train Epoch 61: Averaged Generator Loss: 20.760528, Averaged Pred Discriminator Loss: 0.529903, Averaged RelFlow Discriminator Loss: 0.686733
+2022-07-13 23:08: **********Val Epoch 61: average Loss: 19.472033
+2022-07-13 23:08: Train Epoch 62: 0/158 Generator Loss: 21.512356 Pred Discriminator Loss: 0.514429 RelFlow Discriminator Loss: 0.680643
+2022-07-13 23:08: Train Epoch 62: 20/158 Generator Loss: 20.064995 Pred Discriminator Loss: 0.510756 RelFlow Discriminator Loss: 0.689239
+2022-07-13 23:09: Train Epoch 62: 40/158 Generator Loss: 19.587078 Pred Discriminator Loss: 0.526975 RelFlow Discriminator Loss: 0.689191
+2022-07-13 23:09: Train Epoch 62: 60/158 Generator Loss: 20.003376 Pred Discriminator Loss: 0.539876 RelFlow Discriminator Loss: 0.688442
+2022-07-13 23:09: Train Epoch 62: 80/158 Generator Loss: 20.508661 Pred Discriminator Loss: 0.511069 RelFlow Discriminator Loss: 0.684769
+2022-07-13 23:09: Train Epoch 62: 100/158 Generator Loss: 19.409992 Pred Discriminator Loss: 0.542973 RelFlow Discriminator Loss: 0.689278
+2022-07-13 23:09: Train Epoch 62: 120/158 Generator Loss: 19.779636 Pred Discriminator Loss: 0.521214 RelFlow Discriminator Loss: 0.680138
+2022-07-13 23:09: Train Epoch 62: 140/158 Generator Loss: 18.834131 Pred Discriminator Loss: 0.552891 RelFlow Discriminator Loss: 0.685966
+2022-07-13 23:09: **********Train Epoch 62: Averaged Generator Loss: 20.745518, Averaged Pred Discriminator Loss: 0.526154, Averaged RelFlow Discriminator Loss: 0.687299
+2022-07-13 23:09: **********Val Epoch 62: average Loss: 19.160148
+2022-07-13 23:09: *********************************Current best model saved!
+2022-07-13 23:09: Train Epoch 63: 0/158 Generator Loss: 20.884501 Pred Discriminator Loss: 0.533765 RelFlow Discriminator Loss: 0.698400
+2022-07-13 23:09: Train Epoch 63: 20/158 Generator Loss: 20.785160 Pred Discriminator Loss: 0.512269 RelFlow Discriminator Loss: 0.685995
+2022-07-13 23:09: Train Epoch 63: 40/158 Generator Loss: 20.779375 Pred Discriminator Loss: 0.521614 RelFlow Discriminator Loss: 0.685002
+2022-07-13 23:09: Train Epoch 63: 60/158 Generator Loss: 20.207003 Pred Discriminator Loss: 0.518441 RelFlow Discriminator Loss: 0.686237
+2022-07-13 23:09: Train Epoch 63: 80/158 Generator Loss: 19.374035 Pred Discriminator Loss: 0.573296 RelFlow Discriminator Loss: 0.696742
+2022-07-13 23:09: Train Epoch 63: 100/158 Generator Loss: 21.477522 Pred Discriminator Loss: 0.512874 RelFlow Discriminator Loss: 0.673209
+2022-07-13 23:09: Train Epoch 63: 120/158 Generator Loss: 23.501932 Pred Discriminator Loss: 0.506801 RelFlow Discriminator Loss: 0.687468
+2022-07-13 23:09: Train Epoch 63: 140/158 Generator Loss: 21.474968 Pred Discriminator Loss: 0.509536 RelFlow Discriminator Loss: 0.685416
+2022-07-13 23:09: **********Train Epoch 63: Averaged Generator Loss: 20.710431, Averaged Pred Discriminator Loss: 0.528571, Averaged RelFlow Discriminator Loss: 0.686930
+2022-07-13 23:09: **********Val Epoch 63: average Loss: 19.355314
+2022-07-13 23:09: Train Epoch 64: 0/158 Generator Loss: 18.256548 Pred Discriminator Loss: 0.526481 RelFlow Discriminator Loss: 0.685997
+2022-07-13 23:09: Train Epoch 64: 20/158 Generator Loss: 21.088034 Pred Discriminator Loss: 0.552497 RelFlow Discriminator Loss: 0.685349
+2022-07-13 23:09: Train Epoch 64: 40/158 Generator Loss: 20.282404 Pred Discriminator Loss: 0.546354 RelFlow Discriminator Loss: 0.685565
+2022-07-13 23:09: Train Epoch 64: 60/158 Generator Loss: 20.958822 Pred Discriminator Loss: 0.512330 RelFlow Discriminator Loss: 0.680997
+2022-07-13 23:09: Train Epoch 64: 80/158 Generator Loss: 19.968452 Pred Discriminator Loss: 0.546341 RelFlow Discriminator Loss: 0.682755
+2022-07-13 23:09: Train Epoch 64: 100/158 Generator Loss: 19.452639 Pred Discriminator Loss: 0.514146 RelFlow Discriminator Loss: 0.686115
+2022-07-13 23:09: Train Epoch 64: 120/158 Generator Loss: 21.957596 Pred Discriminator Loss: 0.522133 RelFlow Discriminator Loss: 0.685634
+2022-07-13 23:09: Train Epoch 64: 140/158 Generator Loss: 20.569122 Pred Discriminator Loss: 0.536788 RelFlow Discriminator Loss: 0.685991
+2022-07-13 23:10: **********Train Epoch 64: Averaged Generator Loss: 20.696767, Averaged Pred Discriminator Loss: 0.530144, Averaged RelFlow Discriminator Loss: 0.687163
+2022-07-13 23:10: **********Val Epoch 64: average Loss: 19.251431
+2022-07-13 23:10: Train Epoch 65: 0/158 Generator Loss: 20.550358 Pred Discriminator Loss: 0.513102 RelFlow Discriminator Loss: 0.679397
+2022-07-13 23:10: Train Epoch 65: 20/158 Generator Loss: 18.600636 Pred Discriminator Loss: 0.526432 RelFlow Discriminator Loss: 0.689321
+2022-07-13 23:10: Train Epoch 65: 40/158 Generator Loss: 21.428139 Pred Discriminator Loss: 0.533340 RelFlow Discriminator Loss: 0.685878
+2022-07-13 23:10: Train Epoch 65: 60/158 Generator Loss: 20.932449 Pred Discriminator Loss: 0.523199 RelFlow Discriminator Loss: 0.689010
+2022-07-13 23:10: Train Epoch 65: 80/158 Generator Loss: 20.562279 Pred Discriminator Loss: 0.514472 RelFlow Discriminator Loss: 0.688412
+2022-07-13 23:10: Train Epoch 65: 100/158 Generator Loss: 20.218655 Pred Discriminator Loss: 0.514718 RelFlow Discriminator Loss: 0.682707
+2022-07-13 23:10: Train Epoch 65: 120/158 Generator Loss: 21.376457 Pred Discriminator Loss: 0.526902 RelFlow Discriminator Loss: 0.680019
+2022-07-13 23:10: Train Epoch 65: 140/158 Generator Loss: 19.431885 Pred Discriminator Loss: 0.527389 RelFlow Discriminator Loss: 0.698875
+2022-07-13 23:10: **********Train Epoch 65: Averaged Generator Loss: 20.659498, Averaged Pred Discriminator Loss: 0.528138, Averaged RelFlow Discriminator Loss: 0.686526
+2022-07-13 23:10: **********Val Epoch 65: average Loss: 19.099720
+2022-07-13 23:10: *********************************Current best model saved!
+2022-07-13 23:10: Train Epoch 66: 0/158 Generator Loss: 20.633829 Pred Discriminator Loss: 0.525688 RelFlow Discriminator Loss: 0.687487
+2022-07-13 23:10: Train Epoch 66: 20/158 Generator Loss: 21.833597 Pred Discriminator Loss: 0.517551 RelFlow Discriminator Loss: 0.687785
+2022-07-13 23:10: Train Epoch 66: 40/158 Generator Loss: 20.377958 Pred Discriminator Loss: 0.539484 RelFlow Discriminator Loss: 0.689250
+2022-07-13 23:10: Train Epoch 66: 60/158 Generator Loss: 20.731367 Pred Discriminator Loss: 0.522184 RelFlow Discriminator Loss: 0.698506
+2022-07-13 23:10: Train Epoch 66: 80/158 Generator Loss: 19.562767 Pred Discriminator Loss: 0.516753 RelFlow Discriminator Loss: 0.677962
+2022-07-13 23:10: Train Epoch 66: 100/158 Generator Loss: 21.622839 Pred Discriminator Loss: 0.512057 RelFlow Discriminator Loss: 0.679060
+2022-07-13 23:10: Train Epoch 66: 120/158 Generator Loss: 19.781628 Pred Discriminator Loss: 0.523566 RelFlow Discriminator Loss: 0.686486
+2022-07-13 23:10: Train Epoch 66: 140/158 Generator Loss: 20.675787 Pred Discriminator Loss: 0.513254 RelFlow Discriminator Loss: 0.688175
+2022-07-13 23:10: **********Train Epoch 66: Averaged Generator Loss: 20.648752, Averaged Pred Discriminator Loss: 0.529301, Averaged RelFlow Discriminator Loss: 0.686294
+2022-07-13 23:10: **********Val Epoch 66: average Loss: 19.212656
+2022-07-13 23:10: Train Epoch 67: 0/158 Generator Loss: 19.256998 Pred Discriminator Loss: 0.539257 RelFlow Discriminator Loss: 0.688498
+2022-07-13 23:10: Train Epoch 67: 20/158 Generator Loss: 21.137426 Pred Discriminator Loss: 0.562841 RelFlow Discriminator Loss: 0.685415
+2022-07-13 23:10: Train Epoch 67: 40/158 Generator Loss: 20.126001 Pred Discriminator Loss: 0.525581 RelFlow Discriminator Loss: 0.676832
+2022-07-13 23:10: Train Epoch 67: 60/158 Generator Loss: 18.958534 Pred Discriminator Loss: 0.530806 RelFlow Discriminator Loss: 0.688874
+2022-07-13 23:10: Train Epoch 67: 80/158 Generator Loss: 19.709269 Pred Discriminator Loss: 0.540169 RelFlow Discriminator Loss: 0.685076
+2022-07-13 23:10: Train Epoch 67: 100/158 Generator Loss: 21.231941 Pred Discriminator Loss: 0.501571 RelFlow Discriminator Loss: 0.685418
+2022-07-13 23:10: Train Epoch 67: 120/158 Generator Loss: 22.260143 Pred Discriminator Loss: 0.507749 RelFlow Discriminator Loss: 0.688116
+2022-07-13 23:11: Train Epoch 67: 140/158 Generator Loss: 22.286232 Pred Discriminator Loss: 0.510428 RelFlow Discriminator Loss: 0.674108
+2022-07-13 23:11: **********Train Epoch 67: Averaged Generator Loss: 20.651423, Averaged Pred Discriminator Loss: 0.532196, Averaged RelFlow Discriminator Loss: 0.686267
+2022-07-13 23:11: **********Val Epoch 67: average Loss: 19.277914
+2022-07-13 23:11: Train Epoch 68: 0/158 Generator Loss: 20.744463 Pred Discriminator Loss: 0.514157 RelFlow Discriminator Loss: 0.692821
+2022-07-13 23:11: Train Epoch 68: 20/158 Generator Loss: 20.468771 Pred Discriminator Loss: 0.527438 RelFlow Discriminator Loss: 0.681059
+2022-07-13 23:11: Train Epoch 68: 40/158 Generator Loss: 18.850492 Pred Discriminator Loss: 0.544844 RelFlow Discriminator Loss: 0.689861
+2022-07-13 23:11: Train Epoch 68: 60/158 Generator Loss: 19.897594 Pred Discriminator Loss: 0.525857 RelFlow Discriminator Loss: 0.680252
+2022-07-13 23:11: Train Epoch 68: 80/158 Generator Loss: 20.518169 Pred Discriminator Loss: 0.522387 RelFlow Discriminator Loss: 0.687256
+2022-07-13 23:11: Train Epoch 68: 100/158 Generator Loss: 22.182947 Pred Discriminator Loss: 0.533362 RelFlow Discriminator Loss: 0.690087
+2022-07-13 23:11: Train Epoch 68: 120/158 Generator Loss: 21.812954 Pred Discriminator Loss: 0.526335 RelFlow Discriminator Loss: 0.685801
+2022-07-13 23:11: Train Epoch 68: 140/158 Generator Loss: 21.341156 Pred Discriminator Loss: 0.622964 RelFlow Discriminator Loss: 0.691058
+2022-07-13 23:11: **********Train Epoch 68: Averaged Generator Loss: 20.666614, Averaged Pred Discriminator Loss: 0.532528, Averaged RelFlow Discriminator Loss: 0.686559
+2022-07-13 23:11: **********Val Epoch 68: average Loss: 19.261099
+2022-07-13 23:11: Train Epoch 69: 0/158 Generator Loss: 19.890068 Pred Discriminator Loss: 0.535206 RelFlow Discriminator Loss: 0.684939
+2022-07-13 23:11: Train Epoch 69: 20/158 Generator Loss: 19.326471 Pred Discriminator Loss: 0.520697 RelFlow Discriminator Loss: 0.691479
+2022-07-13 23:11: Train Epoch 69: 40/158 Generator Loss: 22.154778 Pred Discriminator Loss: 0.534016 RelFlow Discriminator Loss: 0.689862
+2022-07-13 23:11: Train Epoch 69: 60/158 Generator Loss: 20.427645 Pred Discriminator Loss: 0.519526 RelFlow Discriminator Loss: 0.689532
+2022-07-13 23:11: Train Epoch 69: 80/158 Generator Loss: 20.226748 Pred Discriminator Loss: 0.507747 RelFlow Discriminator Loss: 0.693667
+2022-07-13 23:11: Train Epoch 69: 100/158 Generator Loss: 21.255932 Pred Discriminator Loss: 0.522441 RelFlow Discriminator Loss: 0.680516
+2022-07-13 23:11: Train Epoch 69: 120/158 Generator Loss: 20.056076 Pred Discriminator Loss: 0.513131 RelFlow Discriminator Loss: 0.689562
+2022-07-13 23:11: Train Epoch 69: 140/158 Generator Loss: 21.329111 Pred Discriminator Loss: 0.727022 RelFlow Discriminator Loss: 0.687841
+2022-07-13 23:11: **********Train Epoch 69: Averaged Generator Loss: 20.661011, Averaged Pred Discriminator Loss: 0.541124, Averaged RelFlow Discriminator Loss: 0.686245
+2022-07-13 23:11: **********Val Epoch 69: average Loss: 19.319253
+2022-07-13 23:11: Train Epoch 70: 0/158 Generator Loss: 19.728615 Pred Discriminator Loss: 0.617995 RelFlow Discriminator Loss: 0.701276
+2022-07-13 23:11: Train Epoch 70: 20/158 Generator Loss: 20.385031 Pred Discriminator Loss: 0.587698 RelFlow Discriminator Loss: 0.686312
+2022-07-13 23:11: Train Epoch 70: 40/158 Generator Loss: 20.190519 Pred Discriminator Loss: 0.540227 RelFlow Discriminator Loss: 0.685231
+2022-07-13 23:12: Train Epoch 70: 60/158 Generator Loss: 19.892189 Pred Discriminator Loss: 0.544885 RelFlow Discriminator Loss: 0.683797
+2022-07-13 23:12: Train Epoch 70: 80/158 Generator Loss: 20.647776 Pred Discriminator Loss: 0.524845 RelFlow Discriminator Loss: 0.683782
+2022-07-13 23:12: Train Epoch 70: 100/158 Generator Loss: 19.937073 Pred Discriminator Loss: 0.522328 RelFlow Discriminator Loss: 0.693472
+2022-07-13 23:12: Train Epoch 70: 120/158 Generator Loss: 21.411905 Pred Discriminator Loss: 0.523419 RelFlow Discriminator Loss: 0.687123
+2022-07-13 23:12: Train Epoch 70: 140/158 Generator Loss: 21.355652 Pred Discriminator Loss: 0.520649 RelFlow Discriminator Loss: 0.689078
+2022-07-13 23:12: **********Train Epoch 70: Averaged Generator Loss: 20.583602, Averaged Pred Discriminator Loss: 0.543559, Averaged RelFlow Discriminator Loss: 0.686389
+2022-07-13 23:12: **********Val Epoch 70: average Loss: 19.272738
+2022-07-13 23:12: Train Epoch 71: 0/158 Generator Loss: 20.141113 Pred Discriminator Loss: 0.544536 RelFlow Discriminator Loss: 0.682964
+2022-07-13 23:12: Train Epoch 71: 20/158 Generator Loss: 20.014244 Pred Discriminator Loss: 0.525798 RelFlow Discriminator Loss: 0.688535
+2022-07-13 23:12: Train Epoch 71: 40/158 Generator Loss: 20.967384 Pred Discriminator Loss: 0.521030 RelFlow Discriminator Loss: 0.683164
+2022-07-13 23:12: Train Epoch 71: 60/158 Generator Loss: 20.332018 Pred Discriminator Loss: 0.508599 RelFlow Discriminator Loss: 0.679017
+2022-07-13 23:12: Train Epoch 71: 80/158 Generator Loss: 20.624218 Pred Discriminator Loss: 0.514400 RelFlow Discriminator Loss: 0.695525
+2022-07-13 23:12: Train Epoch 71: 100/158 Generator Loss: 19.779863 Pred Discriminator Loss: 0.543056 RelFlow Discriminator Loss: 0.683678
+2022-07-13 23:12: Train Epoch 71: 120/158 Generator Loss: 20.290474 Pred Discriminator Loss: 0.506844 RelFlow Discriminator Loss: 0.689817
+2022-07-13 23:12: Train Epoch 71: 140/158 Generator Loss: 21.298660 Pred Discriminator Loss: 0.567221 RelFlow Discriminator Loss: 0.677754
+2022-07-13 23:12: **********Train Epoch 71: Averaged Generator Loss: 20.598976, Averaged Pred Discriminator Loss: 0.526684, Averaged RelFlow Discriminator Loss: 0.686668
+2022-07-13 23:12: **********Val Epoch 71: average Loss: 19.215603
+2022-07-13 23:12: Train Epoch 72: 0/158 Generator Loss: 21.415768 Pred Discriminator Loss: 0.512453 RelFlow Discriminator Loss: 0.690451
+2022-07-13 23:12: Train Epoch 72: 20/158 Generator Loss: 20.502480 Pred Discriminator Loss: 0.545792 RelFlow Discriminator Loss: 0.690621
+2022-07-13 23:12: Train Epoch 72: 40/158 Generator Loss: 20.123823 Pred Discriminator Loss: 0.562934 RelFlow Discriminator Loss: 0.687666
+2022-07-13 23:12: Train Epoch 72: 60/158 Generator Loss: 21.041166 Pred Discriminator Loss: 0.505663 RelFlow Discriminator Loss: 0.683774
+2022-07-13 23:12: Train Epoch 72: 80/158 Generator Loss: 21.774176 Pred Discriminator Loss: 0.504011 RelFlow Discriminator Loss: 0.684371
+2022-07-13 23:12: Train Epoch 72: 100/158 Generator Loss: 21.305166 Pred Discriminator Loss: 0.521382 RelFlow Discriminator Loss: 0.687257
+2022-07-13 23:12: Train Epoch 72: 120/158 Generator Loss: 21.169331 Pred Discriminator Loss: 0.529299 RelFlow Discriminator Loss: 0.684643
+2022-07-13 23:12: Train Epoch 72: 140/158 Generator Loss: 20.097046 Pred Discriminator Loss: 0.526420 RelFlow Discriminator Loss: 0.684723
+2022-07-13 23:13: **********Train Epoch 72: Averaged Generator Loss: 20.592279, Averaged Pred Discriminator Loss: 0.529407, Averaged RelFlow Discriminator Loss: 0.686230
+2022-07-13 23:13: **********Val Epoch 72: average Loss: 19.294212
+2022-07-13 23:13: Train Epoch 73: 0/158 Generator Loss: 21.619257 Pred Discriminator Loss: 0.513853 RelFlow Discriminator Loss: 0.692092
+2022-07-13 23:13: Train Epoch 73: 20/158 Generator Loss: 20.401602 Pred Discriminator Loss: 0.513742 RelFlow Discriminator Loss: 0.685404
+2022-07-13 23:13: Train Epoch 73: 40/158 Generator Loss: 21.241343 Pred Discriminator Loss: 0.549763 RelFlow Discriminator Loss: 0.687938
+2022-07-13 23:13: Train Epoch 73: 60/158 Generator Loss: 18.749741 Pred Discriminator Loss: 0.534086 RelFlow Discriminator Loss: 0.694573
+2022-07-13 23:13: Train Epoch 73: 80/158 Generator Loss: 20.702852 Pred Discriminator Loss: 0.512165 RelFlow Discriminator Loss: 0.684268
+2022-07-13 23:13: Train Epoch 73: 100/158 Generator Loss: 20.282770 Pred Discriminator Loss: 0.515964 RelFlow Discriminator Loss: 0.673087
+2022-07-13 23:13: Train Epoch 73: 120/158 Generator Loss: 20.320110 Pred Discriminator Loss: 0.509414 RelFlow Discriminator Loss: 0.685249
+2022-07-13 23:13: Train Epoch 73: 140/158 Generator Loss: 21.294880 Pred Discriminator Loss: 0.514297 RelFlow Discriminator Loss: 0.685493
+2022-07-13 23:13: **********Train Epoch 73: Averaged Generator Loss: 20.556767, Averaged Pred Discriminator Loss: 0.529519, Averaged RelFlow Discriminator Loss: 0.686441
+2022-07-13 23:13: **********Val Epoch 73: average Loss: 19.157406
+2022-07-13 23:13: Train Epoch 74: 0/158 Generator Loss: 20.008284 Pred Discriminator Loss: 0.524260 RelFlow Discriminator Loss: 0.687922
+2022-07-13 23:13: Train Epoch 74: 20/158 Generator Loss: 18.990685 Pred Discriminator Loss: 0.529529 RelFlow Discriminator Loss: 0.686070
+2022-07-13 23:13: Train Epoch 74: 40/158 Generator Loss: 21.297945 Pred Discriminator Loss: 0.501831 RelFlow Discriminator Loss: 0.687958
+2022-07-13 23:13: Train Epoch 74: 60/158 Generator Loss: 21.501104 Pred Discriminator Loss: 0.619478 RelFlow Discriminator Loss: 0.680641
+2022-07-13 23:13: Train Epoch 74: 80/158 Generator Loss: 22.039755 Pred Discriminator Loss: 0.534098 RelFlow Discriminator Loss: 0.679040
+2022-07-13 23:13: Train Epoch 74: 100/158 Generator Loss: 20.986197 Pred Discriminator Loss: 0.523221 RelFlow Discriminator Loss: 0.683657
+2022-07-13 23:13: Train Epoch 74: 120/158 Generator Loss: 20.068256 Pred Discriminator Loss: 0.563831 RelFlow Discriminator Loss: 0.689386
+2022-07-13 23:13: Train Epoch 74: 140/158 Generator Loss: 18.457399 Pred Discriminator Loss: 0.524827 RelFlow Discriminator Loss: 0.688545
+2022-07-13 23:13: **********Train Epoch 74: Averaged Generator Loss: 20.579659, Averaged Pred Discriminator Loss: 0.532826, Averaged RelFlow Discriminator Loss: 0.686320
+2022-07-13 23:13: **********Val Epoch 74: average Loss: 19.279541
+2022-07-13 23:13: Train Epoch 75: 0/158 Generator Loss: 21.852879 Pred Discriminator Loss: 0.512429 RelFlow Discriminator Loss: 0.677895
+2022-07-13 23:13: Train Epoch 75: 20/158 Generator Loss: 20.154125 Pred Discriminator Loss: 0.554465 RelFlow Discriminator Loss: 0.688771
+2022-07-13 23:13: Train Epoch 75: 40/158 Generator Loss: 19.378157 Pred Discriminator Loss: 0.536887 RelFlow Discriminator Loss: 0.690516
+2022-07-13 23:13: Train Epoch 75: 60/158 Generator Loss: 21.535975 Pred Discriminator Loss: 0.513017 RelFlow Discriminator Loss: 0.686637
+2022-07-13 23:13: Train Epoch 75: 80/158 Generator Loss: 21.282772 Pred Discriminator Loss: 0.503263 RelFlow Discriminator Loss: 0.688456
+2022-07-13 23:14: Train Epoch 75: 100/158 Generator Loss: 19.945564 Pred Discriminator Loss: 0.551167 RelFlow Discriminator Loss: 0.694458
+2022-07-13 23:14: Train Epoch 75: 120/158 Generator Loss: 20.502914 Pred Discriminator Loss: 0.512122 RelFlow Discriminator Loss: 0.687476
+2022-07-13 23:14: Train Epoch 75: 140/158 Generator Loss: 19.057722 Pred Discriminator Loss: 0.530741 RelFlow Discriminator Loss: 0.687104
+2022-07-13 23:14: **********Train Epoch 75: Averaged Generator Loss: 20.516368, Averaged Pred Discriminator Loss: 0.528859, Averaged RelFlow Discriminator Loss: 0.685983
+2022-07-13 23:14: **********Val Epoch 75: average Loss: 19.167037
+2022-07-13 23:14: Train Epoch 76: 0/158 Generator Loss: 20.550385 Pred Discriminator Loss: 0.527734 RelFlow Discriminator Loss: 0.679931
+2022-07-13 23:14: Train Epoch 76: 20/158 Generator Loss: 20.700497 Pred Discriminator Loss: 0.526868 RelFlow Discriminator Loss: 0.688108
+2022-07-13 23:14: Train Epoch 76: 40/158 Generator Loss: 20.014881 Pred Discriminator Loss: 0.526249 RelFlow Discriminator Loss: 0.674591
+2022-07-13 23:14: Train Epoch 76: 60/158 Generator Loss: 18.148621 Pred Discriminator Loss: 0.510916 RelFlow Discriminator Loss: 0.682820
+2022-07-13 23:14: Train Epoch 76: 80/158 Generator Loss: 19.408295 Pred Discriminator Loss: 0.542604 RelFlow Discriminator Loss: 0.682538
+2022-07-13 23:14: Train Epoch 76: 100/158 Generator Loss: 20.702967 Pred Discriminator Loss: 0.505647 RelFlow Discriminator Loss: 0.683679
+2022-07-13 23:14: Train Epoch 76: 120/158 Generator Loss: 21.441130 Pred Discriminator Loss: 0.516847 RelFlow Discriminator Loss: 0.687365
+2022-07-13 23:14: Train Epoch 76: 140/158 Generator Loss: 21.195200 Pred Discriminator Loss: 0.509122 RelFlow Discriminator Loss: 0.697836
+2022-07-13 23:14: **********Train Epoch 76: Averaged Generator Loss: 20.538573, Averaged Pred Discriminator Loss: 0.515945, Averaged RelFlow Discriminator Loss: 0.686059
+2022-07-13 23:14: **********Val Epoch 76: average Loss: 19.107560
+2022-07-13 23:14: Train Epoch 77: 0/158 Generator Loss: 21.596699 Pred Discriminator Loss: 0.509266 RelFlow Discriminator Loss: 0.690569
+2022-07-13 23:14: Train Epoch 77: 20/158 Generator Loss: 22.329338 Pred Discriminator Loss: 0.506805 RelFlow Discriminator Loss: 0.684832
+2022-07-13 23:14: Train Epoch 77: 40/158 Generator Loss: 20.146530 Pred Discriminator Loss: 0.543637 RelFlow Discriminator Loss: 0.689378
+2022-07-13 23:14: Train Epoch 77: 60/158 Generator Loss: 19.470446 Pred Discriminator Loss: 0.511081 RelFlow Discriminator Loss: 0.682934
+2022-07-13 23:14: Train Epoch 77: 80/158 Generator Loss: 20.600721 Pred Discriminator Loss: 0.498177 RelFlow Discriminator Loss: 0.690499
+2022-07-13 23:14: Train Epoch 77: 100/158 Generator Loss: 21.075911 Pred Discriminator Loss: 0.525454 RelFlow Discriminator Loss: 0.690286
+2022-07-13 23:14: Train Epoch 77: 120/158 Generator Loss: 19.608950 Pred Discriminator Loss: 0.507318 RelFlow Discriminator Loss: 0.680809
+2022-07-13 23:14: Train Epoch 77: 140/158 Generator Loss: 20.983297 Pred Discriminator Loss: 0.499739 RelFlow Discriminator Loss: 0.689427
+2022-07-13 23:14: **********Train Epoch 77: Averaged Generator Loss: 20.573221, Averaged Pred Discriminator Loss: 0.527332, Averaged RelFlow Discriminator Loss: 0.686208
+2022-07-13 23:14: **********Val Epoch 77: average Loss: 19.165069
+2022-07-13 23:14: Train Epoch 78: 0/158 Generator Loss: 22.317198 Pred Discriminator Loss: 0.579565 RelFlow Discriminator Loss: 0.680223
+2022-07-13 23:14: Train Epoch 78: 20/158 Generator Loss: 20.378410 Pred Discriminator Loss: 0.513980 RelFlow Discriminator Loss: 0.680943
+2022-07-13 23:14: Train Epoch 78: 40/158 Generator Loss: 20.231846 Pred Discriminator Loss: 0.513632 RelFlow Discriminator Loss: 0.692294
+2022-07-13 23:15: Train Epoch 78: 60/158 Generator Loss: 21.277184 Pred Discriminator Loss: 0.508406 RelFlow Discriminator Loss: 0.682618
+2022-07-13 23:15: Train Epoch 78: 80/158 Generator Loss: 18.809797 Pred Discriminator Loss: 0.512349 RelFlow Discriminator Loss: 0.684101
+2022-07-13 23:15: Train Epoch 78: 100/158 Generator Loss: 20.398880 Pred Discriminator Loss: 0.512516 RelFlow Discriminator Loss: 0.686940
+2022-07-13 23:15: Train Epoch 78: 120/158 Generator Loss: 21.897284 Pred Discriminator Loss: 0.499632 RelFlow Discriminator Loss: 0.693535
+2022-07-13 23:15: Train Epoch 78: 140/158 Generator Loss: 19.532892 Pred Discriminator Loss: 0.516593 RelFlow Discriminator Loss: 0.685917
+2022-07-13 23:15: **********Train Epoch 78: Averaged Generator Loss: 20.522464, Averaged Pred Discriminator Loss: 0.517610, Averaged RelFlow Discriminator Loss: 0.686231
+2022-07-13 23:15: **********Val Epoch 78: average Loss: 19.069616
+2022-07-13 23:15: *********************************Current best model saved!
+2022-07-13 23:15: Train Epoch 79: 0/158 Generator Loss: 20.885019 Pred Discriminator Loss: 0.505712 RelFlow Discriminator Loss: 0.687770
+2022-07-13 23:15: Train Epoch 79: 20/158 Generator Loss: 19.617001 Pred Discriminator Loss: 0.734738 RelFlow Discriminator Loss: 0.684760
+2022-07-13 23:15: Train Epoch 79: 40/158 Generator Loss: 20.711302 Pred Discriminator Loss: 0.567129 RelFlow Discriminator Loss: 0.689886
+2022-07-13 23:15: Train Epoch 79: 60/158 Generator Loss: 20.070875 Pred Discriminator Loss: 0.545920 RelFlow Discriminator Loss: 0.687773
+2022-07-13 23:15: Train Epoch 79: 80/158 Generator Loss: 19.114431 Pred Discriminator Loss: 0.538406 RelFlow Discriminator Loss: 0.691361
+2022-07-13 23:15: Train Epoch 79: 100/158 Generator Loss: 21.381836 Pred Discriminator Loss: 0.521415 RelFlow Discriminator Loss: 0.687629
+2022-07-13 23:15: Train Epoch 79: 120/158 Generator Loss: 21.544085 Pred Discriminator Loss: 0.508529 RelFlow Discriminator Loss: 0.685792
+2022-07-13 23:15: Train Epoch 79: 140/158 Generator Loss: 19.625858 Pred Discriminator Loss: 0.504455 RelFlow Discriminator Loss: 0.691014
+2022-07-13 23:15: **********Train Epoch 79: Averaged Generator Loss: 20.525020, Averaged Pred Discriminator Loss: 0.540413, Averaged RelFlow Discriminator Loss: 0.685813
+2022-07-13 23:15: **********Val Epoch 79: average Loss: 19.085990
+2022-07-13 23:15: Train Epoch 80: 0/158 Generator Loss: 22.157593 Pred Discriminator Loss: 0.507254 RelFlow Discriminator Loss: 0.689738
+2022-07-13 23:15: Train Epoch 80: 20/158 Generator Loss: 21.006416 Pred Discriminator Loss: 0.531945 RelFlow Discriminator Loss: 0.675852
+2022-07-13 23:15: Train Epoch 80: 40/158 Generator Loss: 20.591656 Pred Discriminator Loss: 0.521228 RelFlow Discriminator Loss: 0.687173
+2022-07-13 23:15: Train Epoch 80: 60/158 Generator Loss: 20.434242 Pred Discriminator Loss: 0.505835 RelFlow Discriminator Loss: 0.690619
+2022-07-13 23:15: Train Epoch 80: 80/158 Generator Loss: 21.529892 Pred Discriminator Loss: 0.518600 RelFlow Discriminator Loss: 0.689564
+2022-07-13 23:15: Train Epoch 80: 100/158 Generator Loss: 21.772331 Pred Discriminator Loss: 0.508979 RelFlow Discriminator Loss: 0.680284
+2022-07-13 23:15: Train Epoch 80: 120/158 Generator Loss: 19.006073 Pred Discriminator Loss: 0.519088 RelFlow Discriminator Loss: 0.691797
+2022-07-13 23:15: Train Epoch 80: 140/158 Generator Loss: 20.273441 Pred Discriminator Loss: 0.499388 RelFlow Discriminator Loss: 0.697184
+2022-07-13 23:15: **********Train Epoch 80: Averaged Generator Loss: 20.497346, Averaged Pred Discriminator Loss: 0.517310, Averaged RelFlow Discriminator Loss: 0.686068
+2022-07-13 23:16: **********Val Epoch 80: average Loss: 19.143594
+2022-07-13 23:16: Train Epoch 81: 0/158 Generator Loss: 19.820320 Pred Discriminator Loss: 0.517132 RelFlow Discriminator Loss: 0.679659
+2022-07-13 23:16: Train Epoch 81: 20/158 Generator Loss: 20.945414 Pred Discriminator Loss: 0.495485 RelFlow Discriminator Loss: 0.683487
+2022-07-13 23:16: Train Epoch 81: 40/158 Generator Loss: 18.187984 Pred Discriminator Loss: 0.512034 RelFlow Discriminator Loss: 0.683509
+2022-07-13 23:16: Train Epoch 81: 60/158 Generator Loss: 19.385212 Pred Discriminator Loss: 0.499372 RelFlow Discriminator Loss: 0.689656
+2022-07-13 23:16: Train Epoch 81: 80/158 Generator Loss: 19.469833 Pred Discriminator Loss: 0.496235 RelFlow Discriminator Loss: 0.682246
+2022-07-13 23:16: Train Epoch 81: 100/158 Generator Loss: 19.261698 Pred Discriminator Loss: 0.501829 RelFlow Discriminator Loss: 0.681104
+2022-07-13 23:16: Train Epoch 81: 120/158 Generator Loss: 18.759693 Pred Discriminator Loss: 0.507888 RelFlow Discriminator Loss: 0.687427
+2022-07-13 23:16: Train Epoch 81: 140/158 Generator Loss: 19.110241 Pred Discriminator Loss: 0.501668 RelFlow Discriminator Loss: 0.677125
+2022-07-13 23:16: **********Train Epoch 81: Averaged Generator Loss: 20.289131, Averaged Pred Discriminator Loss: 0.498924, Averaged RelFlow Discriminator Loss: 0.685182
+2022-07-13 23:16: **********Val Epoch 81: average Loss: 19.064978
+2022-07-13 23:16: *********************************Current best model saved!
+2022-07-13 23:16: Train Epoch 82: 0/158 Generator Loss: 20.063255 Pred Discriminator Loss: 0.493544 RelFlow Discriminator Loss: 0.685244
+2022-07-13 23:16: Train Epoch 82: 20/158 Generator Loss: 19.913965 Pred Discriminator Loss: 0.497948 RelFlow Discriminator Loss: 0.694103
+2022-07-13 23:16: Train Epoch 82: 40/158 Generator Loss: 21.697140 Pred Discriminator Loss: 0.493541 RelFlow Discriminator Loss: 0.683360
+2022-07-13 23:16: Train Epoch 82: 60/158 Generator Loss: 20.814892 Pred Discriminator Loss: 0.494307 RelFlow Discriminator Loss: 0.687071
+2022-07-13 23:16: Train Epoch 82: 80/158 Generator Loss: 21.599937 Pred Discriminator Loss: 0.491796 RelFlow Discriminator Loss: 0.685162
+2022-07-13 23:16: Train Epoch 82: 100/158 Generator Loss: 19.984173 Pred Discriminator Loss: 0.495066 RelFlow Discriminator Loss: 0.682294
+2022-07-13 23:16: Train Epoch 82: 120/158 Generator Loss: 20.241650 Pred Discriminator Loss: 0.496912 RelFlow Discriminator Loss: 0.683222
+2022-07-13 23:16: Train Epoch 82: 140/158 Generator Loss: 20.743299 Pred Discriminator Loss: 0.498500 RelFlow Discriminator Loss: 0.686382
+2022-07-13 23:16: **********Train Epoch 82: Averaged Generator Loss: 20.271567, Averaged Pred Discriminator Loss: 0.498749, Averaged RelFlow Discriminator Loss: 0.685509
+2022-07-13 23:16: **********Val Epoch 82: average Loss: 19.026397
+2022-07-13 23:16: *********************************Current best model saved!
+2022-07-13 23:16: Train Epoch 83: 0/158 Generator Loss: 20.547777 Pred Discriminator Loss: 0.494326 RelFlow Discriminator Loss: 0.692392
+2022-07-13 23:16: Train Epoch 83: 20/158 Generator Loss: 19.266706 Pred Discriminator Loss: 0.502030 RelFlow Discriminator Loss: 0.681730
+2022-07-13 23:16: Train Epoch 83: 40/158 Generator Loss: 19.839310 Pred Discriminator Loss: 0.499060 RelFlow Discriminator Loss: 0.693321
+2022-07-13 23:16: Train Epoch 83: 60/158 Generator Loss: 19.315916 Pred Discriminator Loss: 0.499694 RelFlow Discriminator Loss: 0.686042
+2022-07-13 23:16: Train Epoch 83: 80/158 Generator Loss: 20.576872 Pred Discriminator Loss: 0.498279 RelFlow Discriminator Loss: 0.682229
+2022-07-13 23:16: Train Epoch 83: 100/158 Generator Loss: 20.468433 Pred Discriminator Loss: 0.497024 RelFlow Discriminator Loss: 0.683909
+2022-07-13 23:17: Train Epoch 83: 120/158 Generator Loss: 21.593090 Pred Discriminator Loss: 0.495772 RelFlow Discriminator Loss: 0.687873
+2022-07-13 23:17: Train Epoch 83: 140/158 Generator Loss: 22.268393 Pred Discriminator Loss: 0.493831 RelFlow Discriminator Loss: 0.685266
+2022-07-13 23:17: **********Train Epoch 83: Averaged Generator Loss: 20.271387, Averaged Pred Discriminator Loss: 0.498117, Averaged RelFlow Discriminator Loss: 0.685237
+2022-07-13 23:17: **********Val Epoch 83: average Loss: 18.920590
+2022-07-13 23:17: *********************************Current best model saved!
+2022-07-13 23:17: Train Epoch 84: 0/158 Generator Loss: 19.210070 Pred Discriminator Loss: 0.496411 RelFlow Discriminator Loss: 0.682907
+2022-07-13 23:17: Train Epoch 84: 20/158 Generator Loss: 21.593307 Pred Discriminator Loss: 0.495422 RelFlow Discriminator Loss: 0.687497
+2022-07-13 23:17: Train Epoch 84: 40/158 Generator Loss: 20.544258 Pred Discriminator Loss: 0.492892 RelFlow Discriminator Loss: 0.682266
+2022-07-13 23:17: Train Epoch 84: 60/158 Generator Loss: 19.790390 Pred Discriminator Loss: 0.503144 RelFlow Discriminator Loss: 0.676771
+2022-07-13 23:17: Train Epoch 84: 80/158 Generator Loss: 19.222406 Pred Discriminator Loss: 0.498836 RelFlow Discriminator Loss: 0.686539
+2022-07-13 23:17: Train Epoch 84: 100/158 Generator Loss: 20.280661 Pred Discriminator Loss: 0.496204 RelFlow Discriminator Loss: 0.683591
+2022-07-13 23:17: Train Epoch 84: 120/158 Generator Loss: 20.846888 Pred Discriminator Loss: 0.510895 RelFlow Discriminator Loss: 0.673264
+2022-07-13 23:17: Train Epoch 84: 140/158 Generator Loss: 20.255239 Pred Discriminator Loss: 0.499668 RelFlow Discriminator Loss: 0.686911
+2022-07-13 23:17: **********Train Epoch 84: Averaged Generator Loss: 20.260919, Averaged Pred Discriminator Loss: 0.499085, Averaged RelFlow Discriminator Loss: 0.684803
+2022-07-13 23:17: **********Val Epoch 84: average Loss: 18.985637
+2022-07-13 23:17: Train Epoch 85: 0/158 Generator Loss: 20.996759 Pred Discriminator Loss: 0.491825 RelFlow Discriminator Loss: 0.695453
+2022-07-13 23:17: Train Epoch 85: 20/158 Generator Loss: 19.388985 Pred Discriminator Loss: 0.510776 RelFlow Discriminator Loss: 0.678009
+2022-07-13 23:17: Train Epoch 85: 40/158 Generator Loss: 19.315649 Pred Discriminator Loss: 0.498516 RelFlow Discriminator Loss: 0.684260
+2022-07-13 23:17: Train Epoch 85: 60/158 Generator Loss: 19.373167 Pred Discriminator Loss: 0.499137 RelFlow Discriminator Loss: 0.689868
+2022-07-13 23:17: Train Epoch 85: 80/158 Generator Loss: 20.537859 Pred Discriminator Loss: 0.493801 RelFlow Discriminator Loss: 0.679170
+2022-07-13 23:17: Train Epoch 85: 100/158 Generator Loss: 19.453354 Pred Discriminator Loss: 0.507559 RelFlow Discriminator Loss: 0.676671
+2022-07-13 23:17: Train Epoch 85: 120/158 Generator Loss: 19.169617 Pred Discriminator Loss: 0.499988 RelFlow Discriminator Loss: 0.689580
+2022-07-13 23:17: Train Epoch 85: 140/158 Generator Loss: 21.706923 Pred Discriminator Loss: 0.494479 RelFlow Discriminator Loss: 0.692418
+2022-07-13 23:17: **********Train Epoch 85: Averaged Generator Loss: 20.251008, Averaged Pred Discriminator Loss: 0.498482, Averaged RelFlow Discriminator Loss: 0.684978
+2022-07-13 23:17: **********Val Epoch 85: average Loss: 19.074851
+2022-07-13 23:17: Train Epoch 86: 0/158 Generator Loss: 20.483898 Pred Discriminator Loss: 0.500304 RelFlow Discriminator Loss: 0.685453
+2022-07-13 23:17: Train Epoch 86: 20/158 Generator Loss: 20.160776 Pred Discriminator Loss: 0.502477 RelFlow Discriminator Loss: 0.681870
+2022-07-13 23:17: Train Epoch 86: 40/158 Generator Loss: 20.223532 Pred Discriminator Loss: 0.494806 RelFlow Discriminator Loss: 0.683071
+2022-07-13 23:18: Train Epoch 86: 60/158 Generator Loss: 21.889610 Pred Discriminator Loss: 0.488920 RelFlow Discriminator Loss: 0.686220
+2022-07-13 23:18: Train Epoch 86: 80/158 Generator Loss: 19.608303 Pred Discriminator Loss: 0.493421 RelFlow Discriminator Loss: 0.686895
+2022-07-13 23:18: Train Epoch 86: 100/158 Generator Loss: 21.577154 Pred Discriminator Loss: 0.490771 RelFlow Discriminator Loss: 0.683757
+2022-07-13 23:18: Train Epoch 86: 120/158 Generator Loss: 21.448238 Pred Discriminator Loss: 0.499070 RelFlow Discriminator Loss: 0.689580
+2022-07-13 23:18: Train Epoch 86: 140/158 Generator Loss: 20.561642 Pred Discriminator Loss: 0.492550 RelFlow Discriminator Loss: 0.674528
+2022-07-13 23:18: **********Train Epoch 86: Averaged Generator Loss: 20.263534, Averaged Pred Discriminator Loss: 0.497367, Averaged RelFlow Discriminator Loss: 0.685077
+2022-07-13 23:18: **********Val Epoch 86: average Loss: 18.953644
+2022-07-13 23:18: Train Epoch 87: 0/158 Generator Loss: 21.260559 Pred Discriminator Loss: 0.490450 RelFlow Discriminator Loss: 0.684024
+2022-07-13 23:18: Train Epoch 87: 20/158 Generator Loss: 20.003059 Pred Discriminator Loss: 0.497851 RelFlow Discriminator Loss: 0.696082
+2022-07-13 23:18: Train Epoch 87: 40/158 Generator Loss: 20.614851 Pred Discriminator Loss: 0.511466 RelFlow Discriminator Loss: 0.692186
+2022-07-13 23:18: Train Epoch 87: 60/158 Generator Loss: 21.252504 Pred Discriminator Loss: 0.491643 RelFlow Discriminator Loss: 0.686785
+2022-07-13 23:18: Train Epoch 87: 80/158 Generator Loss: 22.039087 Pred Discriminator Loss: 0.489908 RelFlow Discriminator Loss: 0.677763
+2022-07-13 23:18: Train Epoch 87: 100/158 Generator Loss: 19.355711 Pred Discriminator Loss: 0.501983 RelFlow Discriminator Loss: 0.687108
+2022-07-13 23:18: Train Epoch 87: 120/158 Generator Loss: 20.764294 Pred Discriminator Loss: 0.491519 RelFlow Discriminator Loss: 0.685965
+2022-07-13 23:18: Train Epoch 87: 140/158 Generator Loss: 19.825121 Pred Discriminator Loss: 0.496293 RelFlow Discriminator Loss: 0.684146
+2022-07-13 23:18: **********Train Epoch 87: Averaged Generator Loss: 20.240090, Averaged Pred Discriminator Loss: 0.497702, Averaged RelFlow Discriminator Loss: 0.685296
+2022-07-13 23:18: **********Val Epoch 87: average Loss: 18.965208
+2022-07-13 23:18: Train Epoch 88: 0/158 Generator Loss: 20.527363 Pred Discriminator Loss: 0.494152 RelFlow Discriminator Loss: 0.681235
+2022-07-13 23:18: Train Epoch 88: 20/158 Generator Loss: 19.730211 Pred Discriminator Loss: 0.494588 RelFlow Discriminator Loss: 0.684079
+2022-07-13 23:18: Train Epoch 88: 40/158 Generator Loss: 20.507126 Pred Discriminator Loss: 0.496818 RelFlow Discriminator Loss: 0.683422
+2022-07-13 23:18: Train Epoch 88: 60/158 Generator Loss: 21.932159 Pred Discriminator Loss: 0.492172 RelFlow Discriminator Loss: 0.684071
+2022-07-13 23:18: Train Epoch 88: 80/158 Generator Loss: 20.893795 Pred Discriminator Loss: 0.493606 RelFlow Discriminator Loss: 0.686810
+2022-07-13 23:18: Train Epoch 88: 100/158 Generator Loss: 21.372097 Pred Discriminator Loss: 0.495238 RelFlow Discriminator Loss: 0.684304
+2022-07-13 23:18: Train Epoch 88: 120/158 Generator Loss: 18.591011 Pred Discriminator Loss: 0.509641 RelFlow Discriminator Loss: 0.682537
+2022-07-13 23:18: Train Epoch 88: 140/158 Generator Loss: 20.119755 Pred Discriminator Loss: 0.495305 RelFlow Discriminator Loss: 0.686688
+2022-07-13 23:18: **********Train Epoch 88: Averaged Generator Loss: 20.240525, Averaged Pred Discriminator Loss: 0.496114, Averaged RelFlow Discriminator Loss: 0.684686
+2022-07-13 23:18: **********Val Epoch 88: average Loss: 19.034683
+2022-07-13 23:18: Train Epoch 89: 0/158 Generator Loss: 22.192543 Pred Discriminator Loss: 0.487258 RelFlow Discriminator Loss: 0.687845
+2022-07-13 23:18: Train Epoch 89: 20/158 Generator Loss: 20.170326 Pred Discriminator Loss: 0.497455 RelFlow Discriminator Loss: 0.685957
+2022-07-13 23:19: Train Epoch 89: 40/158 Generator Loss: 21.195677 Pred Discriminator Loss: 0.500596 RelFlow Discriminator Loss: 0.687612
+2022-07-13 23:19: Train Epoch 89: 60/158 Generator Loss: 19.963594 Pred Discriminator Loss: 0.497246 RelFlow Discriminator Loss: 0.687282
+2022-07-13 23:19: Train Epoch 89: 80/158 Generator Loss: 21.140564 Pred Discriminator Loss: 0.494380 RelFlow Discriminator Loss: 0.682650
+2022-07-13 23:19: Train Epoch 89: 100/158 Generator Loss: 20.151550 Pred Discriminator Loss: 0.498596 RelFlow Discriminator Loss: 0.683747
+2022-07-13 23:19: Train Epoch 89: 120/158 Generator Loss: 20.061081 Pred Discriminator Loss: 0.490685 RelFlow Discriminator Loss: 0.681383
+2022-07-13 23:19: Train Epoch 89: 140/158 Generator Loss: 20.721037 Pred Discriminator Loss: 0.495533 RelFlow Discriminator Loss: 0.687052
+2022-07-13 23:19: **********Train Epoch 89: Averaged Generator Loss: 20.251537, Averaged Pred Discriminator Loss: 0.496914, Averaged RelFlow Discriminator Loss: 0.684946
+2022-07-13 23:19: **********Val Epoch 89: average Loss: 19.081094
+2022-07-13 23:19: Train Epoch 90: 0/158 Generator Loss: 19.844416 Pred Discriminator Loss: 0.497778 RelFlow Discriminator Loss: 0.683529
+2022-07-13 23:19: Train Epoch 90: 20/158 Generator Loss: 18.558521 Pred Discriminator Loss: 0.500145 RelFlow Discriminator Loss: 0.687070
+2022-07-13 23:19: Train Epoch 90: 40/158 Generator Loss: 21.415104 Pred Discriminator Loss: 0.491702 RelFlow Discriminator Loss: 0.691520
+2022-07-13 23:19: Train Epoch 90: 60/158 Generator Loss: 22.082233 Pred Discriminator Loss: 0.492657 RelFlow Discriminator Loss: 0.687034
+2022-07-13 23:19: Train Epoch 90: 80/158 Generator Loss: 19.818172 Pred Discriminator Loss: 0.494109 RelFlow Discriminator Loss: 0.682075
+2022-07-13 23:19: Train Epoch 90: 100/158 Generator Loss: 20.181652 Pred Discriminator Loss: 0.504015 RelFlow Discriminator Loss: 0.681926
+2022-07-13 23:19: Train Epoch 90: 120/158 Generator Loss: 20.536345 Pred Discriminator Loss: 0.493986 RelFlow Discriminator Loss: 0.672261
+2022-07-13 23:19: Train Epoch 90: 140/158 Generator Loss: 19.413033 Pred Discriminator Loss: 0.495299 RelFlow Discriminator Loss: 0.692887
+2022-07-13 23:19: **********Train Epoch 90: Averaged Generator Loss: 20.238970, Averaged Pred Discriminator Loss: 0.497080, Averaged RelFlow Discriminator Loss: 0.684717
+2022-07-13 23:19: **********Val Epoch 90: average Loss: 18.966692
+2022-07-13 23:19: Train Epoch 91: 0/158 Generator Loss: 21.644077 Pred Discriminator Loss: 0.499577 RelFlow Discriminator Loss: 0.687038
+2022-07-13 23:19: Train Epoch 91: 20/158 Generator Loss: 21.123665 Pred Discriminator Loss: 0.497737 RelFlow Discriminator Loss: 0.684772
+2022-07-13 23:19: Train Epoch 91: 40/158 Generator Loss: 19.694756 Pred Discriminator Loss: 0.496485 RelFlow Discriminator Loss: 0.686357
+2022-07-13 23:19: Train Epoch 91: 60/158 Generator Loss: 19.705992 Pred Discriminator Loss: 0.501531 RelFlow Discriminator Loss: 0.694535
+2022-07-13 23:19: Train Epoch 91: 80/158 Generator Loss: 19.939661 Pred Discriminator Loss: 0.495491 RelFlow Discriminator Loss: 0.682396
+2022-07-13 23:19: Train Epoch 91: 100/158 Generator Loss: 18.714277 Pred Discriminator Loss: 0.509837 RelFlow Discriminator Loss: 0.691555
+2022-07-13 23:19: Train Epoch 91: 120/158 Generator Loss: 20.872658 Pred Discriminator Loss: 0.497928 RelFlow Discriminator Loss: 0.686494
+2022-07-13 23:20: Train Epoch 91: 140/158 Generator Loss: 20.987946 Pred Discriminator Loss: 0.500072 RelFlow Discriminator Loss: 0.686751
+2022-07-13 23:20: **********Train Epoch 91: Averaged Generator Loss: 20.219523, Averaged Pred Discriminator Loss: 0.498139, Averaged RelFlow Discriminator Loss: 0.685274
+2022-07-13 23:20: **********Val Epoch 91: average Loss: 18.955879
+2022-07-13 23:20: Train Epoch 92: 0/158 Generator Loss: 22.876806 Pred Discriminator Loss: 0.488994 RelFlow Discriminator Loss: 0.673467
+2022-07-13 23:20: Train Epoch 92: 20/158 Generator Loss: 18.822588 Pred Discriminator Loss: 0.520156 RelFlow Discriminator Loss: 0.677981
+2022-07-13 23:20: Train Epoch 92: 40/158 Generator Loss: 21.643970 Pred Discriminator Loss: 0.500197 RelFlow Discriminator Loss: 0.683247
+2022-07-13 23:20: Train Epoch 92: 60/158 Generator Loss: 18.327011 Pred Discriminator Loss: 0.509162 RelFlow Discriminator Loss: 0.681501
+2022-07-13 23:20: Train Epoch 92: 80/158 Generator Loss: 19.398582 Pred Discriminator Loss: 0.497950 RelFlow Discriminator Loss: 0.686459
+2022-07-13 23:20: Train Epoch 92: 100/158 Generator Loss: 19.429007 Pred Discriminator Loss: 0.505294 RelFlow Discriminator Loss: 0.682021
+2022-07-13 23:20: Train Epoch 92: 120/158 Generator Loss: 19.849205 Pred Discriminator Loss: 0.497188 RelFlow Discriminator Loss: 0.684996
+2022-07-13 23:20: Train Epoch 92: 140/158 Generator Loss: 20.080284 Pred Discriminator Loss: 0.492877 RelFlow Discriminator Loss: 0.683553
+2022-07-13 23:20: **********Train Epoch 92: Averaged Generator Loss: 20.233290, Averaged Pred Discriminator Loss: 0.499171, Averaged RelFlow Discriminator Loss: 0.684963
+2022-07-13 23:20: **********Val Epoch 92: average Loss: 18.998535
+2022-07-13 23:20: Train Epoch 93: 0/158 Generator Loss: 20.510925 Pred Discriminator Loss: 0.497168 RelFlow Discriminator Loss: 0.689039
+2022-07-13 23:20: Train Epoch 93: 20/158 Generator Loss: 20.111938 Pred Discriminator Loss: 0.491780 RelFlow Discriminator Loss: 0.691409
+2022-07-13 23:20: Train Epoch 93: 40/158 Generator Loss: 19.969942 Pred Discriminator Loss: 0.493090 RelFlow Discriminator Loss: 0.680297
+2022-07-13 23:20: Train Epoch 93: 60/158 Generator Loss: 19.932707 Pred Discriminator Loss: 0.500663 RelFlow Discriminator Loss: 0.686351
+2022-07-13 23:20: Train Epoch 93: 80/158 Generator Loss: 19.951103 Pred Discriminator Loss: 0.525008 RelFlow Discriminator Loss: 0.691440
+2022-07-13 23:20: Train Epoch 93: 100/158 Generator Loss: 20.753090 Pred Discriminator Loss: 0.494421 RelFlow Discriminator Loss: 0.684404
+2022-07-13 23:20: Train Epoch 93: 120/158 Generator Loss: 22.505762 Pred Discriminator Loss: 0.486799 RelFlow Discriminator Loss: 0.679672
+2022-07-13 23:20: Train Epoch 93: 140/158 Generator Loss: 19.796833 Pred Discriminator Loss: 0.491961 RelFlow Discriminator Loss: 0.683331
+2022-07-13 23:20: **********Train Epoch 93: Averaged Generator Loss: 20.217055, Averaged Pred Discriminator Loss: 0.496028, Averaged RelFlow Discriminator Loss: 0.684927
+2022-07-13 23:20: **********Val Epoch 93: average Loss: 18.990288
+2022-07-13 23:20: Train Epoch 94: 0/158 Generator Loss: 18.862335 Pred Discriminator Loss: 0.507123 RelFlow Discriminator Loss: 0.686595
+2022-07-13 23:20: Train Epoch 94: 20/158 Generator Loss: 20.732244 Pred Discriminator Loss: 0.493629 RelFlow Discriminator Loss: 0.678663
+2022-07-13 23:20: Train Epoch 94: 40/158 Generator Loss: 20.124706 Pred Discriminator Loss: 0.495431 RelFlow Discriminator Loss: 0.685558
+2022-07-13 23:20: Train Epoch 94: 60/158 Generator Loss: 19.861599 Pred Discriminator Loss: 0.498117 RelFlow Discriminator Loss: 0.688348
+2022-07-13 23:20: Train Epoch 94: 80/158 Generator Loss: 20.860929 Pred Discriminator Loss: 0.491718 RelFlow Discriminator Loss: 0.680912
+2022-07-13 23:20: Train Epoch 94: 100/158 Generator Loss: 19.642069 Pred Discriminator Loss: 0.496850 RelFlow Discriminator Loss: 0.684509
+2022-07-13 23:21: Train Epoch 94: 120/158 Generator Loss: 22.181221 Pred Discriminator Loss: 0.489378 RelFlow Discriminator Loss: 0.696051
+2022-07-13 23:21: Train Epoch 94: 140/158 Generator Loss: 21.072720 Pred Discriminator Loss: 0.500160 RelFlow Discriminator Loss: 0.689984
+2022-07-13 23:21: **********Train Epoch 94: Averaged Generator Loss: 20.222358, Averaged Pred Discriminator Loss: 0.496877, Averaged RelFlow Discriminator Loss: 0.684867
+2022-07-13 23:21: **********Val Epoch 94: average Loss: 18.970587
+2022-07-13 23:21: Train Epoch 95: 0/158 Generator Loss: 19.203651 Pred Discriminator Loss: 0.506591 RelFlow Discriminator Loss: 0.691615
+2022-07-13 23:21: Train Epoch 95: 20/158 Generator Loss: 21.541430 Pred Discriminator Loss: 0.493094 RelFlow Discriminator Loss: 0.671134
+2022-07-13 23:21: Train Epoch 95: 40/158 Generator Loss: 20.482874 Pred Discriminator Loss: 0.492711 RelFlow Discriminator Loss: 0.686913
+2022-07-13 23:21: Train Epoch 95: 60/158 Generator Loss: 20.300533 Pred Discriminator Loss: 0.495618 RelFlow Discriminator Loss: 0.689704
+2022-07-13 23:21: Train Epoch 95: 80/158 Generator Loss: 20.938082 Pred Discriminator Loss: 0.490946 RelFlow Discriminator Loss: 0.694420
+2022-07-13 23:21: Train Epoch 95: 100/158 Generator Loss: 21.088379 Pred Discriminator Loss: 0.491661 RelFlow Discriminator Loss: 0.690414
+2022-07-13 23:21: Train Epoch 95: 120/158 Generator Loss: 19.458263 Pred Discriminator Loss: 0.495993 RelFlow Discriminator Loss: 0.690533
+2022-07-13 23:21: Train Epoch 95: 140/158 Generator Loss: 20.352324 Pred Discriminator Loss: 0.495789 RelFlow Discriminator Loss: 0.681049
+2022-07-13 23:21: **********Train Epoch 95: Averaged Generator Loss: 20.209202, Averaged Pred Discriminator Loss: 0.497157, Averaged RelFlow Discriminator Loss: 0.685440
+2022-07-13 23:21: **********Val Epoch 95: average Loss: 18.927890
+2022-07-13 23:21: Train Epoch 96: 0/158 Generator Loss: 19.356306 Pred Discriminator Loss: 0.510309 RelFlow Discriminator Loss: 0.687340
+2022-07-13 23:21: Train Epoch 96: 20/158 Generator Loss: 19.425615 Pred Discriminator Loss: 0.489752 RelFlow Discriminator Loss: 0.677636
+2022-07-13 23:21: Train Epoch 96: 40/158 Generator Loss: 20.100645 Pred Discriminator Loss: 0.493883 RelFlow Discriminator Loss: 0.688000
+2022-07-13 23:21: Train Epoch 96: 60/158 Generator Loss: 20.698961 Pred Discriminator Loss: 0.493816 RelFlow Discriminator Loss: 0.684556
+2022-07-13 23:21: Train Epoch 96: 80/158 Generator Loss: 19.296780 Pred Discriminator Loss: 0.497489 RelFlow Discriminator Loss: 0.689898
+2022-07-13 23:21: Train Epoch 96: 100/158 Generator Loss: 21.149761 Pred Discriminator Loss: 0.489820 RelFlow Discriminator Loss: 0.678717
+2022-07-13 23:21: Train Epoch 96: 120/158 Generator Loss: 21.997711 Pred Discriminator Loss: 0.485210 RelFlow Discriminator Loss: 0.686006
+2022-07-13 23:21: Train Epoch 96: 140/158 Generator Loss: 20.523708 Pred Discriminator Loss: 0.492678 RelFlow Discriminator Loss: 0.681314
+2022-07-13 23:21: **********Train Epoch 96: Averaged Generator Loss: 20.200184, Averaged Pred Discriminator Loss: 0.496355, Averaged RelFlow Discriminator Loss: 0.685003
+2022-07-13 23:21: **********Val Epoch 96: average Loss: 19.037200
+2022-07-13 23:21: Train Epoch 97: 0/158 Generator Loss: 19.703876 Pred Discriminator Loss: 0.495786 RelFlow Discriminator Loss: 0.684064
+2022-07-13 23:21: Train Epoch 97: 20/158 Generator Loss: 21.366966 Pred Discriminator Loss: 0.492903 RelFlow Discriminator Loss: 0.682280
+2022-07-13 23:22: Train Epoch 97: 40/158 Generator Loss: 18.902376 Pred Discriminator Loss: 0.496824 RelFlow Discriminator Loss: 0.691436
+2022-07-13 23:22: Train Epoch 97: 60/158 Generator Loss: 19.548058 Pred Discriminator Loss: 0.501470 RelFlow Discriminator Loss: 0.685328
+2022-07-13 23:22: Train Epoch 97: 80/158 Generator Loss: 20.969812 Pred Discriminator Loss: 0.488945 RelFlow Discriminator Loss: 0.677304
+2022-07-13 23:22: Train Epoch 97: 100/158 Generator Loss: 20.338797 Pred Discriminator Loss: 0.500515 RelFlow Discriminator Loss: 0.687765
+2022-07-13 23:22: Train Epoch 97: 120/158 Generator Loss: 19.972485 Pred Discriminator Loss: 0.495732 RelFlow Discriminator Loss: 0.681826
+2022-07-13 23:22: Train Epoch 97: 140/158 Generator Loss: 20.720640 Pred Discriminator Loss: 0.492302 RelFlow Discriminator Loss: 0.679741
+2022-07-13 23:22: **********Train Epoch 97: Averaged Generator Loss: 20.210771, Averaged Pred Discriminator Loss: 0.495179, Averaged RelFlow Discriminator Loss: 0.685161
+2022-07-13 23:22: **********Val Epoch 97: average Loss: 19.023525
+2022-07-13 23:22: Train Epoch 98: 0/158 Generator Loss: 18.798115 Pred Discriminator Loss: 0.502575 RelFlow Discriminator Loss: 0.684013
+2022-07-13 23:22: Train Epoch 98: 20/158 Generator Loss: 21.349972 Pred Discriminator Loss: 0.490611 RelFlow Discriminator Loss: 0.689977
+2022-07-13 23:22: Train Epoch 98: 40/158 Generator Loss: 20.169449 Pred Discriminator Loss: 0.493092 RelFlow Discriminator Loss: 0.686660
+2022-07-13 23:22: Train Epoch 98: 60/158 Generator Loss: 20.488029 Pred Discriminator Loss: 0.497873 RelFlow Discriminator Loss: 0.680504
+2022-07-13 23:22: Train Epoch 98: 80/158 Generator Loss: 19.978685 Pred Discriminator Loss: 0.505050 RelFlow Discriminator Loss: 0.679645
+2022-07-13 23:22: Train Epoch 98: 100/158 Generator Loss: 20.461723 Pred Discriminator Loss: 0.491615 RelFlow Discriminator Loss: 0.678351
+2022-07-13 23:22: Train Epoch 98: 120/158 Generator Loss: 20.545141 Pred Discriminator Loss: 0.493707 RelFlow Discriminator Loss: 0.686581
+2022-07-13 23:22: Train Epoch 98: 140/158 Generator Loss: 19.224461 Pred Discriminator Loss: 0.501062 RelFlow Discriminator Loss: 0.680963
+2022-07-13 23:22: **********Train Epoch 98: Averaged Generator Loss: 20.204178, Averaged Pred Discriminator Loss: 0.495685, Averaged RelFlow Discriminator Loss: 0.684798
+2022-07-13 23:22: **********Val Epoch 98: average Loss: 18.976504
+2022-07-13 23:22: Validation performance didn't improve for 15 epochs! Training stops!
+2022-07-13 23:22: Train Epoch 99: 0/158 Generator Loss: 18.594954 Pred Discriminator Loss: 0.497578 RelFlow Discriminator Loss: 0.679895
+2022-07-13 23:22: Train Epoch 99: 20/158 Generator Loss: 21.594730 Pred Discriminator Loss: 0.488150 RelFlow Discriminator Loss: 0.688601
+2022-07-13 23:22: Train Epoch 99: 40/158 Generator Loss: 20.247263 Pred Discriminator Loss: 0.494280 RelFlow Discriminator Loss: 0.692883
+2022-07-13 23:22: Train Epoch 99: 60/158 Generator Loss: 20.339836 Pred Discriminator Loss: 0.494305 RelFlow Discriminator Loss: 0.689956
+2022-07-13 23:22: Train Epoch 99: 80/158 Generator Loss: 21.897148 Pred Discriminator Loss: 0.491111 RelFlow Discriminator Loss: 0.680319
+2022-07-13 23:22: Train Epoch 99: 100/158 Generator Loss: 19.850357 Pred Discriminator Loss: 0.495483 RelFlow Discriminator Loss: 0.691803
+2022-07-13 23:22: Train Epoch 99: 120/158 Generator Loss: 19.080095 Pred Discriminator Loss: 0.500410 RelFlow Discriminator Loss: 0.685362
+2022-07-13 23:22: Train Epoch 99: 140/158 Generator Loss: 20.752102 Pred Discriminator Loss: 0.493809 RelFlow Discriminator Loss: 0.684520
+2022-07-13 23:22: **********Train Epoch 99: Averaged Generator Loss: 20.194261, Averaged Pred Discriminator Loss: 0.494434, Averaged RelFlow Discriminator Loss: 0.685026
+2022-07-13 23:23: **********Val Epoch 99: average Loss: 18.944288
+2022-07-13 23:23: Train Epoch 100: 0/158 Generator Loss: 21.633604 Pred Discriminator Loss: 0.491579 RelFlow Discriminator Loss: 0.682061
+2022-07-13 23:23: Train Epoch 100: 20/158 Generator Loss: 19.509777 Pred Discriminator Loss: 0.492352 RelFlow Discriminator Loss: 0.681604
+2022-07-13 23:23: Train Epoch 100: 40/158 Generator Loss: 20.894545 Pred Discriminator Loss: 0.492274 RelFlow Discriminator Loss: 0.685598
+2022-07-13 23:23: Train Epoch 100: 60/158 Generator Loss: 21.089703 Pred Discriminator Loss: 0.486427 RelFlow Discriminator Loss: 0.686884
+2022-07-13 23:23: Train Epoch 100: 80/158 Generator Loss: 19.661020 Pred Discriminator Loss: 0.493715 RelFlow Discriminator Loss: 0.694178
+2022-07-13 23:23: Train Epoch 100: 100/158 Generator Loss: 21.717644 Pred Discriminator Loss: 0.490954 RelFlow Discriminator Loss: 0.687836
+2022-07-13 23:23: Train Epoch 100: 120/158 Generator Loss: 20.614622 Pred Discriminator Loss: 0.492049 RelFlow Discriminator Loss: 0.671291
+2022-07-13 23:23: Train Epoch 100: 140/158 Generator Loss: 20.303047 Pred Discriminator Loss: 0.493773 RelFlow Discriminator Loss: 0.677774
+2022-07-13 23:23: **********Train Epoch 100: Averaged Generator Loss: 20.179518, Averaged Pred Discriminator Loss: 0.495995, Averaged RelFlow Discriminator Loss: 0.684580
+2022-07-13 23:23: **********Val Epoch 100: average Loss: 18.966944
+2022-07-13 23:23: Train Epoch 101: 0/158 Generator Loss: 21.207651 Pred Discriminator Loss: 0.504289 RelFlow Discriminator Loss: 0.684271
+2022-07-13 23:23: Train Epoch 101: 20/158 Generator Loss: 19.464848 Pred Discriminator Loss: 0.490478 RelFlow Discriminator Loss: 0.685447
+2022-07-13 23:23: Train Epoch 101: 40/158 Generator Loss: 18.517612 Pred Discriminator Loss: 0.496088 RelFlow Discriminator Loss: 0.686574
+2022-07-13 23:23: Train Epoch 101: 60/158 Generator Loss: 20.105694 Pred Discriminator Loss: 0.488652 RelFlow Discriminator Loss: 0.681182
+2022-07-13 23:23: Train Epoch 101: 80/158 Generator Loss: 18.362122 Pred Discriminator Loss: 0.498623 RelFlow Discriminator Loss: 0.677267
+2022-07-13 23:23: Train Epoch 101: 100/158 Generator Loss: 20.116356 Pred Discriminator Loss: 0.490381 RelFlow Discriminator Loss: 0.695228
+2022-07-13 23:23: Train Epoch 101: 120/158 Generator Loss: 20.601759 Pred Discriminator Loss: 0.491684 RelFlow Discriminator Loss: 0.680021
+2022-07-13 23:23: Train Epoch 101: 140/158 Generator Loss: 18.887056 Pred Discriminator Loss: 0.497391 RelFlow Discriminator Loss: 0.680842
+2022-07-13 23:23: **********Train Epoch 101: Averaged Generator Loss: 20.125122, Averaged Pred Discriminator Loss: 0.491898, Averaged RelFlow Discriminator Loss: 0.684911
+2022-07-13 23:23: **********Val Epoch 101: average Loss: 18.938823
+2022-07-13 23:23: Train Epoch 102: 0/158 Generator Loss: 19.345106 Pred Discriminator Loss: 0.491178 RelFlow Discriminator Loss: 0.686346
+2022-07-13 23:23: Train Epoch 102: 20/158 Generator Loss: 18.002348 Pred Discriminator Loss: 0.499328 RelFlow Discriminator Loss: 0.689661
+2022-07-13 23:23: Train Epoch 102: 40/158 Generator Loss: 20.873903 Pred Discriminator Loss: 0.486926 RelFlow Discriminator Loss: 0.686659
+2022-07-13 23:23: Train Epoch 102: 60/158 Generator Loss: 19.667273 Pred Discriminator Loss: 0.496113 RelFlow Discriminator Loss: 0.684868
+2022-07-13 23:23: Train Epoch 102: 80/158 Generator Loss: 19.605827 Pred Discriminator Loss: 0.493884 RelFlow Discriminator Loss: 0.690955
+2022-07-13 23:24: Train Epoch 102: 100/158 Generator Loss: 21.255163 Pred Discriminator Loss: 0.487434 RelFlow Discriminator Loss: 0.683001
+2022-07-13 23:24: Train Epoch 102: 120/158 Generator Loss: 20.986813 Pred Discriminator Loss: 0.489594 RelFlow Discriminator Loss: 0.690896
+2022-07-13 23:24: Train Epoch 102: 140/158 Generator Loss: 20.937586 Pred Discriminator Loss: 0.486534 RelFlow Discriminator Loss: 0.682993
+2022-07-13 23:24: **********Train Epoch 102: Averaged Generator Loss: 20.104914, Averaged Pred Discriminator Loss: 0.490865, Averaged RelFlow Discriminator Loss: 0.684576
+2022-07-13 23:24: **********Val Epoch 102: average Loss: 18.912812
+2022-07-13 23:24: *********************************Current best model saved!
+2022-07-13 23:24: Train Epoch 103: 0/158 Generator Loss: 22.236645 Pred Discriminator Loss: 0.487986 RelFlow Discriminator Loss: 0.676957
+2022-07-13 23:24: Train Epoch 103: 20/158 Generator Loss: 19.913549 Pred Discriminator Loss: 0.483548 RelFlow Discriminator Loss: 0.692728
+2022-07-13 23:24: Train Epoch 103: 40/158 Generator Loss: 20.291126 Pred Discriminator Loss: 0.488389 RelFlow Discriminator Loss: 0.687412
+2022-07-13 23:24: Train Epoch 103: 60/158 Generator Loss: 21.599360 Pred Discriminator Loss: 0.489234 RelFlow Discriminator Loss: 0.695596
+2022-07-13 23:24: Train Epoch 103: 80/158 Generator Loss: 20.934111 Pred Discriminator Loss: 0.486027 RelFlow Discriminator Loss: 0.688679
+2022-07-13 23:24: Train Epoch 103: 100/158 Generator Loss: 18.793793 Pred Discriminator Loss: 0.497996 RelFlow Discriminator Loss: 0.683342
+2022-07-13 23:24: Train Epoch 103: 120/158 Generator Loss: 20.766106 Pred Discriminator Loss: 0.488316 RelFlow Discriminator Loss: 0.685983
+2022-07-13 23:24: Train Epoch 103: 140/158 Generator Loss: 21.213972 Pred Discriminator Loss: 0.488219 RelFlow Discriminator Loss: 0.680322
+2022-07-13 23:24: **********Train Epoch 103: Averaged Generator Loss: 20.109605, Averaged Pred Discriminator Loss: 0.490950, Averaged RelFlow Discriminator Loss: 0.684764
+2022-07-13 23:24: **********Val Epoch 103: average Loss: 18.966912
+2022-07-13 23:24: Train Epoch 104: 0/158 Generator Loss: 20.798027 Pred Discriminator Loss: 0.485299 RelFlow Discriminator Loss: 0.686465
+2022-07-13 23:24: Train Epoch 104: 20/158 Generator Loss: 20.599937 Pred Discriminator Loss: 0.493760 RelFlow Discriminator Loss: 0.685977
+2022-07-13 23:24: Train Epoch 104: 40/158 Generator Loss: 19.792231 Pred Discriminator Loss: 0.489508 RelFlow Discriminator Loss: 0.690905
+2022-07-13 23:24: Train Epoch 104: 60/158 Generator Loss: 19.729931 Pred Discriminator Loss: 0.492359 RelFlow Discriminator Loss: 0.683591
+2022-07-13 23:24: Train Epoch 104: 80/158 Generator Loss: 21.217978 Pred Discriminator Loss: 0.492480 RelFlow Discriminator Loss: 0.680487
+2022-07-13 23:24: Train Epoch 104: 100/158 Generator Loss: 21.429445 Pred Discriminator Loss: 0.485954 RelFlow Discriminator Loss: 0.680958
+2022-07-13 23:24: Train Epoch 104: 120/158 Generator Loss: 20.896099 Pred Discriminator Loss: 0.485703 RelFlow Discriminator Loss: 0.684691
+2022-07-13 23:24: Train Epoch 104: 140/158 Generator Loss: 19.502405 Pred Discriminator Loss: 0.501144 RelFlow Discriminator Loss: 0.680002
+2022-07-13 23:24: **********Train Epoch 104: Averaged Generator Loss: 20.113472, Averaged Pred Discriminator Loss: 0.491192, Averaged RelFlow Discriminator Loss: 0.684700
+2022-07-13 23:24: **********Val Epoch 104: average Loss: 18.918367
+2022-07-13 23:24: Train Epoch 105: 0/158 Generator Loss: 19.428846 Pred Discriminator Loss: 0.490220 RelFlow Discriminator Loss: 0.688824
+2022-07-13 23:24: Train Epoch 105: 20/158 Generator Loss: 19.232635 Pred Discriminator Loss: 0.491475 RelFlow Discriminator Loss: 0.683759
+2022-07-13 23:25: Train Epoch 105: 40/158 Generator Loss: 20.514547 Pred Discriminator Loss: 0.491475 RelFlow Discriminator Loss: 0.682039
+2022-07-13 23:25: Train Epoch 105: 60/158 Generator Loss: 19.974962 Pred Discriminator Loss: 0.491129 RelFlow Discriminator Loss: 0.679738
+2022-07-13 23:25: Train Epoch 105: 80/158 Generator Loss: 19.215994 Pred Discriminator Loss: 0.493607 RelFlow Discriminator Loss: 0.682858
+2022-07-13 23:25: Train Epoch 105: 100/158 Generator Loss: 20.492348 Pred Discriminator Loss: 0.487306 RelFlow Discriminator Loss: 0.682453
+2022-07-13 23:25: Train Epoch 105: 120/158 Generator Loss: 21.484470 Pred Discriminator Loss: 0.489830 RelFlow Discriminator Loss: 0.686650
+2022-07-13 23:25: Train Epoch 105: 140/158 Generator Loss: 20.826937 Pred Discriminator Loss: 0.490131 RelFlow Discriminator Loss: 0.688358
+2022-07-13 23:25: **********Train Epoch 105: Averaged Generator Loss: 20.104599, Averaged Pred Discriminator Loss: 0.490995, Averaged RelFlow Discriminator Loss: 0.684129
+2022-07-13 23:25: **********Val Epoch 105: average Loss: 18.946562
+2022-07-13 23:25: Train Epoch 106: 0/158 Generator Loss: 19.900793 Pred Discriminator Loss: 0.486412 RelFlow Discriminator Loss: 0.681570
+2022-07-13 23:25: Train Epoch 106: 20/158 Generator Loss: 17.982510 Pred Discriminator Loss: 0.492750 RelFlow Discriminator Loss: 0.686502
+2022-07-13 23:25: Train Epoch 106: 40/158 Generator Loss: 20.248264 Pred Discriminator Loss: 0.496571 RelFlow Discriminator Loss: 0.683447
+2022-07-13 23:25: Train Epoch 106: 60/158 Generator Loss: 19.007780 Pred Discriminator Loss: 0.494332 RelFlow Discriminator Loss: 0.683732
+2022-07-13 23:25: Train Epoch 106: 80/158 Generator Loss: 18.530087 Pred Discriminator Loss: 0.490250 RelFlow Discriminator Loss: 0.688156
+2022-07-13 23:25: Train Epoch 106: 100/158 Generator Loss: 20.710327 Pred Discriminator Loss: 0.488857 RelFlow Discriminator Loss: 0.692315
+2022-07-13 23:25: Train Epoch 106: 120/158 Generator Loss: 20.128248 Pred Discriminator Loss: 0.488073 RelFlow Discriminator Loss: 0.694162
+2022-07-13 23:25: Train Epoch 106: 140/158 Generator Loss: 20.767015 Pred Discriminator Loss: 0.486366 RelFlow Discriminator Loss: 0.683883
+2022-07-13 23:25: **********Train Epoch 106: Averaged Generator Loss: 20.105458, Averaged Pred Discriminator Loss: 0.490401, Averaged RelFlow Discriminator Loss: 0.684745
+2022-07-13 23:25: **********Val Epoch 106: average Loss: 18.919816
+2022-07-13 23:25: Train Epoch 107: 0/158 Generator Loss: 19.911106 Pred Discriminator Loss: 0.486769 RelFlow Discriminator Loss: 0.693555
+2022-07-13 23:25: Train Epoch 107: 20/158 Generator Loss: 20.837690 Pred Discriminator Loss: 0.488125 RelFlow Discriminator Loss: 0.684929
+2022-07-13 23:25: Train Epoch 107: 40/158 Generator Loss: 19.620468 Pred Discriminator Loss: 0.488987 RelFlow Discriminator Loss: 0.686681
+2022-07-13 23:25: Train Epoch 107: 60/158 Generator Loss: 19.816732 Pred Discriminator Loss: 0.489192 RelFlow Discriminator Loss: 0.681460
+2022-07-13 23:25: Train Epoch 107: 80/158 Generator Loss: 20.674086 Pred Discriminator Loss: 0.486489 RelFlow Discriminator Loss: 0.678791
+2022-07-13 23:25: Train Epoch 107: 100/158 Generator Loss: 20.730223 Pred Discriminator Loss: 0.494583 RelFlow Discriminator Loss: 0.688950
+2022-07-13 23:25: Train Epoch 107: 120/158 Generator Loss: 19.612814 Pred Discriminator Loss: 0.496094 RelFlow Discriminator Loss: 0.681908
+2022-07-13 23:26: Train Epoch 107: 140/158 Generator Loss: 21.574902 Pred Discriminator Loss: 0.490823 RelFlow Discriminator Loss: 0.693084
+2022-07-13 23:26: **********Train Epoch 107: Averaged Generator Loss: 20.107445, Averaged Pred Discriminator Loss: 0.491159, Averaged RelFlow Discriminator Loss: 0.685171
+2022-07-13 23:26: **********Val Epoch 107: average Loss: 18.926237
+2022-07-13 23:26: Train Epoch 108: 0/158 Generator Loss: 20.354713 Pred Discriminator Loss: 0.485062 RelFlow Discriminator Loss: 0.680679
+2022-07-13 23:26: Train Epoch 108: 20/158 Generator Loss: 18.949825 Pred Discriminator Loss: 0.489338 RelFlow Discriminator Loss: 0.683405
+2022-07-13 23:26: Train Epoch 108: 40/158 Generator Loss: 20.402452 Pred Discriminator Loss: 0.491373 RelFlow Discriminator Loss: 0.684240
+2022-07-13 23:26: Train Epoch 108: 60/158 Generator Loss: 20.353279 Pred Discriminator Loss: 0.491711 RelFlow Discriminator Loss: 0.689303
+2022-07-13 23:26: Train Epoch 108: 80/158 Generator Loss: 21.758793 Pred Discriminator Loss: 0.486537 RelFlow Discriminator Loss: 0.680878
+2022-07-13 23:26: Train Epoch 108: 100/158 Generator Loss: 19.747108 Pred Discriminator Loss: 0.489211 RelFlow Discriminator Loss: 0.677282
+2022-07-13 23:26: Train Epoch 108: 120/158 Generator Loss: 20.815702 Pred Discriminator Loss: 0.490488 RelFlow Discriminator Loss: 0.689478
+2022-07-13 23:26: Train Epoch 108: 140/158 Generator Loss: 19.424089 Pred Discriminator Loss: 0.494234 RelFlow Discriminator Loss: 0.689710
+2022-07-13 23:26: **********Train Epoch 108: Averaged Generator Loss: 20.112916, Averaged Pred Discriminator Loss: 0.490613, Averaged RelFlow Discriminator Loss: 0.684474
+2022-07-13 23:26: **********Val Epoch 108: average Loss: 18.905717
+2022-07-13 23:26: *********************************Current best model saved!
+2022-07-13 23:26: Train Epoch 109: 0/158 Generator Loss: 18.952497 Pred Discriminator Loss: 0.496973 RelFlow Discriminator Loss: 0.683782
+2022-07-13 23:26: Train Epoch 109: 20/158 Generator Loss: 19.402201 Pred Discriminator Loss: 0.492884 RelFlow Discriminator Loss: 0.703089
+2022-07-13 23:26: Train Epoch 109: 40/158 Generator Loss: 20.119120 Pred Discriminator Loss: 0.513362 RelFlow Discriminator Loss: 0.684045
+2022-07-13 23:26: Train Epoch 109: 60/158 Generator Loss: 20.781223 Pred Discriminator Loss: 0.492195 RelFlow Discriminator Loss: 0.687070
+2022-07-13 23:26: Train Epoch 109: 80/158 Generator Loss: 20.457079 Pred Discriminator Loss: 0.487166 RelFlow Discriminator Loss: 0.687815
+2022-07-13 23:26: Train Epoch 109: 100/158 Generator Loss: 20.363712 Pred Discriminator Loss: 0.489476 RelFlow Discriminator Loss: 0.684418
+2022-07-13 23:26: Train Epoch 109: 120/158 Generator Loss: 19.403118 Pred Discriminator Loss: 0.489664 RelFlow Discriminator Loss: 0.695115
+2022-07-13 23:26: Train Epoch 109: 140/158 Generator Loss: 21.406353 Pred Discriminator Loss: 0.485532 RelFlow Discriminator Loss: 0.683290
+2022-07-13 23:26: **********Train Epoch 109: Averaged Generator Loss: 20.095886, Averaged Pred Discriminator Loss: 0.490598, Averaged RelFlow Discriminator Loss: 0.684663
+2022-07-13 23:26: **********Val Epoch 109: average Loss: 18.983863
+2022-07-13 23:26: Train Epoch 110: 0/158 Generator Loss: 20.749229 Pred Discriminator Loss: 0.488267 RelFlow Discriminator Loss: 0.687745
+2022-07-13 23:26: Train Epoch 110: 20/158 Generator Loss: 20.741486 Pred Discriminator Loss: 0.485156 RelFlow Discriminator Loss: 0.683672
+2022-07-13 23:26: Train Epoch 110: 40/158 Generator Loss: 21.270744 Pred Discriminator Loss: 0.486308 RelFlow Discriminator Loss: 0.690588
+2022-07-13 23:26: Train Epoch 110: 60/158 Generator Loss: 21.759232 Pred Discriminator Loss: 0.485925 RelFlow Discriminator Loss: 0.677030
+2022-07-13 23:27: Train Epoch 110: 80/158 Generator Loss: 21.725300 Pred Discriminator Loss: 0.488452 RelFlow Discriminator Loss: 0.676203
+2022-07-13 23:27: Train Epoch 110: 100/158 Generator Loss: 19.014259 Pred Discriminator Loss: 0.496367 RelFlow Discriminator Loss: 0.690263
+2022-07-13 23:27: Train Epoch 110: 120/158 Generator Loss: 18.939285 Pred Discriminator Loss: 0.494481 RelFlow Discriminator Loss: 0.682348
+2022-07-13 23:27: Train Epoch 110: 140/158 Generator Loss: 18.698244 Pred Discriminator Loss: 0.498205 RelFlow Discriminator Loss: 0.681517
+2022-07-13 23:27: **********Train Epoch 110: Averaged Generator Loss: 20.100048, Averaged Pred Discriminator Loss: 0.490982, Averaged RelFlow Discriminator Loss: 0.684507
+2022-07-13 23:27: **********Val Epoch 110: average Loss: 18.918087
+2022-07-13 23:27: Train Epoch 111: 0/158 Generator Loss: 20.711102 Pred Discriminator Loss: 0.485785 RelFlow Discriminator Loss: 0.689519
+2022-07-13 23:27: Train Epoch 111: 20/158 Generator Loss: 20.104509 Pred Discriminator Loss: 0.492025 RelFlow Discriminator Loss: 0.680864
+2022-07-13 23:27: Train Epoch 111: 40/158 Generator Loss: 20.025978 Pred Discriminator Loss: 0.486799 RelFlow Discriminator Loss: 0.681975
+2022-07-13 23:27: Train Epoch 111: 60/158 Generator Loss: 17.501846 Pred Discriminator Loss: 0.492005 RelFlow Discriminator Loss: 0.681169
+2022-07-13 23:27: Train Epoch 111: 80/158 Generator Loss: 21.431986 Pred Discriminator Loss: 0.487178 RelFlow Discriminator Loss: 0.688888
+2022-07-13 23:27: Train Epoch 111: 100/158 Generator Loss: 19.121914 Pred Discriminator Loss: 0.491009 RelFlow Discriminator Loss: 0.684453
+2022-07-13 23:27: Train Epoch 111: 120/158 Generator Loss: 19.819345 Pred Discriminator Loss: 0.487893 RelFlow Discriminator Loss: 0.689561
+2022-07-13 23:27: Train Epoch 111: 140/158 Generator Loss: 19.780581 Pred Discriminator Loss: 0.487353 RelFlow Discriminator Loss: 0.693025
+2022-07-13 23:27: **********Train Epoch 111: Averaged Generator Loss: 20.098182, Averaged Pred Discriminator Loss: 0.490096, Averaged RelFlow Discriminator Loss: 0.684172
+2022-07-13 23:27: **********Val Epoch 111: average Loss: 18.908928
+2022-07-13 23:27: Train Epoch 112: 0/158 Generator Loss: 21.940166 Pred Discriminator Loss: 0.486110 RelFlow Discriminator Loss: 0.675962
+2022-07-13 23:27: Train Epoch 112: 20/158 Generator Loss: 20.489008 Pred Discriminator Loss: 0.488746 RelFlow Discriminator Loss: 0.674992
+2022-07-13 23:27: Train Epoch 112: 40/158 Generator Loss: 18.527557 Pred Discriminator Loss: 0.490380 RelFlow Discriminator Loss: 0.688181
+2022-07-13 23:27: Train Epoch 112: 60/158 Generator Loss: 21.552416 Pred Discriminator Loss: 0.486292 RelFlow Discriminator Loss: 0.687228
+2022-07-13 23:27: Train Epoch 112: 80/158 Generator Loss: 22.633663 Pred Discriminator Loss: 0.484515 RelFlow Discriminator Loss: 0.687676
+2022-07-13 23:27: Train Epoch 112: 100/158 Generator Loss: 22.396984 Pred Discriminator Loss: 0.483390 RelFlow Discriminator Loss: 0.683266
+2022-07-13 23:27: Train Epoch 112: 120/158 Generator Loss: 20.253645 Pred Discriminator Loss: 0.488709 RelFlow Discriminator Loss: 0.691663
+2022-07-13 23:27: Train Epoch 112: 140/158 Generator Loss: 21.450182 Pred Discriminator Loss: 0.487846 RelFlow Discriminator Loss: 0.673910
+2022-07-13 23:27: **********Train Epoch 112: Averaged Generator Loss: 20.095283, Averaged Pred Discriminator Loss: 0.490560, Averaged RelFlow Discriminator Loss: 0.684182
+2022-07-13 23:27: **********Val Epoch 112: average Loss: 18.917214
+2022-07-13 23:27: Train Epoch 113: 0/158 Generator Loss: 21.962780 Pred Discriminator Loss: 0.486022 RelFlow Discriminator Loss: 0.683447
+2022-07-13 23:28: Train Epoch 113: 20/158 Generator Loss: 18.350084 Pred Discriminator Loss: 0.492012 RelFlow Discriminator Loss: 0.677535
+2022-07-13 23:28: Train Epoch 113: 40/158 Generator Loss: 20.739689 Pred Discriminator Loss: 0.485026 RelFlow Discriminator Loss: 0.683661
+2022-07-13 23:28: Train Epoch 113: 60/158 Generator Loss: 20.731258 Pred Discriminator Loss: 0.484697 RelFlow Discriminator Loss: 0.687244
+2022-07-13 23:28: Train Epoch 113: 80/158 Generator Loss: 21.563622 Pred Discriminator Loss: 0.495348 RelFlow Discriminator Loss: 0.691339
+2022-07-13 23:28: Train Epoch 113: 100/158 Generator Loss: 19.571501 Pred Discriminator Loss: 0.498181 RelFlow Discriminator Loss: 0.691358
+2022-07-13 23:28: Train Epoch 113: 120/158 Generator Loss: 19.389694 Pred Discriminator Loss: 0.492589 RelFlow Discriminator Loss: 0.690654
+2022-07-13 23:28: Train Epoch 113: 140/158 Generator Loss: 20.010090 Pred Discriminator Loss: 0.488241 RelFlow Discriminator Loss: 0.681011
+2022-07-13 23:28: **********Train Epoch 113: Averaged Generator Loss: 20.098868, Averaged Pred Discriminator Loss: 0.490641, Averaged RelFlow Discriminator Loss: 0.684670
+2022-07-13 23:28: **********Val Epoch 113: average Loss: 18.896530
+2022-07-13 23:28: *********************************Current best model saved!
+2022-07-13 23:28: Train Epoch 114: 0/158 Generator Loss: 21.140223 Pred Discriminator Loss: 0.490073 RelFlow Discriminator Loss: 0.688789
+2022-07-13 23:28: Train Epoch 114: 20/158 Generator Loss: 18.964008 Pred Discriminator Loss: 0.493356 RelFlow Discriminator Loss: 0.689455
+2022-07-13 23:28: Train Epoch 114: 40/158 Generator Loss: 17.565105 Pred Discriminator Loss: 0.496807 RelFlow Discriminator Loss: 0.687331
+2022-07-13 23:28: Train Epoch 114: 60/158 Generator Loss: 19.886936 Pred Discriminator Loss: 0.488456 RelFlow Discriminator Loss: 0.688244
+2022-07-13 23:28: Train Epoch 114: 80/158 Generator Loss: 20.389212 Pred Discriminator Loss: 0.494688 RelFlow Discriminator Loss: 0.682491
+2022-07-13 23:28: Train Epoch 114: 100/158 Generator Loss: 20.615946 Pred Discriminator Loss: 0.487524 RelFlow Discriminator Loss: 0.689376
+2022-07-13 23:28: Train Epoch 114: 120/158 Generator Loss: 21.139317 Pred Discriminator Loss: 0.488881 RelFlow Discriminator Loss: 0.681834
+2022-07-13 23:28: Train Epoch 114: 140/158 Generator Loss: 21.031422 Pred Discriminator Loss: 0.489205 RelFlow Discriminator Loss: 0.682421
+2022-07-13 23:28: **********Train Epoch 114: Averaged Generator Loss: 20.097001, Averaged Pred Discriminator Loss: 0.489894, Averaged RelFlow Discriminator Loss: 0.684381
+2022-07-13 23:28: **********Val Epoch 114: average Loss: 18.957141
+2022-07-13 23:28: Train Epoch 115: 0/158 Generator Loss: 21.560366 Pred Discriminator Loss: 0.484653 RelFlow Discriminator Loss: 0.682867
+2022-07-13 23:28: Train Epoch 115: 20/158 Generator Loss: 21.372303 Pred Discriminator Loss: 0.489176 RelFlow Discriminator Loss: 0.691395
+2022-07-13 23:28: Train Epoch 115: 40/158 Generator Loss: 20.867767 Pred Discriminator Loss: 0.488217 RelFlow Discriminator Loss: 0.684116
+2022-07-13 23:28: Train Epoch 115: 60/158 Generator Loss: 19.529425 Pred Discriminator Loss: 0.491793 RelFlow Discriminator Loss: 0.689347
+2022-07-13 23:28: Train Epoch 115: 80/158 Generator Loss: 18.041004 Pred Discriminator Loss: 0.492472 RelFlow Discriminator Loss: 0.685635
+2022-07-13 23:28: Train Epoch 115: 100/158 Generator Loss: 21.329714 Pred Discriminator Loss: 0.487073 RelFlow Discriminator Loss: 0.686516
+2022-07-13 23:28: Train Epoch 115: 120/158 Generator Loss: 19.404678 Pred Discriminator Loss: 0.487821 RelFlow Discriminator Loss: 0.688670
+2022-07-13 23:29: Train Epoch 115: 140/158 Generator Loss: 19.642397 Pred Discriminator Loss: 0.491834 RelFlow Discriminator Loss: 0.676361
+2022-07-13 23:29: **********Train Epoch 115: Averaged Generator Loss: 20.080012, Averaged Pred Discriminator Loss: 0.489661, Averaged RelFlow Discriminator Loss: 0.684815
+2022-07-13 23:29: **********Val Epoch 115: average Loss: 18.963506
+2022-07-13 23:29: Train Epoch 116: 0/158 Generator Loss: 19.192976 Pred Discriminator Loss: 0.489874 RelFlow Discriminator Loss: 0.684675
+2022-07-13 23:29: Train Epoch 116: 20/158 Generator Loss: 19.792068 Pred Discriminator Loss: 0.490085 RelFlow Discriminator Loss: 0.682472
+2022-07-13 23:29: Train Epoch 116: 40/158 Generator Loss: 20.677862 Pred Discriminator Loss: 0.490979 RelFlow Discriminator Loss: 0.688784
+2022-07-13 23:29: Train Epoch 116: 60/158 Generator Loss: 18.963037 Pred Discriminator Loss: 0.489157 RelFlow Discriminator Loss: 0.680910
+2022-07-13 23:29: Train Epoch 116: 80/158 Generator Loss: 19.351429 Pred Discriminator Loss: 0.487428 RelFlow Discriminator Loss: 0.683695
+2022-07-13 23:29: Train Epoch 116: 100/158 Generator Loss: 18.474806 Pred Discriminator Loss: 0.492690 RelFlow Discriminator Loss: 0.680192
+2022-07-13 23:29: Train Epoch 116: 120/158 Generator Loss: 20.753798 Pred Discriminator Loss: 0.487819 RelFlow Discriminator Loss: 0.687679
+2022-07-13 23:29: Train Epoch 116: 140/158 Generator Loss: 20.561075 Pred Discriminator Loss: 0.489179 RelFlow Discriminator Loss: 0.689305
+2022-07-13 23:29: **********Train Epoch 116: Averaged Generator Loss: 20.086363, Averaged Pred Discriminator Loss: 0.490132, Averaged RelFlow Discriminator Loss: 0.684467
+2022-07-13 23:29: **********Val Epoch 116: average Loss: 18.960376
+2022-07-13 23:29: Train Epoch 117: 0/158 Generator Loss: 21.687117 Pred Discriminator Loss: 0.488886 RelFlow Discriminator Loss: 0.684413
+2022-07-13 23:29: Train Epoch 117: 20/158 Generator Loss: 20.124804 Pred Discriminator Loss: 0.487991 RelFlow Discriminator Loss: 0.675883
+2022-07-13 23:29: Train Epoch 117: 40/158 Generator Loss: 18.607342 Pred Discriminator Loss: 0.489618 RelFlow Discriminator Loss: 0.682862
+2022-07-13 23:29: Train Epoch 117: 60/158 Generator Loss: 19.423428 Pred Discriminator Loss: 0.490193 RelFlow Discriminator Loss: 0.687548
+2022-07-13 23:29: Train Epoch 117: 80/158 Generator Loss: 20.968821 Pred Discriminator Loss: 0.485419 RelFlow Discriminator Loss: 0.685425
+2022-07-13 23:29: Train Epoch 117: 100/158 Generator Loss: 19.396168 Pred Discriminator Loss: 0.489944 RelFlow Discriminator Loss: 0.669328
+2022-07-13 23:29: Train Epoch 117: 120/158 Generator Loss: 19.855587 Pred Discriminator Loss: 0.487290 RelFlow Discriminator Loss: 0.690775
+2022-07-13 23:29: Train Epoch 117: 140/158 Generator Loss: 20.084496 Pred Discriminator Loss: 0.487972 RelFlow Discriminator Loss: 0.687508
+2022-07-13 23:29: **********Train Epoch 117: Averaged Generator Loss: 20.088969, Averaged Pred Discriminator Loss: 0.490212, Averaged RelFlow Discriminator Loss: 0.684755
+2022-07-13 23:29: **********Val Epoch 117: average Loss: 18.968842
+2022-07-13 23:29: Train Epoch 118: 0/158 Generator Loss: 20.302414 Pred Discriminator Loss: 0.491087 RelFlow Discriminator Loss: 0.678782
+2022-07-13 23:29: Train Epoch 118: 20/158 Generator Loss: 21.228781 Pred Discriminator Loss: 0.490055 RelFlow Discriminator Loss: 0.683710
+2022-07-13 23:29: Train Epoch 118: 40/158 Generator Loss: 19.917612 Pred Discriminator Loss: 0.489779 RelFlow Discriminator Loss: 0.684918
+2022-07-13 23:29: Train Epoch 118: 60/158 Generator Loss: 20.000443 Pred Discriminator Loss: 0.487885 RelFlow Discriminator Loss: 0.681915
+2022-07-13 23:29: Train Epoch 118: 80/158 Generator Loss: 18.636347 Pred Discriminator Loss: 0.488885 RelFlow Discriminator Loss: 0.683640
+2022-07-13 23:29: Train Epoch 118: 100/158 Generator Loss: 19.520897 Pred Discriminator Loss: 0.489097 RelFlow Discriminator Loss: 0.680310
+2022-07-13 23:29: Train Epoch 118: 120/158 Generator Loss: 20.537849 Pred Discriminator Loss: 0.490433 RelFlow Discriminator Loss: 0.683303
+2022-07-13 23:30: Train Epoch 118: 140/158 Generator Loss: 19.788618 Pred Discriminator Loss: 0.494703 RelFlow Discriminator Loss: 0.697070
+2022-07-13 23:30: **********Train Epoch 118: Averaged Generator Loss: 20.088284, Averaged Pred Discriminator Loss: 0.490209, Averaged RelFlow Discriminator Loss: 0.684501
+2022-07-13 23:30: **********Val Epoch 118: average Loss: 18.899606
+2022-07-13 23:30: Train Epoch 119: 0/158 Generator Loss: 20.288074 Pred Discriminator Loss: 0.489274 RelFlow Discriminator Loss: 0.683993
+2022-07-13 23:30: Train Epoch 119: 20/158 Generator Loss: 19.583672 Pred Discriminator Loss: 0.489303 RelFlow Discriminator Loss: 0.690466
+2022-07-13 23:30: Train Epoch 119: 40/158 Generator Loss: 20.301321 Pred Discriminator Loss: 0.494448 RelFlow Discriminator Loss: 0.691389
+2022-07-13 23:30: Train Epoch 119: 60/158 Generator Loss: 21.412464 Pred Discriminator Loss: 0.486880 RelFlow Discriminator Loss: 0.684653
+2022-07-13 23:30: Train Epoch 119: 80/158 Generator Loss: 19.033937 Pred Discriminator Loss: 0.486376 RelFlow Discriminator Loss: 0.687209
+2022-07-13 23:30: Train Epoch 119: 100/158 Generator Loss: 19.220047 Pred Discriminator Loss: 0.490558 RelFlow Discriminator Loss: 0.682318
+2022-07-13 23:30: Train Epoch 119: 120/158 Generator Loss: 19.977070 Pred Discriminator Loss: 0.488267 RelFlow Discriminator Loss: 0.684219
+2022-07-13 23:30: Train Epoch 119: 140/158 Generator Loss: 19.482979 Pred Discriminator Loss: 0.493060 RelFlow Discriminator Loss: 0.683867
+2022-07-13 23:30: **********Train Epoch 119: Averaged Generator Loss: 20.097907, Averaged Pred Discriminator Loss: 0.489569, Averaged RelFlow Discriminator Loss: 0.685011
+2022-07-13 23:30: **********Val Epoch 119: average Loss: 18.919757
+2022-07-13 23:30: Train Epoch 120: 0/158 Generator Loss: 19.680258 Pred Discriminator Loss: 0.486973 RelFlow Discriminator Loss: 0.687578
+2022-07-13 23:30: Train Epoch 120: 20/158 Generator Loss: 19.837379 Pred Discriminator Loss: 0.490405 RelFlow Discriminator Loss: 0.683989
+2022-07-13 23:30: Train Epoch 120: 40/158 Generator Loss: 20.810165 Pred Discriminator Loss: 0.489802 RelFlow Discriminator Loss: 0.682063
+2022-07-13 23:30: Train Epoch 120: 60/158 Generator Loss: 18.145626 Pred Discriminator Loss: 0.491942 RelFlow Discriminator Loss: 0.679279
+2022-07-13 23:30: Train Epoch 120: 80/158 Generator Loss: 19.181921 Pred Discriminator Loss: 0.488337 RelFlow Discriminator Loss: 0.679358
+2022-07-13 23:30: Train Epoch 120: 100/158 Generator Loss: 21.371466 Pred Discriminator Loss: 0.489010 RelFlow Discriminator Loss: 0.697460
+2022-07-13 23:30: Train Epoch 120: 120/158 Generator Loss: 18.413013 Pred Discriminator Loss: 0.489914 RelFlow Discriminator Loss: 0.682563
+2022-07-13 23:30: Train Epoch 120: 140/158 Generator Loss: 20.900629 Pred Discriminator Loss: 0.492015 RelFlow Discriminator Loss: 0.684632
+2022-07-13 23:30: **********Train Epoch 120: Averaged Generator Loss: 20.080914, Averaged Pred Discriminator Loss: 0.489556, Averaged RelFlow Discriminator Loss: 0.684315
+2022-07-13 23:30: **********Val Epoch 120: average Loss: 18.960959
+2022-07-13 23:30: Total training time: 48.5335min, best loss: 18.896530
+2022-07-13 23:30: Saving current best model to /home/john/Research/Preprint/M2A/hyper_04/log/PEMS04/20220713224217/best_model.pth
+2022-07-13 23:30: Horizon 01, MAE: 17.16, RMSE: 27.69, MAPE: 11.2595%
+2022-07-13 23:30: Horizon 02, MAE: 17.57, RMSE: 28.50, MAPE: 11.4979%
+2022-07-13 23:30: Horizon 03, MAE: 17.98, RMSE: 29.21, MAPE: 11.7343%
+2022-07-13 23:30: Horizon 04, MAE: 18.29, RMSE: 29.76, MAPE: 11.9162%
+2022-07-13 23:30: Horizon 05, MAE: 18.54, RMSE: 30.23, MAPE: 12.0755%
+2022-07-13 23:30: Horizon 06, MAE: 18.80, RMSE: 30.68, MAPE: 12.2436%
+2022-07-13 23:30: Horizon 07, MAE: 19.04, RMSE: 31.09, MAPE: 12.4009%
+2022-07-13 23:30: Horizon 08, MAE: 19.24, RMSE: 31.43, MAPE: 12.5158%
+2022-07-13 23:30: Horizon 09, MAE: 19.43, RMSE: 31.76, MAPE: 12.6333%
+2022-07-13 23:30: Horizon 10, MAE: 19.62, RMSE: 32.05, MAPE: 12.7421%
+2022-07-13 23:30: Horizon 11, MAE: 19.82, RMSE: 32.37, MAPE: 12.8842%
+2022-07-13 23:30: Horizon 12, MAE: 20.20, RMSE: 32.88, MAPE: 13.1226%
+2022-07-13 23:30: Average Horizon, MAE: 18.81, RMSE: 30.68, MAPE: 12.2522%
+Reading configuration file: ./config/PEMS04.conf
+adj_file: ./dataset/PEMS04/PEMS04.csv
+batch_size: 64
+cheb_k: 2
+column_wise: False
+dataset: PEMS04
+debug: True
+default_graph: True
+early_stop: True
+early_stop_patience: 15
+embed_dim: 6
+epochs: 120
+gpu_id: 2
+grad_norm: False
+horizon: 12
+input_dim: 1
+lag: 12
+log_dir: ./
+log_step: 20
+loss_func: mae
+lr_decay: True
+lr_decay_rate: 0.3
+lr_decay_step: 80,100
+lr_init: 0.003
+mae_thresh: None
+mape_thresh: 0.0
+max_grad_norm: 5
+mode: Train
+model: DAAGCN
+normalizer: std
+num_layers: 2
+num_nodes: 307
+output_dim: 1
+plot: False
+real_value: True
+rnn_units: 64
+seed: 10
+test_ratio: 0.2
+tod: False
+val_ratio: 0.2
+*****************Model Parameter*****************
+node_embeddings torch.Size([307, 6]) True
+time_embeddings torch.Size([12, 6]) True
+node_flows torch.Size([6, 6]) True
+encoder.magrnn_cells.0.gate.weights_pool torch.Size([6, 2, 65, 128]) True
+encoder.magrnn_cells.0.gate.bias_pool torch.Size([6, 128]) True
+encoder.magrnn_cells.0.gate.layernorm.weight torch.Size([6]) True
+encoder.magrnn_cells.0.gate.layernorm.bias torch.Size([6]) True
+encoder.magrnn_cells.0.gate.layernorm_graph.weight torch.Size([307]) True
+encoder.magrnn_cells.0.gate.layernorm_graph.bias torch.Size([307]) True
+encoder.magrnn_cells.0.update.weights_pool torch.Size([6, 2, 65, 64]) True
+encoder.magrnn_cells.0.update.bias_pool torch.Size([6, 64]) True
+encoder.magrnn_cells.0.update.layernorm.weight torch.Size([6]) True
+encoder.magrnn_cells.0.update.layernorm.bias torch.Size([6]) True
+encoder.magrnn_cells.0.update.layernorm_graph.weight torch.Size([307]) True
+encoder.magrnn_cells.0.update.layernorm_graph.bias torch.Size([307]) True
+encoder.magrnn_cells.1.gate.weights_pool torch.Size([6, 2, 128, 128]) True
+encoder.magrnn_cells.1.gate.bias_pool torch.Size([6, 128]) True
+encoder.magrnn_cells.1.gate.layernorm.weight torch.Size([6]) True
+encoder.magrnn_cells.1.gate.layernorm.bias torch.Size([6]) True
+encoder.magrnn_cells.1.gate.layernorm_graph.weight torch.Size([307]) True
+encoder.magrnn_cells.1.gate.layernorm_graph.bias torch.Size([307]) True
+encoder.magrnn_cells.1.update.weights_pool torch.Size([6, 2, 128, 64]) True
+encoder.magrnn_cells.1.update.bias_pool torch.Size([6, 64]) True
+encoder.magrnn_cells.1.update.layernorm.weight torch.Size([6]) True
+encoder.magrnn_cells.1.update.layernorm.bias torch.Size([6]) True
+encoder.magrnn_cells.1.update.layernorm_graph.weight torch.Size([307]) True
+encoder.magrnn_cells.1.update.layernorm_graph.bias torch.Size([307]) True
+layernorm.weight torch.Size([64]) True
+layernorm.bias torch.Size([64]) True
+end_conv.weight torch.Size([12, 1, 1, 64]) True
+end_conv.bias torch.Size([12]) True
+Total params num: 452338
+*****************Finish Parameter****************
+*****************Model Parameter*****************
+model.0.weight torch.Size([512, 307]) True
+model.0.bias torch.Size([512]) True
+model.2.weight torch.Size([256, 512]) True
+model.2.bias torch.Size([256]) True
+model.4.weight torch.Size([1, 256]) True
+model.4.bias torch.Size([1]) True
+Total params num: 289281
+*****************Finish Parameter****************
+*****************Model Parameter*****************
+model.0.weight torch.Size([512, 307]) True
+model.0.bias torch.Size([512]) True
+model.2.weight torch.Size([256, 512]) True
+model.2.bias torch.Size([256]) True
+model.4.weight torch.Size([1, 256]) True
+model.4.bias torch.Size([1]) True
+Total params num: 289281
+*****************Finish Parameter****************
+Load PEMS04 Dataset shaped:  (16992, 307, 1) 919.0 0.0 211.7007794815878 180.0
+Normalize the dataset by Standard Normalization
+Train:  (10173, 12, 307, 1) (10173, 12, 307, 1)
+Val:  (3375, 12, 307, 1) (3375, 12, 307, 1)
+Test:  (3375, 12, 307, 1) (3375, 12, 307, 1)
+Applying learning rate decay.
