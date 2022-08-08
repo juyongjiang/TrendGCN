@@ -102,7 +102,7 @@ Please cite our paper if you find our code or paper useful:
 ```bibtex
 @article{jiang2022dynamic,
   title={Dynamic Adaptive and Adversarial Graph Convolutional Network for Traffic Forecasting},
-  author={Jiang, Juyong and Wu, Binqing and Chen, Ling\* and Kim, Sunghun},
+  author={Jiang, Juyong and Wu, Binqing and Chen, Ling and Kim, Sunghun},
   journal={arXiv preprint arXiv:2208.03063},
   year={2022}
 }
