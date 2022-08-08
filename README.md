@@ -1,7 +1,7 @@
 # DAAGCN: Dynamic Adaptive and Adversarial Graph Convolutional Network for Traffic Forecasting
-Juyong Jiang\*, Binqing Wu\*, Ling Chen\†, Sunghun Kim
+Juyong Jiang\*, Binqing Wu\*, Ling Chen\+, Sunghun Kim
 
-(\*) Equal Contribution, (†) Corresponding Author.
+(\*) Equal Contribution, (\+) Corresponding Author.
 
 This is our Pytorch implementation for the paper: "**[Dynamic Adaptive and Adversarial Graph Convolutional Network for Traffic Forecasting]()**".
 Our framework is built based on framework of [AGCRN](https://github.com/LeiBAI/AGCRN). More useful repositories can be found in our [HKUST@DeepSE Lab](https://github.com/AIM-SE).
@@ -82,7 +82,7 @@ bash run.sh
 Note that for descriptions of more arguments, please run `python main.py -h`. The logs of testing results on four datasets reported in our paper can be found in [results](https://github.com/juyongjiang/DAAGCN/tree/master/results).
 
 ## Visualization
-```
+```bash
 $ tree
 .
 ├── visualize
@@ -90,6 +90,7 @@ $ tree
         ├── DAAGCN_PEMS04_pred.npy
         ├── DAAGCN_PEMS04_true.npy
         └── DAAGCN_PEMS04_val_loss.txt
+...
 ``` 
 After training, the training loss will be saved in root path. Besides, the predicted results with 12 horizon will be saved in `log/dataset_name_xx/date_xx` which contains `best_model.pth`, `dataset_pred.npy`, and `dataset_true.npy`. Place these files in the format of above path tree. Then, run the following script to visualize model convergence loss and prediction with 12 horizon in [Colab](https://colab.research.google.com/?utm_source=scs-index). 
 ```bash
