@@ -3,6 +3,7 @@ exp/
 *__pycache__
 log/
 dataset/PEMS*
+dataset/*
 debug.py
 run.log
 *.log

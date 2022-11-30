@@ -94,10 +94,10 @@ class Trainer(object):
             if self.args.real_value: # it is depended on the output of model. If output is real data, the label should be reversed to real data
                 label = self.scaler.inverse_transform(label)
             
-            fake_input = torch.cat((data, self.scaler.transform(output)), dim=1) # [B'', W, N, 1] // [B'', H, N, 1] -> [B'', W+H, N, 1]
+            fake_input = torch.cat((data, self.scaler.transform(output)), dim=1) if self.args.real_value else torch.cat((data, output), dim=1) # [B'', W, N, 1] // [B'', H, N, 1] -> [B'', W+H, N, 1]
             true_input = torch.cat((data, self.scaler.transform(label)), dim=1) if self.args.real_value else torch.cat((data, label), dim=1)
 
-            fake_input_rf = self.scaler.transform(output) # [B'', W, N, 1] // [B'', H, N, 1] -> [B'', W+H, N, 1]
+            fake_input_rf = self.scaler.transform(output) if self.args.real_value else output # [B'', W, N, 1] // [B'', H, N, 1] -> [B'', W+H, N, 1]
             true_input_rf = self.scaler.transform(label) if self.args.real_value else label
             
             loss_G = self.loss_G(output.cuda(), label) + 0.01 * self.loss_D(self.discriminator(fake_input), valid) + self.loss_D(self.discriminator_rf(fake_input_rf), valid_rf)
