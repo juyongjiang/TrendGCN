@@ -1,4 +1,4 @@
-# TrendGCN: Enhancing the Robustness via Adversarial Learning and Joint Spatial-Temporal Embeddings in Traffic Forecasting
+# Enhancing the Robustness via Adversarial Learning and Joint Spatial-Temporal Embeddings in Traffic Forecasting
 
 [![License](https://img.shields.io/badge/License-CC%20By%20NC%204.0-red.svg)](./LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/release/python-390/)
@@ -8,7 +8,7 @@
 This is the official Pytorch implementation for our [CIKM 2023](https://uobevents.eventsair.com/cikm2023) paper: "[TrendGCN: Enhancing the Robustness via Adversarial Learning and Joint Spatial-temporal Embeddings in Traffic Forecasting](./TrendGCN_CIKM2023.pdf)".
 
 <p align="center">
-  <img src="./assets/TrendGCN.jpg" alt="TrendGCN model architecture" width="700">
+  <img src="./assets/TrendGCN.jpg" alt="TrendGCN model architecture" width="600">
   <br>
   <b>Figure 1.</b> TrendGCN Model Architecture.
 </p>
@@ -135,13 +135,13 @@ The prediction average horizon results of TrendGCN on six datasets are as follow
 </p>
 
 <p align="center">
-    <img src="./assets/Prediction.jpg" width = "1000" alt="" align=center />
+    <img src="./assets/Prediction.jpg" width = "80%" alt="" align=center />
     <br><br>
     <b>Figure 2.</b> Comparison of short (12 steps)-(a)(c)(e)(g) and long (288 steps)-(b)(d)(f)(h) term prediction curves between STSGCN, AGCRN, and our TrendGCN on a snapshot of the test data of four datasets. Note that, the predicted time series for the whole day period (288 steps) is simply obtained by concatenating all the short-term predictions (12 steps) along the time axis (and remove overlaps), which is a common practice widely used in existing literatures, so that a better visualization of the prediction quality during different time of the day can be presented. 
 </p>
 
 <p align="center">
-    <img src="./assets/Graph_Heatmap.jpg" width = "1000" alt="" align=center />
+    <img src="./assets/Graph_Heatmap.jpg" width = "80%" alt="" align=center />
     <br><br>
     <b>Figure 3.</b> Visualization of 2D projection of UMAP on spatial embeddings (Upper) and the heatmap of learned graphs (Lower) at t = {2, 4, 6, 8, 10, 12} time steps.
 </p>
