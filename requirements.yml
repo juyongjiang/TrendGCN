@@ -1,4 +1,4 @@
-name: daagcn
+name: trendgcn
 channels:
   - pytorch
   - dglteam

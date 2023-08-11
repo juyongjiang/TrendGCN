@@ -1,26 +1,53 @@
-# DAAGCN: Dynamic Adaptive and Adversarial Graph Convolutional Network for Traffic Forecasting
-Juyong Jiang\*, Binqing Wu\*, Ling Chen†, Sunghun Kim .
+# TrendGCN: Enhancing the Robustness via Adversarial Learning and Joint Spatial-Temporal Embeddings in Traffic Forecasting
 
-(\*) Equal Contribution, (†) Corresponding Author.
+[![License](https://img.shields.io/badge/License-CC%20By%20NC%204.0-red.svg)](./LICENSE)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/release/python-390/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![arXiv](https://img.shields.io/badge/arXiv-TrendGCN-%23B21B1B)](https://arxiv.org/abs/2208.03063)
 
-This is our Pytorch implementation for the paper: "[Dynamic Adaptive and Adversarial Graph Convolutional Network for Traffic Forecasting](https://arxiv.org/abs/2208.03063)".
-Our framework is built based on framework of [AGCRN](https://github.com/LeiBAI/AGCRN). More useful repositories can be found in our [HKUST@DeepSE Lab](https://github.com/AIM-SE).
-
-## Paper Abstract
-Traffic forecasting is challenging due to dynamic and complicated spatial-temporal dependencies. However, existing methods still suffer from two critical limitations. Firstly, many approaches typically utilize static pre-defined or adaptively learned spatial graphs to capture dynamic spatial-temporal dependencies in the traffic system, which limits the flexibility and only captures shared patterns for the whole time, thus leading to sub-optimal performance. In addition, most approaches individually and independently consider the absolute error between ground truth and predictions at each time step, which fails to maintain the global properties and statistics of time series as a whole and results in trend discrepancy between ground truth and predictions. To this end, in this paper, we propose a Dynamic Adaptive and Adversarial Graph Convolutional Network (DAAGCN), which combines Graph Convolution Networks (GCNs) with Generative Adversarial Networks (GANs) for traffic forecasting. Specifically, DAAGCN leverages a universal paradigm with a gate module to integrate time-varying embeddings with node embeddings to generate dynamic adaptive graphs for inferring spatial-temporal dependencies at each time step. Then, two discriminators are designed to maintain the consistency of the global properties and statistics of predicted time series with ground truth at the sequence and graph levels. Extensive experiments on four benchmark datasets manifest that DAAGCN outperforms the state-of-the-art by average 5.05%, 3.80%, and 5.27%, in terms of MAE, RMSE, and MAPE, meanwhile, speeds up convergence up to 9 times.
+This is the official Pytorch implementation for our [CIKM 2023](https://uobevents.eventsair.com/cikm2023) paper: "[TrendGCN: Enhancing the Robustness via Adversarial Learning and Joint Spatial-temporal Embeddings in Traffic Forecasting](./TrendGCN_CIKM2023.pdf)".
 
 <p align="center">
-  <img src="./DAAGCN.png" alt="DAAGCN Framework" width="800">
+  <img src="./assets/TrendGCN.jpg" alt="TrendGCN model architecture" width="700">
   <br>
-  <b>Figure 1.</b> The model architecture of the proposed DAAGCN.
+  <b>Figure 1.</b> TrendGCN Model Architecture.
 </p>
 
-## Installation
-Clone this project:
-
+## Overview
 ```bash
-git clone git@github.com:juyongjiang/DAAGCN.git
+TrendGCN
+├── config                   # the configuration of six datasets
+    ├── METR-LA.conf
+    ├── PEMS-Bay.conf
+    ├── PEMS03.conf
+    ├── PEMS04.conf
+    ├── PEMS07.conf
+    └── PEMS08.conf
+├── dataset                  # place six dataset folders
+    ├── METR-LA
+    ├── PEMS-Bay
+    ├── PEMS03
+    ├── PEMS04
+    ├── PEMS07
+    └── PEMS08
+├── model
+    ├── discriminator.py     
+    └── generator.py         
+├── utils
+    ├── adj_dis_matrix.py    # construct adjacent matrix 
+    ├── metrics.py           # evaluation metrics
+    ├── norm.py              # data normalization
+    └── util.py              # useful tools
+├── dataloader.py            # load dataset
+├── LICENSE                  
+├── main.py                  # run
+├── README.md                # detailed illustration of model training and testing
+├── requirements.yml         # environment dependencies
+└── trainer.py               # training and testing procedure
 ```
+
+
+## Environment
 
 Make sure you have `Python>=3.8` and `Pytorch>=1.8` installed on your machine. 
 
@@ -32,22 +59,20 @@ Install python dependencies by running:
 ```bash
 conda env create -f requirements.yml
 # After creating environment, activate it
-conda activate daagcn
+conda activate trendgcn
 ```
 
 ## Datasets Preparation
-In our work, we evaluate proposed models on four public traffic benchmark dataset, including: PEMS03, PEMS04, PEMS07, and PEMS08.
-You can download them at [TimeSeriesDatasets](https://github.com/juyongjiang/TimeSeriesDatasets). Then, place them into `dataset` folder.
+In our work, we evaluate proposed models on six real-world traffic benchmark dataset, including: PEMS03, PEMS04, PEMS07, PEMS08, PEMS-Bay, and METR-LA. Then, place them into `dataset` folder.
 
 ## Train and Test
 **Step 1:**
 
-You need to modify the following variables in `main.py` script. 
+Modifying the following variables in `main.py` script. 
 ```python
 #********************************************************#
-Mode = 'Train'
+Mode = 'Train'     # or Test (loading best_model.pth to evaluate on test dataset)
 DATASET = 'PEMS04' # PEMS03 or PEMS04 or PEMS07 or PEMS08
-MODEL = 'DAAGCN'
 #********************************************************#
 ```
 
@@ -70,46 +95,66 @@ default_graph = True
 ```
 
 **Step 3:**
+
 ```bash
-python -u main.py --gpu_id=1 2>&1 | tee daagcn.log
-```
-or 
-
-```
-bash run.sh
+python -u main.py --gpu_id=1 2>&1 | tee exps/PEMS04.log
 ```
 
-Note that for descriptions of more arguments, please run `python main.py -h`. The logs of testing results on four datasets reported in our paper can be found in [results](https://github.com/juyongjiang/DAAGCN/tree/master/results).
-
-## Visualization
+Note that for descriptions of more arguments, please run `python main.py -h`. After training, the model will be evalutated on test dataset automatically. The results for 1 ~ 12 horizon prediction will be shown in terminal or can be found in the end of `exps/PEMS04.log`. 
 ```bash
-$ tree
-.
-├── visualize
-    └── PEMS04
-        ├── DAAGCN_PEMS04_pred.npy
-        ├── DAAGCN_PEMS04_true.npy
-        └── DAAGCN_PEMS04_val_loss.txt
-...
-``` 
-After training, the training loss will be saved in root path. Besides, the predicted results with 12 horizon will be saved in `log/dataset_name_xx/date_xx` which contains `best_model.pth`, `dataset_pred.npy`, and `dataset_true.npy`. Place these files in the format of above path tree. Then, run the following script to visualize model convergence loss and prediction with 12 horizon in [Colab](https://colab.research.google.com/?utm_source=scs-index). 
-```bash
-vis_loss_pred.ipynb
+Horizon 01, MAE: 17.16, RMSE: 27.69, MAPE: 11.2595%
+Horizon 02, MAE: 17.57, RMSE: 28.50, MAPE: 11.4979%
+Horizon 03, MAE: 17.98, RMSE: 29.21, MAPE: 11.7343%
+Horizon 04, MAE: 18.29, RMSE: 29.76, MAPE: 11.9162%
+Horizon 05, MAE: 18.54, RMSE: 30.23, MAPE: 12.0755%
+Horizon 06, MAE: 18.80, RMSE: 30.68, MAPE: 12.2436%
+Horizon 07, MAE: 19.04, RMSE: 31.09, MAPE: 12.4009%
+Horizon 08, MAE: 19.24, RMSE: 31.43, MAPE: 12.5158%
+Horizon 09, MAE: 19.43, RMSE: 31.76, MAPE: 12.6333%
+Horizon 10, MAE: 19.62, RMSE: 32.05, MAPE: 12.7421%
+Horizon 11, MAE: 19.82, RMSE: 32.37, MAPE: 12.8842%
+Horizon 12, MAE: 20.20, RMSE: 32.88, MAPE: 13.1226%
+Average Horizon, MAE: 18.81, RMSE: 30.68, MAPE: 12.2522%
 ```
+More prediction results are stored in `exps/META-LA.log`, `exps/PeMS-BAY.log`, `exps/PEMS03.log`, `exps/PEMS07.log`, and `exps/PEMS08.log`.
 
-## Bibtex
-Please cite our paper if you find our code or paper useful:
-```bibtex
+## Experimental Results
+
+The prediction average horizon results of TrendGCN on six datasets are as follows:
+<!-- ||PEMS03| | |PEMS04| | |PEMS07| | |PEMS08| | 
+|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+|MAE|RMSE|MAPE|MAE|RMSE|MAPE|MAE|RMSE|MAPE|MAE|RMSE|MAPE|
+|14.77 | 25.66 | 13.92% | 18.81 | 30.68 | 12.25% | 20.43 | 34.32 | 8.51% | 15.15 | 24.26 |9.51%|
+
+||METR-LA| | |PeMS-BAY| |
+|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+|MAE|RMSE|MAPE|MAE|RMSE|MAPE|
+|3.55 | 7.39 | 10.27% | 1.92 | 4.46 | 4.51%| -->
+<p align="center">
+    <img src="./assets/Main_Results.jpg" width = "1000" alt="" align=center />
+</p>
+
+<p align="center">
+    <img src="./assets/Prediction.jpg" width = "1000" alt="" align=center />
+    <br><br>
+    <b>Figure 2.</b> Comparison of short (12 steps)-(a)(c)(e)(g) and long (288 steps)-(b)(d)(f)(h) term prediction curves between STSGCN, AGCRN, and our TrendGCN on a snapshot of the test data of four datasets. Note that, the predicted time series for the whole day period (288 steps) is simply obtained by concatenating all the short-term predictions (12 steps) along the time axis (and remove overlaps), which is a common practice widely used in existing literatures, so that a better visualization of the prediction quality during different time of the day can be presented. 
+</p>
+
+<p align="center">
+    <img src="./assets/Graph_Heatmap.jpg" width = "1000" alt="" align=center />
+    <br><br>
+    <b>Figure 3.</b> Visualization of 2D projection of UMAP on spatial embeddings (Upper) and the heatmap of learned graphs (Lower) at t = {2, 4, 6, 8, 10, 12} time steps.
+</p>
+
+
+## Citation
+If you use the data or code in this repo, please cite the repo.
+
+```
 @article{jiang2022dynamic,
-  title={Dynamic Adaptive and Adversarial Graph Convolutional Network for Traffic Forecasting},
-  author={Jiang, Juyong and Wu, Binqing and Chen, Ling and Kim, Sunghun},
+  title={Enhancing the Robustness via Adversarial Learning and Joint Spatial-Temporal Embeddings in Traffic Forecasting},
+  author={Jiang, Juyong and Wu, Binqing and Chen, Ling and Zhang, Kai and Kim, Sunghun},
   journal={arXiv preprint arXiv:2208.03063},
   year={2022}
 }
 ```
-
-## Contact
-Feel free to contact us if there is any question. (Juyong Jiang, juyongjiang@ust.hk; Binqing Wu, binqingwu@cs.zju.edu.cn)
-
-
-

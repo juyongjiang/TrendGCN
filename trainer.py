@@ -91,12 +91,16 @@ class Trainer(object):
                         
             # data and target shape: B, W, N, F, and B, H, N, F; output shape: B, H, N, F (F=1)
             output = self.generator(data, self.norm_dis_matrix)
-            if self.args.real_value: # it is depended on the output of model. If output is real data, the label should be reversed to real data
+
+            if self.args.real_value and self.args.dataset.lower() not in ['metr-la', 'pems-bay']: # it is depended on the output of model. If output is real data, the label should be reversed to real data
                 label = self.scaler.inverse_transform(label)
-            
+            elif self.args.real_value and self.args.dataset.lower() in ['metr-la', 'pems-bay']:
+                output = self.scaler.inverse_transform(output)  
+            if self.args.dataset.lower() in ['metr-la', 'pems-bay']: 
+                data = data[:, :, :, :1]
+            # print(data.shape, output.shape, label.shape)
             fake_input = torch.cat((data, self.scaler.transform(output)), dim=1) if self.args.real_value else torch.cat((data, output), dim=1) # [B'', W, N, 1] // [B'', H, N, 1] -> [B'', W+H, N, 1]
             true_input = torch.cat((data, self.scaler.transform(label)), dim=1) if self.args.real_value else torch.cat((data, label), dim=1)
-
             fake_input_rf = self.scaler.transform(output) if self.args.real_value else output # [B'', W, N, 1] // [B'', H, N, 1] -> [B'', W+H, N, 1]
             true_input_rf = self.scaler.transform(label) if self.args.real_value else label
             
@@ -165,8 +169,10 @@ class Trainer(object):
                 data = data[..., :self.args.input_dim] # [B'', W, N, 1]
                 label = target[..., :self.args.output_dim] # [B'', H, N, 1]
                 output = self.generator(data, self.norm_dis_matrix)
-                if self.args.real_value:
+                if self.args.real_value and self.args.dataset.lower() not in ['metr-la', 'pems-bay']:
                     label = self.scaler.inverse_transform(label)
+                elif self.args.real_value and self.args.dataset.lower() in ['metr-la', 'pems-bay']:
+                    output = self.scaler.inverse_transform(output)  
                 loss = self.loss_G(output.cuda(), label)
                 # a whole batch of Metr_LA is filtered
                 if not torch.isnan(loss):
@@ -234,10 +240,9 @@ class Trainer(object):
 
         # save the best model to file
         # if not self.args.debug:
-        self.save_checkpoint()
-
         # test
         self.generator.load_state_dict(best_model)
+        self.save_checkpoint()
         # self.val_epoch(self.args.epochs, self.test_loader)
         self.test(self.generator, self.norm_dis_matrix, self.args, self.test_loader, self.scaler, self.logger)
 
@@ -268,8 +273,12 @@ class Trainer(object):
                 output = model(data, norm_dis_matrix)
                 y_true.append(label) # [B'', H, N, 1]
                 y_pred.append(output) # [B'', H, N, 1]
-        y_true = scaler.inverse_transform(torch.cat(y_true, dim=0))
-        if args.real_value:
+        if args.real_value and args.dataset.lower() in ['metr-la', 'pems-bay']:
+            y_true = torch.cat(y_true, dim=0)
+        else:
+            y_true = scaler.inverse_transform(torch.cat(y_true, dim=0))
+        
+        if args.real_value and args.dataset.lower() not in ['metr-la', 'pems-bay']:
             y_pred = torch.cat(y_pred, dim=0)
         else:
             y_pred = scaler.inverse_transform(torch.cat(y_pred, dim=0))

@@ -5,6 +5,7 @@ import torch.utils.data
 from utils.norm import *
 
 
+# For PEMS03/04/07/08 Datasets
 def get_dataloader(args, normalizer='std', tod=False, dow=False, weather=False, single=True):
     # load raw st dataset
     data = load_st_dataset(args.dataset)        # B, N, D
@@ -35,6 +36,42 @@ def get_dataloader(args, normalizer='std', tod=False, dow=False, weather=False, 
         val_dataloader = data_loader(x_val, y_val, args.batch_size, shuffle=False, drop_last=True)
     test_dataloader = data_loader(x_test, y_test, args.batch_size, shuffle=False, drop_last=False)
 
+    return train_dataloader, val_dataloader, test_dataloader, scaler
+
+
+# For PEMS-Bay and METR-LA Datasets
+def get_dataloader_meta_la(args, normalizer='std', tod=False, dow=False, weather=False, single=True):
+    data = {}
+    for category in ['train', 'val', 'test']:
+        cat_data = np.load(os.path.join("./dataset", args.dataset, category + '.npz'))
+        data['x_' + category] = cat_data['x'] # [B, T, N, 2]
+        data['y_' + category] = np.expand_dims(cat_data['y'][:, :, :, 0], axis=-1) # [B, T, N, 1]
+        
+    # data normalization method following DCRNN
+    scaler = StandardScaler(mean=data['x_train'][..., 0].mean(), std=data['x_train'][..., 0].std())
+    for category in ['train', 'val', 'test']:
+        data['x_' + category][:, :, :, 0] = scaler.transform(data['x_' + category][:, :, :, 0])
+    if not args.real_value:
+        data['y_' + category][:, :, :, 0] = scaler.transform(data['y_' + category][:, :, :, 0])
+    
+    x_tra, y_tra = data['x_train'], data['y_train']
+    x_val, y_val = data['x_val'], data['y_val']
+    x_test, y_test = data['x_test'], data['y_test']
+
+    print('Train: ', x_tra.shape, y_tra.shape)
+    print('Val: ', x_val.shape, y_val.shape)
+    print('Test: ', x_test.shape, y_test.shape)
+    # print(x_tra[:10], x_val[:10], x_test[:10])
+    # print(y_tra[:10], y_val[:10], y_test[:10])
+    
+    ##############get dataloader######################
+    train_dataloader = data_loader(x_tra, y_tra, args.batch_size, shuffle=True, drop_last=True)
+    if len(x_val) == 0:
+        val_dataloader = None
+    else:
+        val_dataloader = data_loader(x_val, y_val, args.batch_size, shuffle=False, drop_last=True)
+    test_dataloader = data_loader(x_test, y_test, args.batch_size, shuffle=False, drop_last=False)
+    
     return train_dataloader, val_dataloader, test_dataloader, scaler
 
 

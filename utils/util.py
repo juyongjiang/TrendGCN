@@ -4,6 +4,7 @@ import random
 import numpy as np
 import logging
 from datetime import datetime
+from utils.metrics import MAE_torch
 
 def get_device(args):
     if torch.cuda.is_available():
@@ -47,9 +48,6 @@ def get_memory_usage(device):
 
 def masked_mae_loss(scaler, mask_value):
     def loss(preds, labels):
-        if scaler:
-            preds = scaler.inverse_transform(preds)
-            labels = scaler.inverse_transform(labels)
         mae = MAE_torch(pred=preds, true=labels, mask_value=mask_value)
         return mae
 

@@ -11,7 +11,7 @@ from model.generator import DAAGCN as Generator
 from model.discriminator import Discriminator, Discriminator_RF
 from trainer import Trainer
 
-from dataloader import get_dataloader
+from dataloader import get_dataloader, get_dataloader_meta_la
 from utils.metrics import MAE_torch
 from utils.util import *
 from utils.adj_dis_matrix import get_adj_dis_matrix, norm_Adj as norm_adj
@@ -19,8 +19,8 @@ from utils.adj_dis_matrix import get_adj_dis_matrix, norm_Adj as norm_adj
 #*************************************************************************#
 Mode = 'Train'
 DEBUG = 'True'
-DATASET = 'PEMS04'      # PEMS03 or PEMS04 or PEMS07 or PEMS08
-MODEL = 'DAAGCN'
+DATASET = 'PEMS04'      # PEMS03 or PEMS04 or PEMS07 or PEMS08 or METR-LA or PEMS-Bay
+MODEL = 'TrendGCN'
 ADJ_MATRIX = './dataset/{}/{}.csv'.format(DATASET, DATASET)
 #*************************************************************************#
 
@@ -109,21 +109,32 @@ if __name__ == "__main__":
     discriminator_rf = discriminator_rf.to(args.device)
     discriminator_rf = init_model(discriminator_rf)
 
+    if args.dataset in ['METR-LA', 'PEMS-Bay']:
+        train_loader, val_loader, test_loader, scaler = get_dataloader_meta_la(args,
+                                                                    normalizer=args.normalizer,
+                                                                    tod=args.tod,
+                                                                    dow=False,
+                                                                    weather=False,
+                                                                    single=False)   
     # load dataset X = [B', W, N, D], Y = [B', H, N, D]
-    train_loader, val_loader, test_loader, scaler = get_dataloader(args,
-                                                                   normalizer=args.normalizer,
-                                                                   tod=args.tod, 
-                                                                   dow=False,
-                                                                   weather=False, 
-                                                                   single=False)
-    # get norm adj_matrix, norm dis_matrix
-    if args.dataset.lower() == 'pems03':
-        adj_matrix, dis_matrix = get_adj_dis_matrix(args.adj_file, args.num_nodes, False, "./dataset/PEMS03/PEMS03.txt")
     else:
-        adj_matrix, dis_matrix = get_adj_dis_matrix(args.adj_file, args.num_nodes, False)
+        train_loader, val_loader, test_loader, scaler = get_dataloader(args,
+                                                                    normalizer=args.normalizer,
+                                                                    tod=args.tod, 
+                                                                    dow=False,
+                                                                    weather=False, 
+                                                                    single=False)
+    # get norm adj_matrix, norm dis_matrix
     cuda = True if torch.cuda.is_available() else False
     TensorFloat = torch.cuda.FloatTensor if cuda else torch.FloatTensor
-    norm_adj_matrix, norm_dis_matrix = TensorFloat(norm_adj(adj_matrix)), TensorFloat(norm_adj(dis_matrix))
+    if args.dataset.lower() == 'pems03':
+        adj_matrix, dis_matrix = get_adj_dis_matrix(args.adj_file, args.num_nodes, False, "./dataset/PEMS03/PEMS03.txt")
+        norm_adj_matrix, norm_dis_matrix = TensorFloat(norm_adj(adj_matrix)), TensorFloat(norm_adj(dis_matrix))
+    elif args.dataset.lower() in ['metr-la', 'pems-bay']:
+        norm_adj_matrix, norm_dis_matrix = None, None
+    else:
+        adj_matrix, dis_matrix = get_adj_dis_matrix(args.adj_file, args.num_nodes, False)
+        norm_adj_matrix, norm_dis_matrix = TensorFloat(norm_adj(adj_matrix)), TensorFloat(norm_adj(dis_matrix))
 
     # loss function
     if args.loss_func == 'mask_mae':
@@ -192,8 +203,8 @@ if __name__ == "__main__":
     if args.mode.lower() == 'train':
         trainer.train()
     elif args.mode.lower() == 'test':
-        generator.load_state_dict(torch.load('../pre-trained/{}.pth'.format(args.dataset)))
+        # generator.load_state_dict(torch.load('./log/{}/20221128054144/best_model.pth'.format(args.dataset)))
         print("Load saved model")
-        trainer.test(generator, norm_dis_matrix, trainer.args, test_loader, scaler, trainer.logger)
+        trainer.test(generator, norm_dis_matrix, trainer.args, test_loader, scaler, trainer.logger, path=f'./log/{args.dataset}/20221130052054/')
     else:
         raise ValueError
