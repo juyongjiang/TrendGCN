@@ -131,8 +131,10 @@ The prediction average horizon results of TrendGCN on six datasets are as follow
 |MAE|RMSE|MAPE|MAE|RMSE|MAPE|
 |3.55 | 7.39 | 10.27% | 1.92 | 4.46 | 4.51%| -->
 <p align="center">
-    <img src="./assets/Main_Results.jpg" width = "90%" alt="" align=center />
+    <img src="./assets/Main_Results.jpg" width = "1000" alt="" align=center />
 </p>
+
+## Visualization
 
 <p align="center">
     <img src="./assets/Prediction.jpg" width = "80%" alt="" align=center />
